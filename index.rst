@@ -5,7 +5,7 @@
 
 This section provides links for help with frequently-raised issues when using PDC resources.
 If you cannot find the information you need in the official documentation, or through a global web search
-please :ref:`contact_pdc_support`.
+please see *Contact PDC Support* below.
 We are always glad to help, and we also appreciate suggestions for improving our documentation.
 
 Getting started at PDC
@@ -42,6 +42,15 @@ Hardware
    :maxdepth: 2
 
    https://www.pdc.kth.se/resources/computers/
+
+How to contact PDC Support
+==========================
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   documents/contact/*
 
 
 Indices and tables
