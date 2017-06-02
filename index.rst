@@ -6,12 +6,47 @@
 Welcome to PDC Support's documentation!
 =======================================
 
+Getting started at PDC
+======================
+
 .. toctree::
    :glob:
    :maxdepth: 2
-   :caption: Contents:
+
+
+How to login
+============
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
 
    documents/login/*
+
+Software
+========
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   http://www.pdc.kth.se/software
+   
+Hardware
+========
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   https://www.pdc.kth.se/resources/computers/
+      
+Ask support
+===========
+
+If you cannot find the information you need in the official documentation, or through a global web search
+please contact PDC Support.
+We are always glad to help, and we also appreciate suggestions for improving our documentation.
 
 Indices and tables
 ==================
