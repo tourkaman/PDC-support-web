@@ -85,6 +85,8 @@ Create or modify the file **~/.ssh/config**::
   # All other hosts
   Host *
 
+The file can be downloaded from :download:`here <config>`.
+
 Do remember to set the right permission on the file::
 
   chmod 644 ~/.ssh/config

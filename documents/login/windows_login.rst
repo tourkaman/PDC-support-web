@@ -32,6 +32,7 @@ The kerberos file should located at::
 If windows is not installed as default under **C:** then replace
 this with were windows is installed. Also the folder **ProgramData**
 is hidden by default in windows, so just write the path in the file manager.
+
 **krb5.conf** should be defined with the following entries::
 
   [domain_realm]

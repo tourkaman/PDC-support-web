@@ -1,0 +1,15 @@
+# Hosts we want to authenticate to with Kerberos
+Host *.kth.se *.kth.se.
+# User authentication based on GSSAPI is allowed
+GSSAPIAuthentication yes
+# Key exchange based on GSSAPI may be used for server authentication
+GSSAPIKeyExchange yes
+# Hosts to which we want to delegate credentials. Try to limit this to
+# hosts you trust, and were you really have use for forwarded tickets.
+Host *.csc.kth.se *.csc.kth.se. *.nada.kth.se *.nada.kth.se. *.pdc.kth.se *.pdc.kth.se.
+# Forward (delegate) credentials (tickets) to the server.
+GSSAPIDelegateCredentials yes
+# Prefer GSSAPI key exchange
+PreferredAuthentications gssapi-keyex,gssapi-with-mic
+# All other hosts
+Host *

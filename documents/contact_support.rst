@@ -54,9 +54,11 @@ We recommend contacting PDC support via email, rather than phone.
 
 If necessary, PDC support can be contacted on the following number.
 
-================= ============================
+================= ================ ===========
+Phone number      Office days      Hours
+================= ================ ===========
 +46 (0)8 790 7800 Monday to Friday 09:00-17:00
-================= ============================
+================= ================ ===========
 
 Information to state when contacting PDC support
 ------------------------------------------------
