@@ -3,8 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to PDC Support's documentation!
-=======================================
+This section provides links for help with frequently-raised issues when using PDC resources.
+If you cannot find the information you need in the official documentation, or through a global web search
+please :ref:`contact_pdc_support`.
+We are always glad to help, and we also appreciate suggestions for improving our documentation.
 
 Getting started at PDC
 ======================
@@ -40,13 +42,7 @@ Hardware
    :maxdepth: 2
 
    https://www.pdc.kth.se/resources/computers/
-      
-Ask support
-===========
 
-If you cannot find the information you need in the official documentation, or through a global web search
-please contact PDC Support.
-We are always glad to help, and we also appreciate suggestions for improving our documentation.
 
 Indices and tables
 ==================
