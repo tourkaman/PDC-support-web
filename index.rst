@@ -8,6 +8,15 @@ If you cannot find the information you need in the official documentation, or th
 please see *Contact PDC Support* below.
 We are always glad to help, and we also appreciate suggestions for improving our documentation.
 
+Before starting at PDC
+========================
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   documents/basics/*
+
 Getting started at PDC
 ======================
 
@@ -15,36 +24,20 @@ Getting started at PDC
    :glob:
    :maxdepth: 2
 
+   documents/starting/*
 
-How to login
-============
-
-.. toctree::
-   :glob:
-   :maxdepth: 2
-
-   documents/login/*
-
-Software
-========
+Running research at PDC
+=======================
 
 .. toctree::
    :glob:
    :maxdepth: 2
 
-   http://www.pdc.kth.se/software
-   
-Hardware
-========
+   documents/running/*
 
-.. toctree::
-   :glob:
-   :maxdepth: 2
 
-   https://www.pdc.kth.se/resources/computers/
-
-How to contact PDC Support
-==========================
+Contact PDC Support
+===================
 
 .. toctree::
    :glob:
