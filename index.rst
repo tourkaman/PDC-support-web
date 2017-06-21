@@ -3,13 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+Welcome to PDC Support!
+=======================================
+
 This section provides links for help with frequently-raised issues when using PDC resources.
 If you cannot find the information you need in the official documentation, or through a global web search
 please see *Contact PDC Support* below.
 We are always glad to help, and we also appreciate suggestions for improving our documentation.
 
-Before starting at PDC
-========================
+User guide
+==========
 
 .. toctree::
    :glob:
@@ -17,8 +20,8 @@ Before starting at PDC
 
    documents/basics/*
 
-Getting started at PDC
-======================
+Getting Started
+===============
 
 .. toctree::
    :glob:
