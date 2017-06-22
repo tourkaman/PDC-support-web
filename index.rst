@@ -6,10 +6,8 @@
 Welcome to PDC Support!
 =======================================
 
-This section provides links for help with frequently-raised issues when using PDC resources.
-If you cannot find the information you need in the official documentation, or through a global web search
-please see *Contact PDC Support* below.
-We are always glad to help, and we also appreciate suggestions for improving our documentation.
+This section provides links for help with frequently-raised issues when using PDC resources. If you cannot find the information you need in the official documentation, or through a global web search
+please see *Contact PDC Support* below. We are always glad to help, and we also appreciate suggestions for improving our documentation.
 
 User guide
 ==========
@@ -18,7 +16,9 @@ User guide
    :glob:
    :maxdepth: 2
 
-   documents/basics/*
+   documents/basics/preliminaries/
+   documents/basics/linux/
+   documents/basics/glossary/   
 
 Getting Started
 ===============
@@ -29,7 +29,7 @@ Getting Started
 
    documents/starting/*
 
-Running research at PDC
+Running research
 =======================
 
 .. toctree::

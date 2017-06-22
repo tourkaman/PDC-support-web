@@ -1,12 +1,11 @@
 .. index:: Getting an account at PDC
 .. _get_account:
 
-Getting an account at PDC
+Step 2: Applying for an account
 =========================
 
 TODO: Apply for PDC account
 TODO: hyperlink to 'time allocation' basics
-
 
 SUPR Account
 ############
@@ -19,4 +18,3 @@ Linking SUPR to PDC
 
 Industrial account
 ##################
-

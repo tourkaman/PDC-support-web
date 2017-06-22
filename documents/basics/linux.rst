@@ -31,11 +31,7 @@ In the shell, you can start typing commands to perform some action. Most command
 
    ========================  ====================================
 
-For additional explanations about commands type ``man <cmd>``. 
-
-.. rubric:: Scripts and text-editors
-
-.. **TODO**: PDC commands
+For additional explanations, have a look at the command manual by typing ``man <cmd>``. 
 
 .. seealso:: 
  
@@ -48,14 +44,15 @@ For additional explanations about commands type ``man <cmd>``.
 Tutorial: Scripting and text-editors
 ====================================
 
-**TODO**: what are scripts, text editors: emacs/vim commands
+Now that we can use Linux commands on the shell, we can move on to executing a bunch of commands together. This is usually executing a file called **script** that contains the list of commands to be executed sequentially.
 
+.. code-block:: scipt
+		
+   #!/bin/bash
+   # here we loop over all files that end with *.out
+   for file in *.out; do
+     echo $file
+     cat $file
+   done
 
-Tutorial: Linux commands for PDC
-==============================================
-
-**TODO**: Special commands for using PDC
-
-
-
-   
+To starting executing such scripts, you would need to start with a text-editor. Choosing a text-editor is a matter of personal choice, the most popular ones being Vim and Emacs. But there are a lot more new and interesting ones. Open your favorite text-editor and copy-paste the above code and save with file as <script>. Then run the script by typing ``./<script>``. 
