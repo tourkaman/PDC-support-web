@@ -13,11 +13,14 @@ Before running on PDC, users must belong to at least one Time Allocation. If you
 
 If you're a participant of a course at KTH that uses the super computers, you can jump to the step [STEP 2: account creation for course account]. Do not forget to specify the course ID, and the name of the course administrator for the course. You also need to be a part of a participant list managed by the course administrator.
 
+.. rubric:: Are you a Master student in need for PDC resources for thesis?
+
+In general, we do not accept application from Master students. However, you can ask your supervisor to **Apply for a New Time Allocation** and then join that Time allocation as an project member. We recommend to apply for *Small allocation* (see more info below) for thesis projects. 
 
 Applying for a New Time Allocation
 ############################
 
-If you are applying for a new Time Allocation, you are the Principal Investigator (PI). Since the Time Allocation is so limited, both in time per month for running jobs, and in duration, many projects have applied for more time on a certain computer/cluster. For instance, a PI apply for a time allocation that will cover the needs for all people in a certain research project. You would have to find what allocation would suit the best for your project with the help of the table below:
+If you are applying for a new Time Allocation, you are the Principal Investigator (PI). Time Allocation is limited both in time per month for running jobs, and in duration, so it is important to apply for the right amount of time. Keep in mind that a PI apply for a time allocation that will cover the needs for all people in a certain research project. You would have to find what allocation would suit the best for your project with the help of the table below:
 
 .. table::
    :widths: auto
@@ -33,16 +36,25 @@ If you are applying for a new Time Allocation, you are the Principal Investigato
 
 .. Add to large allocation, application evaluation: Evidence of successful work at a medium level needed. Performed by SNAC twice a year   
 
-All time allocations are now managed through SUPR, so users can be added or removed from the allocation directly using the SUPR web interface. The changes are then automatically applied overnight by various scripts. All allocations are handled on a national level through SNAC (Swedish National Allocations Committee), and the SUPR system. regardless of the size of the requested allocation.
+All time allocations are now managed through `SUPR <https://supr.snic.se/>`_, handled by SNAC (Swedish National Allocations Committee) so users can be added or removed from the allocation directly using the SUPR web interface. If you do not have an SUPR account, you need to obtain one [go to step 2 SUPR account] and apply from my page in SUPR web interface.  The changes are then automatically applied to PDC clusters overnight by various scripts.
 
 To know more on what cores or core-hours mean, please visit the Preliminaries page.
 
 Joining a existing Time Allocation
 ##################################
 
+If you want to join an existing Time allocation, you have to first create an SUPR account [go to step 2 SUPR account] and send an Project Membership Request from SUPR web interface, and then proceed to send an PDC account request through SUPR.
+
+
 Check your existing Time Allocation
 ###################################
 
 You can see what time allocations you belong to via the SUPR web page. Note that medium allocations normally have an extra m, at the start, e.g. SNIC 2015/1-1 is m.2015-1-1 on our system. You can see which time allocation you are a member of using the ``projinfo`` command. It will print the information of all the allocations you belong to and information on the recent usage of the allocation.
+
+TEMP
+####
+Placeholder for poster-like infographics for user
+
+.. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrYW1xTkRnQXRqRU0
 
 .. Shouldn't be here. Maybe in running research section. Acknowledge your SNAC/PDC time allocation
