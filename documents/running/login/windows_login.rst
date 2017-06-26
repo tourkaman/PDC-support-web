@@ -59,7 +59,7 @@ enter the following::
 You will be asked for your kerberos password and then you have acquired your ticket.
 More information about kerberos can be found at ...
 
-If you intend to use OpenAFS(see ... ), you also need to obtain an AFS token with the following command::
+If you intend to use OpenAFS(see :ref:`file_transfer` ), you also need to obtain an AFS token with the following command::
 	aklog
 
 After you have obtained an kerberos ticket.
@@ -103,7 +103,6 @@ Configuring PuTTY
    (with hostname beskow.pdc.kth.se), with username "user". 
    You can substitute these values for some other cluster at PDC (eg tegner.pdc.kth.se, etc) and of course your own username respectively.
 	.. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrLWVmdVh3VURnWnc
-
 #. In the field Host Name at the top, we enter ``user@beskow.pdc.kth.se``. 
    Again, substitute the username and the cluster as needed. Make sure the port is 22 and that SSH is selected underneath.
 	.. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrTzloaUxMWmU0eG8
