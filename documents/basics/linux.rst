@@ -2,7 +2,7 @@
 .. _linux:
 
 Tutorial: Linux 
-========================
+================
 
 .. Refer to http://www.ee.surrey.ac.uk/Teaching/Unix/unix1.html
 
@@ -46,7 +46,7 @@ Tutorial: Scripting and text-editors
 
 Now that we can use Linux commands on the shell, we can move on to executing a bunch of commands together. This is usually executing a file called **script** that contains the list of commands to be executed sequentially.
 
-.. code-block:: scipt
+.. code-block:: bash
 		
    #!/bin/bash
    # here we loop over all files that end with *.out

@@ -9,7 +9,7 @@ Step 1: Getting research time
 Before running on PDC, users must belong to at least one Time Allocation. If you are joining a project in a research group that already has a Time Allocation, or if you are participating in a course that requires accessing PDC resourses, then you are joining an existing Time Allocation. In that case, jump here to find all Time Allocations you belong to [link].
 
 Applying for a Time Allocation
-############################
+##############################
 
 If you are applying for a new Time Allocation, you are the Principal Investigator (PI). Since the Time Allocation is so limited, both in time per month for running jobs, and in duration, many projects have applied for more time on a certain computer/cluster. For instance, a PI apply for a time allocation that will cover the needs for all people in a certain research project. You would have to find what allocation would suit the best for your project with the help of the table below:
 
