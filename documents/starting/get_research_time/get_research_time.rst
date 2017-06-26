@@ -9,6 +9,7 @@ Step 1: Getting research time
 Before running on PDC, users must belong to at least one Time Allocation. If you are joining a project in a research group that already has a Time Allocation, then jump to [joining an existing time allocation].
 
 
+
 .. rubric:: Are you applying for PDC resources for a course?
 
 If you're a participant of a course at KTH that uses the super computers, you can jump to the step [STEP 2: account creation for course account]. Do not forget to specify the course ID, and the name of the course administrator for the course. You also need to be a part of a participant list managed by the course administrator.
