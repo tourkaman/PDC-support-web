@@ -31,13 +31,13 @@ You can apply for an account at PDC in one of three ways depending on the type o
 
 (3) Industrial requests: TODO. Jump here.
 
-.. note::
+.. topic:: :ref:`Linking your SUPR account and PDC account <link_supr_pdc>`
 
-   **Linking your SUPR account and PDC account**: Many things are now managed through SUPR, so all PDC accounts should be linked to a SUPR account. In case you have an active PDC account that was not applied through SUPR, and would now like to link them, jump here.
+   Most projects are now managed through SUPR, so all PDC accounts should be linked to a SUPR account. In case you have an active PDC account that was not applied through SUPR, and you would now like to link them, use the link above.
 
-.. note::
+.. topic:: `Request class access <https://www.pdc.kth.se/support/accounts/class-new/request-class-access>`_
 
-   **Request course access**: If you are the instructor of a course, and want to request access to PDC for course participant, please complete this `application <https://www.pdc.kth.se/support/accounts/class-new/request-class-access>`_.
+   If you are the instructor of a course and want to request access to PDC for course participant, please complete this application using the link.
 
 SUPR Account
 ############
@@ -99,8 +99,8 @@ Industrial account
    3.   If the account creation was successful, you will recieve an confirmation e-mail, and the login credentials will be sent to the address you provided.
    4.   If you requested an accounts for a course, you will recieve the credentials in the corresponding course lecture.
 
-.. Should we add Estimated Time of Account Creation
-
+.. _link_supr_pdc:
+   
 Linking SUPR to PDC
 ###################
 
