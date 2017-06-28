@@ -2,7 +2,9 @@
 
 .. _contact_support:
 
-Before contacting PDC Support, please have a look at the Support pages to see if your questions are already addressed, and check the current **system alerts** to see if there is a related issue. PDC Support will be available on Monday to Friday 09:00-17:00 CEST.
+Before contacting PDC Support, please have a look at the `Support <https://www.pdc.kth.se/support>`_ pages to see if your questions are already addressed, and check the current `System Alerts <https://www.pdc.kth.se/cgi-bin/flash/flash.py>`_ to see if there is a related issue.
+
+PDC Support will be available Monday to Friday 09:00-17:00 CEST.
 
 #######
 Mail us
