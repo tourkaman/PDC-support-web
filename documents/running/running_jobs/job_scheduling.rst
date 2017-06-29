@@ -53,34 +53,39 @@ The flag option depend on the cluster you are intending to run the program on. B
 		
 	In a job script option the following sbatch command can be defined:
 	
-		* **#SBATCH -A project_name** - the name of the project(time allocation) to be charged for this run. Note the name should not normally contain PDC or SNIC, so PDC-2015-1 is just 2015-1 and SNIC 2015/1-1 is just 2015-1-1	
+		* ``#SBATCH -A project_name`` - the name of the project(time allocation) to be charged for this run. Note the name should not normally contain PDC or SNIC, so PDC-2015-1 is just 2015-1 and SNIC 2015/1-1 is just 2015-1-1	
 
 
-		* **#SBATCH -t hh:mm:ss** - maximum job elapsed time should be indicated whenever possible: this allows slurm to determine best scheduling startegy.
+
+	        * ``#SBATCH -t hh:mm:ss``  - maximum job elapsed time should be indicated whenever possible: this allows slurm to determine best scheduling startegy.
 
 
-		* **#SBATCH -n n** - Number of processes (MPI ranks) that will be reserved for the given job. Each node supports up to 48 MPI processes with hyperthreading. It is recommended to use 24 cores per node though in most cases.
+
+		* ``#SBATCH -n n`` - Number of processes (MPI ranks) that will be reserved for the given job. Each node supports up to 48 MPI processes with hyperthreading. It is recommended to use 24 cores per node though in most cases.
 
 
-		*  **#SBATCH --nodes=X** - Number of Nodes to reserve
+
+		*  ``#SBATCH --nodes=X`` - Number of Nodes to reserve
 
 
-		* **#SBATCH --ntasks-per-node=X** - Set the number of tasks per node. The default is 48, to allow the use of hyperthreading. In most cases, using 24 (the number of physical cores) is better.
+
+		* ``#SBATCH --ntasks-per-node=X`` - Set the number of tasks per node. The default is 48, to allow the use of hyperthreading. In most cases, using 24 (the number of physical cores) is better.
 
 
-		* **#SBATCH --gres=gpu:X** - for Tegner you can book nodes with GPU. note that the following command is needed for program to recognize the GPU. the *X* option can either be **K80:2** or **K420:1**
-		* **#SBATCH -J job_name** - the job name is used to determine the name of job output and error files
+		  
+		* ``#SBATCH --gres=gpu:X`` - for Tegner you can book nodes with GPU. note that the following command is needed for program to recognize the GPU. the *X* option can either be **K80:2** or **K420:1**
+		  
+		* ``#SBATCH -J job_name`` - the job name is used to determine the name of job output and error files
+		  
+
+		* ``#SBATCH -e error_file.e`` - job error file
 
 
-		* **#SBATCH -e error_file.e** - job error file
+		* ``#SBATCH -o output_file.o`` - job output file
 
-
-		* **#SBATCH -o output_file.o** - job output file
-
-
-		* **#SBATCH --mail-type=ALL** - request a mail when the job starts and ends
-
-	dont forget GPU flag and specifications
+		  
+		* ``#SBATCH --mail-type=ALL`` - request a mail when the job starts and ends
+		  
 	and maybe link to example code?
 
 .. container:: toggle
@@ -88,8 +93,36 @@ The flag option depend on the cluster you are intending to run the program on. B
 	.. container:: header
 
 		**Job script examples (Tegner)**
+
+
+	This is an an example of a job script for a MPI program. For other program, you can find an example in the software page <HYPERLINK SOFTWARE>.
 		
-	Arr, here yer exaples code be!
+	.. code-block:: bash
+
+	   #!/bin/bash -l
+	   # The -l above is required to get the full environment with modules
+	   
+	   # Set the allocation to be charged for this job
+	   # not required if you have set a default allocation
+	   #SBATCH -A 201X-X-XX
+
+	   # The name of the script is myjob
+	   #SBATCH -J myjob
+
+	   # Only 1 hour wall-clock time will be given to this job
+	   #SBATCH -t 1:00:00
+	   
+	   # Number of nodes
+	   #SBATCH --nodes=4
+	   # Number of MPI processes per node (the following is actually the default)
+	   #SBATCH --ntasks-per-node=32
+	   
+	   #SBATCH -e error_file.e
+	   #SBATCH -o output_file.o
+	   
+	   # Run the executable named myexe 
+	   # and write the output into my_output_file
+	   aprun -n 128 ./myexe > my_output_file 2>&1
 
 	software specific examples can be found at <software link>
 .. container:: toggle
