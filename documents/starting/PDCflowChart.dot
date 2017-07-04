@@ -1,0 +1,45 @@
+digraph {
+	nodesep=1.5
+	 ranksep=1.1
+	
+	subgraph cluster_0 {
+		label="What kind of user are you?"
+		Researcher[label="Researcher\nPh.d\nMaster Thesis"]
+		Industry[label="Industry"]
+		Student[label="Course student"]
+	}
+
+	subgraph cluster_1 {
+		label="Create an account"
+		SUPR[label="SUPR account"]
+		Course[label="Course account"]
+		Special[label="Special account"]
+	}
+	Researcher -> SUPR[label=""];
+	Student -> Course[label=""];
+	Industry -> Special[label=""];
+
+	subgraph cluster_2 {
+		label="Be a part of a Time allocation"
+                New[label="Create new Time allocation"]
+		Join[label="Join an existing Time allocation"]	
+	}
+	SUPR->New[ltail=cluster_1,lhead=cluster_2];
+
+	Login[label="How to login to cluster"];
+	
+	SUPRPDC[label="Apply for PDC account from SUPR"];
+	
+	subgraph cluster_3 {
+		label="Goto How to run jobs"
+		Tegner;
+		Beskow;
+		}
+
+	Course->SUPRPDC[ltail=cluster_1];	
+	SUPRPDC->Login[ltail=cluster_2];
+	Login ->Tegner[lhead=cluster_3];
+	Login ->Beskow[lhead=cluster_3];
+	
+	
+}

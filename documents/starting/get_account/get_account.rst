@@ -120,3 +120,6 @@ Contact PDC support requesting that your PDC account be linked to your SUPR acco
 2.    e-mail address connected to your SUPR account
 
 PDC Support will send you a confirmation email when your SUPR account has been linked to your PDC account. When you receive the email, you can use the instructions above to verify that your SUPR account is now linked to your PDC account.
+
+.. graphviz:: ../PDCflowChart.dot
+
