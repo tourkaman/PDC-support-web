@@ -56,7 +56,12 @@ Running research
      :titlesonly:
      :maxdepth: 2
 
-     documents/running/managing_files/*
+     documents/running/managing_files/afs_and_cfs
+     documents/running/managing_files/afs
+     documents/running/managing_files/klemming
+     documents/running/managing_files/file_transfer
+     documents/running/managing_files/storing_data
+     
 
 Contact Support
 ===============
