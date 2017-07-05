@@ -5,13 +5,14 @@ How to login from Mac OS
 ========================
 
 This section describes how to acquire Kerberos tickets and
-login from different version of Mac OS X.
+log in from different versions of Mac OS X.
 
 
-Mac OS X 10.7.2 to 10.10
-------------------------
+Mac OS X 10.7 to 10.10
+----------------------
 
-These versions Mac OS come with Heimdal and kerberized ssh. 
+These versions of Mac OS come with Heimdal and kerberized ssh, so you only have 
+to modify your Kerberos and SSH configuration files.
 
 Configure Kerberos
 ^^^^^^^^^^^^^^^^^^
@@ -33,7 +34,7 @@ and should be changed by adding the following entries::
     dns_lookup_realm = true
     dns_lookup_kdc = true
 
-If you are not able to become root on your machines you can create a file in your home
+If you are not able to become root on your machine you can create a file in your home
 directory called for example **~/pdckrb** with the changes shown above.
 After this you need to set the path for kerberos like::
 
@@ -48,18 +49,18 @@ Acquire kerberos tickets
 
 In order to get a kerberos ticket::
 
-  kinit Username@NADA.KTH.SE
+  kinit --forwardable username@NADA.KTH.SE
 
 You will be asked for your kerberos password and then you have acquired your ticket.
 You can see what active tickets you have using::
 
-  klist
+  klist -f
 
 More information about kerberos can be found at ...
 
 
-Configure SSH configuration
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Configure SSH 
+^^^^^^^^^^^^^
 
 OpenSSH can be configured with command line arguments or a configuration file.
 The options in the configuration file are parsed in order.
@@ -87,13 +88,13 @@ Do remember to set the right permission on the file::
 
   chmod 644 ~/.ssh/config
 
-After this you can login by using::
+After this you can log in by using::
 
   ssh UserName@Cluster.pdc.kth.se
 
 
 SSH without configuration
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 As an alternative you can also supply these options directly to the ssh command in order to login::
 
@@ -106,22 +107,44 @@ Mac OS X 10.11 to 10.12
 The native ssh which comes with recent Mac OS X versions (El Capitan 10.11 and Sierra 10.12) does not support 
 GSSAPI key exchange, which is required for authenticating to PDC systems 
 using Kerberos.  
-Three options are available for setting up the connection to PDC. The 
-first option listed below is recommended, but the alternatives are also 
-described.
+Two options are available for setting up the connection to PDC. The 
+first option listed below is easier if you don't have macports installed on your machine, 
+but both methods are described below.
 
 
-(Recommended) Mac Installer
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(Method 1) Mac Installer
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-Start by downloading `this Mac installer package https://www.google.se`_ [TODO: put installer on Drive and link to it here].
+Start by downloading :download:`this Mac installer package `.
 Start the installer and click through the steps.
 
-To avoid interfering with the default binaries in /usr/bin, the installer will place the binary files (kinit, klist) in /usr/local/bin, 
-and it adjusts your path to make sure this directory is listed before the system location in your PATH variable.
+To avoid interfering with the default binaries in /usr/bin, the installer will place the ssh, scp and sftp binaries in /usr/local/bin, 
+and it will adjust your path to make sure this directory is 
+listed before the system location in your PATH variable (by adding a line your 
+.profile file).
 
 
+(Method 2) Install openssh via macports
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Another option is to install openssh via macports.  
+First, install Xcode through the App Store.  
+Open Xcode and choose in the menu:  
+
+*Xcode > Open Developer Tool > More Developer Tools*
+
+A browser will open with a list.  Download and install:
+
+*Command Line Tools for Xcode*
+
+Then install macports from https://www.macports.org.
+
+Finally install openssh through macports with the command::
+
+  sudo port install openssh +gsskex
+
+You can now restart the computer and continue with the setup of the 
+Kerberos file and .ssh/config described above for Mac OS X 10.7 to 10.10.
 
 
 Installing AFS
@@ -145,3 +168,4 @@ Then you need to start the AFS daemon::
 After installing AFS you can access your home folder located at::
 
   cd /afs/pdc.kth.se/home/u/username
+
