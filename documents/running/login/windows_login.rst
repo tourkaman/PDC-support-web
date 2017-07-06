@@ -1,8 +1,8 @@
 .. index:: Windows Login
 .. _windows_login:
 
-How to login in Windows
-=======================
+How to login from Windows
+=========================
 
 This section describes how to acquire kerberos tickets in Windows
 

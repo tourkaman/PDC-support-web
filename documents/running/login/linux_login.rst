@@ -1,8 +1,8 @@
 .. index:: Linux Login
 .. _linux_login:
 
-How to login in Linux
-=====================
+How to login from Linux (Ubuntu)
+================================
 
 This section describes how to acquire kerberos tickets and
 login in linux

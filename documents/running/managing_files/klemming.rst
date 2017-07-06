@@ -1,19 +1,34 @@
 .. index:: Klemming File System
 .. _klemming:
 
-Guide: Klemming
-===============
+Guide: 3. Klemming
+==================
 
-Guidelines on the usage of Klemming - PDCs high-performance file system.
+Klemming is a parallel file system based on Lustre optimized for handling data from many clients at the same time. This section provides the guidelines on the usage of Klemming.
 
-.. topic:: What is Klemming?:
+.. note:: You can find Klemming at ``/cfs/klemming``
 
-   Klemming is a parallel file system based on Lustre optimized for handling data from many clients at the same time.
+.. warning:: All files on Klemming are **NOT** backed up!	     
+	     	     
+Key features
+^^^^^^^^^^^^
 
-Klemming is divided into two parts
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^	     
+* **Storage size**: large volume of storage (total over 5 PB - so 100 times more than AFS)
+* **File access speed**: fast access (good for files accessed for computation)
+* **Backup**: files are not backed up
+* **Accessibility**: not possible to access files stored on Klemming directly via the internet - need to login to a PDC computer to get acces to Klemming
+* **Access from Tegner**: files on Klemming can be accessed from Beskow's compute nodes (any data or program files that you need for running programs on Beskow must be stored on Klemming)
+* **Access from Beskow**: files on Klemming can be accessed from Tegner's compute nodes - so large amounts of data for egner computationa should be stored on Klemming (small amounts of data are also okay on Klemming)
+* good for storing any large files and program code
+* **File access**: Lustre supports standard (POSIX) Access Control Lists
+* mainly used for:
+  * cluster scratch - shared area for temporary files - no  backup - old files will be deleted periofically by the system, and
+  * nobackup area - shared area to be used for input/output for running jobs - no backup - users should move files elsewhere as soon as possible when they are not needed for jobs
 
-Note that the two parts currently reside in the same file system and therefore share resources. This means that if one part gets overloaded or fills up, so does that other part too. This also means that you can move files between the two parts, with e.g. 'mv', rather than having to copy the data over.
+Klemming has two parts
+^^^^^^^^^^^^^^^^^^^^^^
+
+Klemming is divided into two parts: scratch and nobackup. Note that the two parts currently reside in the same file system and therefore share resources. This means that if one part gets overloaded or fills up, so does that other part too. This also means that you can move files between the two parts, with e.g. 'mv', rather than having to copy the data over.
 
 .. rubric:: Scratch
 
@@ -25,9 +40,9 @@ Use for most files that are used by jobs running at PDC (but does not fall into 
 
 Currently all files older than 30 days are eligible for being deleted during cleaning. The cleaning is usually done at least once a week, but will be done as frequently as deemed necessary to fulfill the above goals.
 
-If your username is "user" is located under /cfs/klemming/scratch/[first letter of username]/username or::
+Your directory is located in ``/cfs/klemming/scratch/[1st letter of username]/[username]``, for example, if your username is ``svensson``, your directory is at::
 
-/cfs/klemming/scratch/u/user
+/cfs/klemming/scratch/s/svensson
 
 .. rubric:: Nobackup
 
@@ -35,12 +50,10 @@ Use for files that - while needed as input by jobs frequently running on PDC - i
 
 Similar to scratch, your nobackup directory is under::
 
-/cfs/klemming/nobackup/u/user
+/cfs/klemming/nobackup/s/svensson
 
-.. warning:: All files on Klemming are **NOT** backed up!	     
-
-Disk usage and quota
-^^^^^^^^^^^^^^^^^^^^
+Check disk usage and quota
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can see how much data and how many files you currently have stored in Klemming using the command:
 

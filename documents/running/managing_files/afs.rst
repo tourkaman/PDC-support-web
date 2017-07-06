@@ -1,9 +1,33 @@
 .. index:: AFS File System
 .. _afs:
 
-Guide: AFS
-==========
+Guide: 2. AFS
+=============
 
+.. topic:: Location
+
+   You can find AFS at ``/afs/pdc.kth.se``
+
+Key features
+^^^^^^^^^^^^
+
+* **Storage size**:small volume of storage (around 50 TB total)
+* **File access speed**: relatively slow access to files (not good for files being accessed by parallel computation)
+* **Backup**: all files on AFS are backed up
+* **Access**: files stored on AFS can be directly accessed from any computer connected to the internet - it is not neccessary to log in to a PDC computer over the internet first
+* **Access from Beskow**: files on AFS are not accessible from Beskow's compute nodes (so any data or program files that you need for running pograms ob Beskow must be stored Klemming)
+* **Access from Tegner**: files on AFS can be accessed from Tegner's compute nodes - so small amounts of data for Tegner computations can be stored on AFS (any large amount of data should be stored on Klemming for reasons of speed of access)
+* good for storing small files that need to be backed up
+* home directories are on AFS (so you will be in AFS when you first log in to PDC's systems)
+* **File access**: AFS has its own implementation of Access Control Lists (ACLs), where users can define new groups (Note: In AFS access is set per directory and not on individual files)
+* **Secure access**: uses Kerberos for authentication and is designed for security and robustness. We assume that you have forwarded a valid ticket from your workstation when you logged in, see Kerberos for details.
+* mainly used for:
+  * users' home directory (with backup) - initially 500 MB (can be raised to 5 GB)
+  * project volumes (backup optional) - typically 10-50 GB (time limited)
+  * installation and configuration of the PDC environment, and
+  * source code packages
+
+   
 The `afsws` module
 ^^^^^^^^^^^^^^^^^^
 

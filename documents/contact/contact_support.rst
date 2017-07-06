@@ -6,9 +6,8 @@ Before contacting PDC Support, please have a look at the `Support <https://www.p
 
 PDC Support will be available Monday to Friday 09:00-17:00 CEST.
 
-#######
 Mail us
-#######
+^^^^^^^
 
 PDC uses a support Request Tracking (RT) system to handle all support requests. All incoming support mails will be tracked via the (RT) system so we can more efficiently follow up on your request and all of the PDC staff can help you in handling your issue. To get the best possible help from us when asking for support, please read this information!
 
@@ -43,9 +42,8 @@ If you are a **non-SUPR** user, you can contact PDC support directly by sending 
 
    #. That said, if your problem actually concerns the previous issue or response that you got from us, you should re-use that request number!
 
-#######      
 Call Us
-#######
+^^^^^^^
 
 We recommend contacting PDC support via email, rather than phone. If necessary, PDC support can be contacted on the following number.
 
@@ -61,9 +59,8 @@ We recommend contacting PDC support via email, rather than phone. If necessary, 
 
 .. more information?
 
-########   
 Visit Us
-########
+^^^^^^^^
 
 PDC Support is open for visitors from 09:00-17:00 Monday to Friday (except on public holidays), however, please make an appointment first to be sure that an appropriate person will be available to meet you when you arrive. For directions to get to PDC, click `here <https://www.pdc.kth.se/about/visit-pdc>`_.
 

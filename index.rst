@@ -49,7 +49,7 @@ Running research
 
      documents/running/running_jobs/*
      
-Data management
+* Data management
        
   .. toctree::
      :glob:
