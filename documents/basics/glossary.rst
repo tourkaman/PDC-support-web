@@ -9,22 +9,22 @@ Here you will find the basic terminologies and quick reference materials.
 .. glossary::
    
    cluster
-     TODO
+     Computer cluster is in the broad sense terminology for a supercomputer, consisting of a set of connected computers working together so that they can be viewed as a single system. Currently PDC have two clusters, **Tegner** and **Beskow**.
      
    node
-     TODO
+     Nodes are component of a cluster and analogus to computer we use everyday. A supercomputer consist of a number of nodes that perform computations and runs its own instance of an operating system. <A bit of -N explanation here?>
 
    processor
-     TODO
+     component of each node. Each node have a number of processors that is analogus to the CPU(Central processing unit) in a personal computer.
 
    core
-     TODO
+     component of each processor. The actual computing entities. <A bit of MPI/ OpenMP flag explanation here>
 
    Time Allocation
-     TODO
+     Time Allocation is the technical term for "Project" that users need to be a part of to use the supercomputer. Time allocation contains information about the project and how much resources the project have been allocated. There are different types of time allocation depending on how one applied for one, but for runtime instruction there is no difference.
 
    CAC
-     CAC or Charge Account Category is a deprecated term referring to allocations for a project. It is now replaced by Time Allocation
+     CAC or Charge Account Category is a deprecated term referring to allocations for a project. It is now replaced by Time Allocation.
 
    node-hours
      TODO
@@ -50,8 +50,10 @@ Here you will find the basic terminologies and quick reference materials.
    Tegner
      Tegner is the name of cluster currently deployed in PDC designed for pre/post processing.
 
+   Kerberos
+     Kerberos is a computer network authentication protocol. It works on the basis of creating a *ticket* that is used for secure communication. You need to create a kerberos ticket to login to the clusters, run program and get access to the home directory and transfer files.
    AFS
-     TODO
+     Andrew File System (AFS) is a distributed file system. This file system can be accessed without logging in to the clusters, and this is also the system where users home directory reside. To get access to AFS, one needs to use Kerberos.
 
    CFS/Klemming
      TODO
