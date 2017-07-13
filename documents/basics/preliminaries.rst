@@ -19,8 +19,8 @@ Like most high-performance computing facilities, PDC mainly features **clusters*
 .. Henric's presentation image: https://drive.google.com/uc?id=0B7GAinAyrwFFR0p5ZU1vREFwWWM
 
 .. image:: https://drive.google.com/uc?id=0B7GAinAyrwFFOVFxQ0NCRTl3czg
-   :height: 300px
-   :width: 400 px
+   :height: 250px
+   :width: 800 px
    :scale: 100 %
    :alt: alternate text
    :align: center
