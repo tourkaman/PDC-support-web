@@ -27,10 +27,11 @@ Here you will find the basic terminologies and quick reference materials.
      CAC or Charge Account Category is a deprecated term referring to allocations for a project. It is now replaced by Time Allocation.
 
    node-hours
-     TODO
+     Node hours(n) equals the core hours(c) divided by the number of cores per node(cpn): `n = c/cpn`. 
+     PDC allocate time on our systems in node hours. SNAC, allocates time in kilo-core hours. 
 
    core-hours
-     TODO
+     Core hours(c) can be calculated with Node hours (n) you have requested on a particular system, by knowing cores per node(cpn): `c = n*cpn` 
 
    SNIC
      SNIC or Swedish National Infrastructure for Computing is a national research infrastructure.
