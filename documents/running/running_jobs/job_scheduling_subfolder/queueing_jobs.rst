@@ -39,6 +39,18 @@ These commands are the basic commands for submit, cancel, check jobs to the queu
 	   /cfs/klemming/nobackup/y/yourUsername
 
 
-	   
-For information about how a job script is written look at:
-     * :ref:`Job scripts <job-scripts>`
+
+
+Job scripts
+*****************
+
+To submit a job to the queue system one have to specify few details, such as the time allocation the user belong to and the number of nodes required. This is done by adding option in the job script with **#SBATCH** flag. This option are then given to the SLURM.
+
+.. note::
+   
+The flag option specified in `#SBATCH` is for **SLURM** (the queue system). This have nothing to do with the `aprun` option, and both needed to be configured properly for the job to make sense. Below are the cluster specific instructions:
+
+
+     * :ref:`Job scripts for tegner<job-scripts_tegner>`
+
+     * :ref:`Job scripts for Beskow<job-scripts_beskow>`
