@@ -23,6 +23,8 @@ Here you will find the basic terminologies and quick reference materials.
    Time Allocation
      Time Allocation is the technical term for "Project" that users need to be a part of to use the supercomputer. Time allocation contains information about the project and how much resources the project have been allocated. There are different types of time allocation depending on how one applied for one, but for runtime instruction there is no difference.
 
+   Principal Investigator (PI)
+     Principal Investigator is the "Project manager" of a time allocation. This user can add/remove users from the project, and usually the one that applied for the time allocation. All project related utilities is managed through SUPR.
    CAC
      CAC or Charge Account Category is a deprecated term referring to allocations for a project. It is now replaced by Time Allocation.
 

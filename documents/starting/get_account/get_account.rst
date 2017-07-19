@@ -66,6 +66,8 @@ If you are involved in a project SUPR, the account request happens entirely in t
 
    Login to SUPR and request PDC account.
 
+.. _course_account:
+
 Course account
 ##############
 
