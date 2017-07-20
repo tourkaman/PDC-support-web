@@ -6,20 +6,22 @@ Step 1: Getting research time
 
 .. rubric:: Are you applying for a new Time Allocation or joining an exisiting one?
 
-Before running on PDC, users must belong to at least one Time Allocation. If you are joining a project in a research group that already has a Time Allocation, then jump to [joining an existing time allocation].
+Before running on PDC, users must belong to at least one Time Allocation. If you are joining a project in a research group that already has a Time Allocation, then jump to :ref:`joining an existing time allocation <joining_a_existing_time_allocation>`.
 
 
 
 .. rubric:: Are you applying for PDC resources for a course?
 
-If you're a participant of a course at KTH that uses the super computers, you can jump to the step [STEP 2: account creation for course account]. Do not forget to specify the course ID, and the name of the course administrator for the course. You also need to be a part of a participant list managed by the course administrator.
+If you're a participant of a course at KTH that uses the super computers, you can jump to the step :ref:`STEP 2: account creation for course account <course_account>`. Do not forget to specify the course ID, and the name of the course administrator for the course. You also need to be a part of a participant list managed by the course administrator.
 
 .. rubric:: Are you a Master student in need for PDC resources for thesis?
 
-In general, we do not accept application from Master students. However, you can ask your supervisor to **Apply for a New Time Allocation** and then join that Time allocation as an project member. We recommend to apply for *Small allocation* (see more info below) for thesis projects. 
+In general, we do not accept application from Master students. However, you can ask your supervisor to :ref:`Apply for a New Time Allocation <Apply_for_a_new_time_allocation>` and then join that Time allocation as an project member. We recommend to apply for *Small allocation* (see more info below) for thesis projects. 
 
-Applying for a New Time Allocation
-############################
+.. _Apply_for_a_new_time_allocation:
+
+Apply for a New Time Allocation
+################################
 
 If you are applying for a new Time Allocation, you are the Principal Investigator (PI). Time Allocation is limited both in time per month for running jobs, and in duration, so it is important to apply for the right amount of time. Keep in mind that a PI apply for a time allocation that will cover the needs for all people in a certain research project. You would have to find what allocation would suit the best for your project with the help of the table below:
 
@@ -40,6 +42,8 @@ If you are applying for a new Time Allocation, you are the Principal Investigato
 All time allocations are now managed through `SUPR <https://supr.snic.se/>`_, handled by SNAC (Swedish National Allocations Committee) so users can be added or removed from the allocation directly using the SUPR web interface. If you do not have an SUPR account, you need to obtain one [go to step 2 SUPR account] and apply from my page in SUPR web interface.  The changes are then automatically applied to PDC clusters overnight by various scripts.
 
 To know more on what cores or core-hours mean, please visit the Preliminaries page.
+
+.. _joining_a_existing_time_allocation:
 
 Joining a existing Time Allocation
 ##################################
