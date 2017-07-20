@@ -76,6 +76,6 @@ Contact Support
 Indices and tables
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
+.. `genindex`
+.. `modindex`
 * :ref:`search`

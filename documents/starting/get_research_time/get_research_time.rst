@@ -52,6 +52,7 @@ Check your existing Time Allocation
 
 You can see what time allocations you belong to via the SUPR web page. Note that medium allocations normally have an extra m, at the start, e.g. SNIC 2015/1-1 is m.2015-1-1 on our system. You can see which time allocation you are a member of using the ``projinfo`` command. It will print the information of all the allocations you belong to and information on the recent usage of the allocation.
 
+
 TEMP
 ####
 Placeholder for poster-like infographics for user
@@ -59,3 +60,39 @@ Placeholder for poster-like infographics for user
 .. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrYW1xTkRnQXRqRU0
 
 .. Shouldn't be here. Maybe in running research section. Acknowledge your SNAC/PDC time allocation
+
+.. graphviz::
+
+   digraph structs {
+   newrank=true;
+   node [shape=record];
+     struct1 [shape=record,label="SNIC",fillcolor=gray,style=filled];
+     struct2 [shape=record,label=" {Other HPC Centres| NSC|HPC2N|LUNARC|UPPMAX|C3SE}",fillcolor=white,style=filled];
+     struct3 [shape=record,label="PDC",fillcolor=gray,style=filled];
+
+     struct1:f1 -> struct2:f0;
+     struct1:f2 -> struct3:here;
+
+     subgraph cluster0 {
+     node [style=filled,color=lback];
+     edge [color=mediumorchid];
+     style=filled;
+     color=mediumorchid;
+   
+     a0 [label="Student \n (MSc/Course)",fillcolor=white,style=filled];
+     a1 [label="Researcher \n (Ph.D)",fillcolor=white,style=filled];
+     a2 [label="Special account \n (PRACE, Scania)",fillcolor=white,style=filled];
+
+     a0 -> a1 -> a2;
+     label = "Users";
+     }    
+
+   }
+
+.. digraph foo {
+   
+   "PDC" [href="#checking-for-pdc-account",peripheries=4,shape=polygon,sides=4,fillcolor=gray,style=filled];
+   
+      "SNIC | stuff" [href="#checking-for-pdc-account",peripheries=1,shape=polygon,sides=4,fillcolor=gray,style=filled];
+      "SNIC" -> "PDC" [ label="No"] ;
+   }
