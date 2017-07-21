@@ -24,9 +24,6 @@ You can apply for an account at PDC in one of three ways depending on the type o
 
 .. add more rows to the table?
    
-(1) SUPR requests: The account will be enabled for all the clusters where you are part of a time allocation. Jump here.
-
-(2) Course request: Class accounts are available for Swedish institutes giving courses in fields that utilize high-performance computing. Resources are made available to classes based on availability of resources and how well motivated the use of national computation resources is to the content of the course. Jump here.
 
 .. topic:: `Request class access <https://www.pdc.kth.se/support/accounts/class-new/request-class-access>`_
 
