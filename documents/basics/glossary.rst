@@ -12,13 +12,13 @@ Here you will find the basic terminologies and quick reference materials.
      Computer cluster is in the broad sense terminology for a supercomputer, consisting of a set of connected computers working together so that they can be viewed as a single system. Currently PDC have two clusters, **Tegner** and **Beskow**.
      
    node
-     Nodes are component of a cluster and analogus to computer we use everyday. A supercomputer consist of a number of nodes that perform computations and runs its own instance of an operating system. <A bit of -N explanation here?>
-
-   processor
+     Nodes are component of a cluster and analogus to computer we use everyday. A supercomputer consist of a number of nodes that perform computations and runs its own instance of an operating system.
+   
+   prosessor
      component of each node. Each node have a number of processors that is analogus to the CPU(Central processing unit) in a personal computer.
 
    core
-     component of each processor. The actual computing entities. <A bit of MPI/ OpenMP flag explanation here>
+     component of each processor. The actual computing entities. 
 
    Time Allocation
      Time Allocation is the technical term for "Project" that users need to be a part of to use the supercomputer. Time allocation contains information about the project and how much resources the project have been allocated. There are different types of time allocation depending on how one applied for one, but for runtime instruction there is no difference.

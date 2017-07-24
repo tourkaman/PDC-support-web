@@ -15,12 +15,19 @@ To run your script/program on the supercomputer, you need to use special command
 
 :ref:`Queue jobs <Queueing_jobs>`
 ###############################################
+Here's a simplified workflow of queueing jobs to the supercomputer. [not sure if this picture should be here or next page].
+
+.. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqra2JSUnpYcUJtOGc
+
 
 :ref:`send the code to the queueing system <Queueing_jobs>` `(sbatch)`
 
 
 :ref:`Run Interactively <Run_interactively>`   
 ######################################################
+Here's a simplified workflow of booking a node.
+
+.. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrbTVybmJTZWRFRjA
      
 :ref:`book an interactive compute node where you can run your code. <Run_interactively>` `(salloc)`:
 

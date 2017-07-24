@@ -17,27 +17,17 @@ You can apply for an account at PDC in one of three ways depending on the type o
    :align: center
 
    ========================= ==================================== ==================================== ====================================
-   Description               (1) SUPR                             (2) Course                           (3) Industry
+   Description               (1) SUPR                             (2) Course                           (3) Special 
    ========================= ==================================== ==================================== ====================================
-   Who should apply?         SNIC project member                  Participant for a KTH course         Members of industy-related projects
-   Link	                     Apply for account                    Apply for account                    Apply for account
+   Who should apply?         SNIC project member                  Participant for a KTH course         industry/special course/EU projects
    ========================= ==================================== ==================================== ====================================
 
 .. add more rows to the table?
    
-(1) SUPR requests: The account will be enabled for all the clusters where you are part of a time allocation. Jump here.
-
-(2) Course request: Class accounts are available for Swedish institutes giving courses in fields that utilize high-performance computing. Resources are made available to classes based on availability of resources and how well motivated the use of national computation resources is to the content of the course. Jump here.
-
-(3) Industrial requests: TODO. Jump here.
-
-.. topic:: :ref:`Linking your SUPR account and PDC account <link_supr_pdc>`
-
-   Most projects are now managed through SUPR, so all PDC accounts should be linked to a SUPR account. In case you have an active PDC account that was not applied through SUPR, and you would now like to link them, use the link above.
 
 .. topic:: `Request class access <https://www.pdc.kth.se/support/accounts/class-new/request-class-access>`_
 
-   If you are the instructor of a course and want to request access to PDC for course participant, please complete this application using the link.
+   If you are the *instructor* of a course and want to request access to PDC for course participant, please complete this application using the link.
 
 SUPR Account
 ############
@@ -89,7 +79,7 @@ If you are a student participating in a course requiring PDC resources, you woul
 .. We should state what vendors ask.
 .. We should state what those countries are!   
     
-Industrial account
+Special account
 ##################
 
 **TODO**: Maybe, this section is unneccessary?!
@@ -105,8 +95,7 @@ Industrial account
    
 Linking SUPR to PDC
 ###################
-
-Some SUPR accounts have been automatically linked to PDC accounts, but others are not linked. Therefore you should check if your SUPR and PDC accounts are linked and, if necessary, arrange for the accounts to be linked.
+   Most projects are now managed through SUPR, so all PDC accounts should be linked to a SUPR account. If you applied for an PDC account outside of SUPR, your account might not be linked. You should check if your SUPR and PDC accounts are linked and, if necessary, arrange for the accounts to be linked.
 
 .. rubric:: Check if your PDC account is linked to your SUPR account:
 
@@ -122,6 +111,4 @@ Contact PDC support requesting that your PDC account be linked to your SUPR acco
 2.    e-mail address connected to your SUPR account
 
 PDC Support will send you a confirmation email when your SUPR account has been linked to your PDC account. When you receive the email, you can use the instructions above to verify that your SUPR account is now linked to your PDC account.
-
-.. graphviz:: ../PDCflowChart.dot
 
