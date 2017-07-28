@@ -57,8 +57,9 @@ Check your existing Time Allocation
 You can see what time allocations you belong to via the SUPR web page. Note that medium allocations normally have an extra m, at the start, e.g. SNIC 2015/1-1 is m.2015-1-1 on our system. You can see which time allocation you are a member of using the ``projinfo`` command. It will print the information of all the allocations you belong to and information on the recent usage of the allocation.
 
 
-TEMP
-####
+Graphic
+#######
+
 Placeholder for poster-like infographics for user
 
 .. Shouldn't be here. Maybe in running research section. Acknowledge your SNAC/PDC time allocation https://drive.google.com/uc?id=0BxYU3X5kGVqrYW1xTkRnQXRqRU0
@@ -71,16 +72,48 @@ Placeholder for poster-like infographics for user
      rank=same;
      node [shape=record];
 
-     struct1 [border=0,shape=box,label= 
-     <
+     struct1 [border=0,shape=box,fixedsize=true,height=0.7,width=2.2,label="SNIC"];
+     
+     struct2 [shape=box,fontsize=20,fixedsize=true,height=0.7,width=2.2,label= "Other \n HPC Centres"];
+
+     struct3 [shape=box,fontsize=20,label= "PDC Centre" ];
+
+     struct1 -> struct2 [penwidth=2];
+     struct1 -> struct3 [penwidth=2];
+     }    
+
+     subgraph cluster1 {
+     style=invis; 
+     color=white;
+     edge [color=white];
+    
+     u0 [shape=box,color=white,fixedsize=true,height=1.5,width=1.5,label= PhD];
+
+     u1 [shape=record,color=white,fixedsize=true,height=0.7,width=2.2,label= MSc];
+
+     u2 [shape=record,color=white,fixedsize=true,height=0.7,width=2.2,label= Industry ];
+
+     u0 -> u1;
+     u1 -> u2;
+     }
+
+     { rank=same; struct1; u0; }
+     { rank=same; struct2; u2; }
+     { rank=same; struct3; u2; }
+   
+     edge[constraint=false];
+     u0 -> struct1 [penwidth=3, href="http://www.yahoo.com", fontcolor=red, color=red, label="Apply for SUPR account"];
+     u1 -> struct3 [penwidth=3, href="http://www.google.com", fontcolor=red, color=red, label="Apply for PDC account"];
+     u2 -> struct3 [penwidth=3, href="http://www.rediff.com", fontcolor=red, color=red, label="Contact PDC directly"];   
+   }
+
+..  <
        <table border="0">
          <tr>
            <td fixedsize="true" width="150" height="30" border="0"><img src="documents/starting/get_research_time/icons/snic.png"/></td>
          </tr>
        </table>
-     > ];
-     
-     struct2 [shape=box,fontsize=20,label= 
+     > 
      <
        <table border="0">
          <tr>
@@ -102,9 +135,7 @@ Placeholder for poster-like infographics for user
            <td fixedsize="true" width="120" height="30" border="0"><img src="documents/starting/get_research_time/icons/C3SE.png"/></td>
          </tr>
        </table>
-     > ];
-
-     struct3 [shape=box,fontsize=20,label= 
+     >
      <
        <table border="0">
          <tr>
@@ -117,30 +148,20 @@ Placeholder for poster-like infographics for user
            <td fixedsize="true" width="120" height="75" border="0"><img src="documents/starting/get_research_time/icons/pdc_cluster.png"/></td>
          </tr>
        </table>
-     > ];
-
-     struct1 -> struct2 [penwidth=2];
-     struct1 -> struct3 [penwidth=2];
-     }    
-
-     subgraph cluster1 {
-     style=invis; 
-     color=white;
-     edge [color=white];
-    
-     u0 [shape=box,color=white,label= 
+     >
+   
      <
        <table border="0">
-         <tr>
+         <!tr>
            <td fixedsize="true" width="100" height="100" border="0"><img src="documents/starting/get_research_time/icons/researcher.png"/></td>
          </tr>
          <tr>
            <td>Researcher <br /> (PhD)</td>
          </tr>
        </table>
-     > ];
+     >
 
-     u1 [shape=record,color=white,label= 
+     
      <
        <table border="0">
          <tr>
@@ -150,9 +171,9 @@ Placeholder for poster-like infographics for user
            <td>Student <br /> (MSc/Course)</td>
          </tr>
        </table>
-     > ];
+     >
 
-     u2 [shape=record,color=white,label= 
+     
      <
        <table border="0">
          <tr>
@@ -162,18 +183,4 @@ Placeholder for poster-like infographics for user
            <td>Special account <br /> (PRACE, Scania)</td>
          </tr>
        </table>
-     > ];
-
-     u0 -> u1;
-     u1 -> u2;
-     }
-
-     { rank=same; struct1; u0; }
-     { rank=same; struct2; u2; }
-     { rank=same; struct3; u2; }
-   
-     edge[constraint=false];
-     u0 -> struct1 [penwidth=3, href="http://www.yahoo.com", fontcolor=red, color=red, label="Apply for SUPR account"];
-     u1 -> struct3 [penwidth=3, href="http://www.google.com", fontcolor=red, color=red, label="Apply for PDC account"];
-     u2 -> struct3 [penwidth=3, href="http://www.rediff.com", fontcolor=red, color=red, label="Contact PDC directly"];   
-   }
+     >
