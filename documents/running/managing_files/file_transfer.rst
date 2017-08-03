@@ -61,14 +61,6 @@ where ``username`` is your username at PDC.
 	   
       ssh pdcusername@t04n28.pdc.kth.se /bin/true
 
-.. note::
-
-   There are some problems trying to transfer files bigger than 1GB using a certain version of openssh (e.g. openssh v72.p1 on MacOs x10.11). You can try to downgrade openssh to an older version, or else, use ``rsync`` to re-establish communication and continue like:
-
-   .. code-block:: bash  
-
-      rsync -avHP pdcusername@t04n28.pdc.kth.se:/cfs/klemming/scratch/u/username/pdcfile .
-
 .. _scp_windows:      
 
 Using SCP/RSYNC from Ubuntu (Linux):
