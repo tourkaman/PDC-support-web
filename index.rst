@@ -63,14 +63,15 @@ Running research
      documents/running/managing_files/klemming
      
 
-Contact Support
-===============
+Getting help
+============
 
 .. toctree::
    :glob:
-   :maxdepth: 2
+   :maxdepth: 1
 
-   documents/contact/index
+   documents/contact/faq
+   documents/contact/contact_support
       
 
 Indices and tables

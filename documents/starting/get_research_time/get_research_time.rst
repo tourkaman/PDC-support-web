@@ -68,52 +68,82 @@ Placeholder for poster-like infographics for user
 
    digraph structs {
    
-     subgraph cluster0 {
-     rank=same;
-     node [shape=record];
-
-     struct1 [border=0,shape=box,fixedsize=true,height=0.7,width=2.2,label="SNIC"];
-     
-     struct2 [shape=box,fontsize=20,fixedsize=true,height=0.7,width=2.2,label= "Other \n HPC Centres"];
-
-     struct3 [shape=box,fontsize=20,label= "PDC Centre" ];
-
-     struct1 -> struct2 [penwidth=2];
-     struct1 -> struct3 [penwidth=2];
-     }    
-
      subgraph cluster1 {
      style=invis; 
      color=white;
      edge [color=white];
     
-     u0 [shape=box,color=white,fixedsize=true,height=1.5,width=1.5,label= PhD];
+     u0 [shape=box,color=white,fixedsize=true,height=2,width=2,label=
+     <
+       <table border="0">
+         <tr>
+           <td fixedsize="true" width="100" height="100" border="0"><img src="documents/starting/get_research_time/icons/researcher.png"/></td>
+         </tr>
+         <tr>
+           <td>Researcher <br /> (PhD)</td>
+         </tr>
+       </table>
+     >];
 
-     u1 [shape=record,color=white,fixedsize=true,height=0.7,width=2.2,label= MSc];
+     u1 [shape=record,color=white,fixedsize=true,height=2,width=2,label=
+     <
+       <table border="0">
+         <tr>
+           <td fixedsize="true" width="100" height="100" border="0"><img src="documents/starting/get_research_time/icons/student.png"/></td>
+         </tr>
+         <tr>
+           <td>Student <br /> (MSc/Course)</td>
+         </tr>
+       </table>
+     >];
 
-     u2 [shape=record,color=white,fixedsize=true,height=0.7,width=2.2,label= Industry ];
-
+     u2 [shape=record,href="www.google.com",color=white,fixedsize=true,height=2,width=2,label=
+     <
+       <table border="0">
+         <tr>
+           <td fixedsize="true" width="100" height="100" border="0"><img src="documents/starting/get_research_time/icons/industry.png"/></td>
+         </tr>
+         <tr>
+           <td>Special account <br /> (PRACE, Scania)</td>
+         </tr>
+       </table>
+     >];  
+     
      u0 -> u1;
      u1 -> u2;
      }
 
-     { rank=same; struct1; u0; }
-     { rank=same; struct2; u2; }
-     { rank=same; struct3; u2; }
-   
-     edge[constraint=false];
-     u0 -> struct1 [penwidth=3, href="http://www.yahoo.com", fontcolor=red, color=red, label="Apply for SUPR account"];
-     u1 -> struct3 [penwidth=3, href="http://www.google.com", fontcolor=red, color=red, label="Apply for PDC account"];
-     u2 -> struct3 [penwidth=3, href="http://www.rediff.com", fontcolor=red, color=red, label="Contact PDC directly"];   
-   }
 
-..  <
+     subgraph cluster0 {
+     rank=same;
+     style=invis; 
+     node [shape=record];
+
+     struct1 [border=0,shape=box,fixedsize=true,height=0.7,width=2.2,label=
+     <
        <table border="0">
          <tr>
            <td fixedsize="true" width="150" height="30" border="0"><img src="documents/starting/get_research_time/icons/snic.png"/></td>
          </tr>
        </table>
-     > 
+     >];
+     
+     struct3 [shape=box,fontsize=20,fontsize=20,fixedsize=true,height=4,width=2.5,label=
+     <
+       <table border="0">
+         <tr>
+           <td> PDC Centre <br/><br/></td>
+         </tr>
+         <tr>
+           <td fixedsize="true" width="75" height="75" border="0"><img src="documents/starting/get_research_time/icons/pdc.png"/></td>
+         </tr>
+         <tr>
+           <td fixedsize="true" width="120" height="75" border="0"><img src="documents/starting/get_research_time/icons/pdc_cluster.png"/></td>
+         </tr>
+       </table>
+     >, href="www.google.com"];
+
+     struct2 [shape=box,fontsize=20,fixedsize=true,height=4,width=2.5,label=
      <
        <table border="0">
          <tr>
@@ -135,52 +165,21 @@ Placeholder for poster-like infographics for user
            <td fixedsize="true" width="120" height="30" border="0"><img src="documents/starting/get_research_time/icons/C3SE.png"/></td>
          </tr>
        </table>
-     >
-     <
-       <table border="0">
-         <tr>
-           <td> PDC Centre <br/><br/></td>
-         </tr>
-         <tr>
-           <td fixedsize="true" width="75" height="75" border="0"><img src="documents/starting/get_research_time/icons/pdc.png"/></td>
-         </tr>
-         <tr>
-           <td fixedsize="true" width="120" height="75" border="0"><img src="documents/starting/get_research_time/icons/pdc_cluster.png"/></td>
-         </tr>
-       </table>
-     >
-   
-     <
-       <table border="0">
-         <!tr>
-           <td fixedsize="true" width="100" height="100" border="0"><img src="documents/starting/get_research_time/icons/researcher.png"/></td>
-         </tr>
-         <tr>
-           <td>Researcher <br /> (PhD)</td>
-         </tr>
-       </table>
-     >
+     >];
 
-     
-     <
-       <table border="0">
-         <tr>
-           <td fixedsize="true" width="100" height="100" border="0"><img src="documents/starting/get_research_time/icons/student.png"/></td>
-         </tr>
-         <tr>
-           <td>Student <br /> (MSc/Course)</td>
-         </tr>
-       </table>
-     >
+     }
 
+     { rank=same; struct1; u0; }
+     { rank=same; struct2; u2; }
+     { rank=same; struct3; u2; }
+
+     struct1 -> struct2 [penwidth=2];
+     struct1 -> struct3 [penwidth=2];    
+
+     edge[constraint=false];
+     u0 -> struct1 [penwidth=3, fontcolor=red, color=red, label="Apply for SUPR account"];
+     u1 -> struct3 [penwidth=3, fontcolor=red, color=red, label="Apply for PDC account"];
+     u2 -> struct3 [penwidth=3, fontcolor=red, color=red, label="Contact PDC directly"];   
      
-     <
-       <table border="0">
-         <tr>
-           <td fixedsize="true" width="100" height="100" border="0"><img src="documents/starting/get_research_time/icons/industry.png"/></td>
-         </tr>
-         <tr>
-           <td>Special account <br /> (PRACE, Scania)</td>
-         </tr>
-       </table>
-     >
+     }
+     
