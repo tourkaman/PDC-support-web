@@ -4,9 +4,9 @@
 Job scripts(Tegner)
 ===================
 		
-	In a job script option the following sbatch command can be defined:
+In a job script option the following sbatch command can be defined:
 	
-		* ``#SBATCH -A project_name`` - the name of the project(time allocation) to be charged for this run. Note the name should not normally contain PDC or SNIC, so PDC-2015-1 is just 2015-1 and SNIC 2015/1-1 is just 2015-1-1	
+		* :bash:`#SBATCH -A project_name` - the name of the project(time allocation) to be charged for this run. Note the name should not normally contain PDC or SNIC, so PDC-2015-1 is just 2015-1 and SNIC 2015/1-1 is just 2015-1-1	
 
 
 
@@ -38,8 +38,6 @@ Job scripts(Tegner)
 
 		  
 		* ``#SBATCH --mail-type=ALL`` - request a mail when the job starts and ends
-		  
-	and maybe link to example code?
 
 	
 Job script examples
