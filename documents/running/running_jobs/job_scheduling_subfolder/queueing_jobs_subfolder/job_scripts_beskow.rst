@@ -28,6 +28,7 @@ In the job script, The following option can be defined:
 	      Some flags in the `#SBATCH` might look the same as the one used in aprun, such as the `-N` flag. But those two might point to different configuration. for aprun, `-N` means number of cores per node, while `-N` for SLURM means number of nodes.
 
 Keep in mind that Beskow **do not** have access to your afs home directory, and therefore, the script, the executable and the dependencies must recide in your *CFS* home directory. ( ``/cfs/klemming/nobackup/u/username`` )    
+
 Job examples (Beskow)
 ***********************
    
