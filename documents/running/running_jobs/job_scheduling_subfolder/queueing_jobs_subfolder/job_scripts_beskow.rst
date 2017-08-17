@@ -8,25 +8,26 @@ Job scripts (Beskow)
 
 In the job script, The following option can be defined:
 
-	 	* `#SBATCH -A allocation` - set the time allocation to be charged. This is required for all jobs, even if you only belong to a single allocation.
+	 	* ``#SBATCH -A allocation`` - set the time allocation to be charged. This is required for all jobs, even if you only belong to a single allocation.
+	 	 
+		* ``#SBATCH -J job_name`` - the job name is used to determine the name of job output and error files
 	 	
-		* `#SBATCH -J job_name` - the job name is used to determine the name of job output and error files
-	 	
-		* `#SBATCH -t hh:mm:ss` - maximum job elapsed time should be indicated whenever possible: this allows slurm to determine best scheduling startegy. Current maximum is 24 hours.
-	 	
-		* `#SBATCH -n n` - Number of processes (MPI ranks) that will be reserved for the given job. Each node supports up to 32 MPI processes. Note the actual number started with the aprun command can be different. Either use -N or -n to reserve nodes/tasks and always ask for full nodes
-	 	
-		* `#SBATCH -N (--nodes)` - Number of nodes that will be reserved for a given job (we recommend that the option always is explicitly set).
-	 	
-		* `#SBATCH -e error_file.e` - job error file
-	 	
-		* `#SBATCH -o output_file.o` - job output file
-	 	
-		* `#SBATCH --mail-type=ALL` - request a mail when the job starts and ends
-
+		* ``#SBATCH -t hh:mm:ss`` - maximum job elapsed time should be indicated whenever possible: this allows slurm to determine best scheduling startegy. Current maximum is 24 hours.
+	 	 
+		* ``#SBATCH -n n`` - Number of processes (MPI ranks) that will be reserved for the given job. Each node supports up to 32 MPI processes. Note the actual number started with the aprun command can be different. Either use -N or -n to reserve nodes/tasks and always ask for full nodes
+	 	 
+		* ``#SBATCH -N (--nodes)`` - Number of nodes that will be reserved for a given job (we recommend that the option always is explicitly set).
+	 	 
+		* ``#SBATCH -e error_file.e`` - job error file
+	 	 
+		* ``#SBATCH -o output_file.o`` - job output file
+	 	 
+		* ``#SBATCH --mail-type=ALL`` - request a mail when the job starts and ends
+ 		 
 	   .. note::
 	      Some flags in the `#SBATCH` might look the same as the one used in aprun, such as the `-N` flag. But those two might point to different configuration. for aprun, `-N` means number of cores per node, while `-N` for SLURM means number of nodes.
-	      
+
+Keep in mind that Beskow **do not** have access to your afs home directory, and therefore, the script, the executable and the dependencies must recide in your *CFS* home directory. ( ``/cfs/klemming/nobackup/u/username`` )    
 Job examples (Beskow)
 ***********************
    
