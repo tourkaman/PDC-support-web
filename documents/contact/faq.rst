@@ -4,8 +4,6 @@
 
 FAQs
 ^^^^
-.. contents:: Table of Contents
-   local: 
 
 **I got "kinit: krb5_get_init_creds: No ENC-TS found" error when trying to run kinit**
 

@@ -10,7 +10,7 @@ When you login to the supercomputer with `ssh`, you will login to a designated *
 
 .. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrdkY0UWJhTXgyQ2M
 	   
-To run your script/program on the supercomputer, you can either queue your jobs
+To run your script/program on the supercomputer, you can do it in one of the following ways.
 
 
 Queue jobs
