@@ -31,14 +31,11 @@ Getting Started
 Running research
 ================
 
-* How to login
-
-  .. toctree::
-     :glob:
-     :titlesonly:
-     :maxdepth: 2
+.. toctree::
+   :glob:
+   :maxdepth: 3
 		
-     documents/running/login/*
+   documents/running/login/login
 
 * How to run jobs
   

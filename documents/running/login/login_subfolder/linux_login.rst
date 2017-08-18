@@ -4,8 +4,7 @@
 How to login from Linux (Ubuntu)
 ================================
 
-This section describes how to acquire kerberos tickets and
-login in linux
+This section describes how to acquire kerberos tickets and login in linux
 
 Installing Kerberos
 -------------------

@@ -1,4 +1,3 @@
-
 .. index:: Job scheduling
 .. _job_scheduling:
    
