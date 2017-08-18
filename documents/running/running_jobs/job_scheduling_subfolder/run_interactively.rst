@@ -6,7 +6,7 @@ Run interactively
 
 Compute nodes can be booked from the queue system for interactive use. This means that you can run your program similar to how you run it on a local computer through terminal.
 
-Booking an interactive node can be useful when you want to test, verify or debug your code in a parallell environment. It's also suitable when the program is not time consuming but is in need of frequent adjustment. For a large scale program we recommend :ref:`Queueing jobs <Queueing_jobs>` instead, since waiting for an interactive node with large amount of run time can slower the productivity.
+Booking an interactive node can be useful when you want to test, verify or debug your code in a parallell environment. It's also suitable when the program is not time consuming but is in need of frequent adjustment. For a large scale program we recommend :ref:`Queueing jobs <Queueing_jobs>` instead, since waiting for an interactive node with large amount of run time can take a lot of time.
 
  The command to book an interactive node is `salloc`
 
@@ -32,7 +32,7 @@ For Tegner the name of the node booked, usually something like *t01n08* is also 
 
 Keep in mind that the node is booked as long as you have not shut down the terminal you typed salloc, or typing the ``exit`` command, or the time runs out.
 
-When a node is booked, the program must be run with a *cluster specific commands* specified below. If you're running with a specific software, please see the :ref:`Accessing software <software>`. 
+When a node is booked, the program must be run with a *cluster specific commands* specified below. If you're running a specific software, please see the :ref:`Accessing software <software>`. 
 
 Beskow
 *******
