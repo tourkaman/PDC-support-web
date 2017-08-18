@@ -64,7 +64,6 @@ Running research
      
 * `Available Software <http://pdc-software-web.readthedocs.io/en/latest/>`_
      
-
 Getting help
 ============
 

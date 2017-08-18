@@ -1,11 +1,12 @@
+
 .. index:: Job scripts(Tegner)
 .. _job-scripts_tegner: 
 		
 Job scripts(Tegner)
 ===================
 		
-	In a job script option the following sbatch command can be defined:
-	
+In a job script option the following sbatch command can be defined:
+
 		* ``#SBATCH -A project_name`` - the name of the project(time allocation) to be charged for this run. Note the name should not normally contain PDC or SNIC, so PDC-2015-1 is just 2015-1 and SNIC 2015/1-1 is just 2015-1-1	
 
 
@@ -38,14 +39,12 @@ Job scripts(Tegner)
 
 		  
 		* ``#SBATCH --mail-type=ALL`` - request a mail when the job starts and ends
-		  
-	and maybe link to example code?
 
 	
-Job script examples
+Job examples (Tegner)
 *******************	
 	   
-	This is an an example of a job script for a MPI program. For other program, you can find an example in the software page <HYPERLINK SOFTWARE>.
+This is an an example of a job script for a MPI program. For other programs, you can find examples in the software page `Software <http://pdc-software-web.readthedocs.io/en/latest/>`_.
 		
         .. code-block:: bash
 	      
@@ -74,4 +73,20 @@ Job script examples
 	      # and write the output into my_output_file
 	      aprun -n 128 ./myexe > my_output_file 2>&1
    
-	software specific examples can be found at <software link>. Note that the command `aprun` have to be used to run the code in parallel!
+Note that the command `aprun` have to be used to run the code in parallel!
+
+Cuda on Tegner
+***************
+The Tegner cluster have some GPU that can be used with CUDA (see more about hardware specification here). You can compile a code including CUDA the following way
+
+.. code-block:: bash
+   cd /cfs/klemming/nobackup/u/username
+   module add cuda
+   nvcc -arch=sm_37 hello.cu -o hello.out
+
+
+and then excecuted with normally ( ./hello.out in a batch script, or with *srun* on interactive mode ). Remember to specify GPU nodes with
+.. code-block:: bash
+   #SBATCH --gres=gpu:K80:2
+
+or with **K420:1** instead of K80.
