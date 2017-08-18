@@ -43,19 +43,19 @@ and the available versions can be found using
 
 You can check the currently loaded modules with
 
-.. code-block::
+.. code-block:: bash
 
    module list
 
 If you have an module you do not want, you can unload it with
 
-.. code-block::
+.. code-block:: bash
 
    module unload Programname
 
 and you can also swap modules with
 
-.. code-block::
+.. code-block:: bash
 
    module swap loadedProgramname newProgramname
 
