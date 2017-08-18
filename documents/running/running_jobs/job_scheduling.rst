@@ -14,7 +14,7 @@ To run your script/program on the supercomputer, you need to use special command
 
 
 :ref:`Queue jobs <Queueing_jobs>`
-###############################################
+#################################
 Here's a simplified workflow of queueing jobs to the supercomputer. [not sure if this picture should be here or next page].
 
 .. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqra2JSUnpYcUJtOGc
@@ -23,8 +23,8 @@ Here's a simplified workflow of queueing jobs to the supercomputer. [not sure if
 :ref:`send the code to the queueing system <Queueing_jobs>` `(sbatch)`
 
 
-:ref:`Run Interactively <Run_interactively>`   
-######################################################
+:ref:`Run Interactively <Run_interactively>`
+############################################
 Here's a simplified workflow of booking a node.
 
 .. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrbTVybmJTZWRFRjA
@@ -36,5 +36,7 @@ Here's a simplified workflow of booking a node.
 The queue system use two main methods *fair-share* and *Backfill* to decide which jobs are run. It might be a good idea to check how the queue system work to get your jobs a better priority, see more at [LINK TO STANDALONE PAGE ABOUT QUEUE DETAIL].
    
 
-How are jobs scheduled
-######################
+Guide: SLURM scheduling
+#######################
+
+TODO: Explain how SLURM performs job scheduling and queueing
