@@ -62,6 +62,8 @@ Running research
      documents/running/managing_files/afs
      documents/running/managing_files/klemming
      
+* `Available Software <http://pdc-software-web.readthedocs.io/en/latest/>`_
+     
 
 Getting help
 ============

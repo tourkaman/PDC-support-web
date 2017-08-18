@@ -1,22 +1,5 @@
 .. index:: File transfer
 .. _file_transfer:
-
-File transfer
-=============
-
-This section contains information about transferring files to, from, and between PDC. We recommend two methods for this:
-
-1. **SCP/rsync**: Secure Copy (SCP) and RSYNC copies files between hosts on a network. It uses SSH for data transfer, and uses the same authentication and provides the same security as SSH.
-   
-   * :ref:`with Ubuntu (Linux) <scp_ubuntu>`
-   * :ref:`with Windows <scp_windows>`
-  
-2. **AFS client**: With an AFS client on your local machine transferring files between PDC and your local computer is as is as drag-and-drop, or, using a cp command. 
-	
-   * :ref:`Using AFS client from Ubuntu (Linux) <afs_client_ubuntu>`
-   * :ref:`Using AFS client from Windows <afs_client_windows>`
-   * :ref:`Using AFS client from Mac <afs_client_mac>`
-   * :ref:`Using AFS client from FreeBSD <afs_client_freebsd>`
      
 Using SCP/RSYNC
 ###############
@@ -63,8 +46,12 @@ where ``username`` is your username at PDC.
 
 .. _scp_windows:      
 
-Using SCP/RSYNC from Ubuntu (Linux):
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Using SCP/RSYNC from Windows:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TODO
+
+Using SCP/RSYNC from Mac OS:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TODO
 
 With AFS client

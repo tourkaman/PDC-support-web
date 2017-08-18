@@ -19,7 +19,7 @@ If you are a **SUPR** user, we encourage you to contact us via the SUPR interfac
 
 If you are a **non-SUPR** user, you can contact PDC support directly by sending a mail to support@pdc.kth.se
 
-.. topic:: Before send us your mail:
+.. topic:: Before sending mail:
 
    Make sure you provide with adequate information when requesting support from PDC. In general, try to include the following:
 
@@ -30,7 +30,7 @@ If you are a **non-SUPR** user, you can contact PDC support directly by sending 
    #. Execution commands used (attaching the job script is useful)
    #. Output from commands (You could attach with your mail the output/error files of the batch system. Also the output of your code could contain information about the problem in case you use redirection in your shell commands. Please, shorten files as much as possible to a length that makes it easy to see the problems while keeping messages short.)
 
-.. topic:: After you send a mail:
+.. topic:: After sending mail:
 
    #. As soon as you send an e-mail, you will receive an automated reply with a subject line **[SNIC support #NNNNN]** which is an unique support request number. This number will keep track of all communication we have with you about that particular issue.
 

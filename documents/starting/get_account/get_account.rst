@@ -7,29 +7,10 @@ Step 2: Applying for an account
 .. TODO: Apply for PDC account
 .. TODO: hyperlink to 'time allocation' basics
 
-.. centered::
-   *It is easy to become a user at PDC, just follow these instructions.*
+Once you know what allocation you will belong to, you are ready to apply for a PDC account. You can apply for an account in one of following ways depending on the type of project.
 
-You can apply for an account at PDC in one of three ways depending on the type of project: (1) account for projects from SUPR, (2) accounts for coursework at KTH, and (3) accounts for users from industry. Please refer to the table below, to know which application you would have to follow.
 
-.. table::
-   :widths: auto
-   :align: center
-
-   ========================= ==================================== ==================================== ====================================
-   Description               (1) SUPR                             (2) Course                           (3) Special 
-   ========================= ==================================== ==================================== ====================================
-   Who should apply?         SNIC project member                  Participant for a KTH course         industry/special course/EU projects
-   ========================= ==================================== ==================================== ====================================
-
-.. add more rows to the table?
-   
-
-.. topic:: `Request class access <https://www.pdc.kth.se/support/accounts/class-new/request-class-access>`_
-
-   If you are the *instructor* of a course and want to request access to PDC for course participant, please complete this application using the link.
-
-SUPR Account
+SUPR account
 ############
 
 If you are involved in a project SUPR, the account request happens entirely in the SUPR website. Follow the instructions below:
@@ -84,18 +65,31 @@ Special account
 
 **TODO**: Maybe, this section is unneccessary?!
 
+
 .. topic:: **What happends after requesting for account?**	   
 	   
-   1.   We take a 2-4 working days to process your account request.
-   2.   We get back to you if we find anything missing in the application.
-   3.   If the account creation was successful, you will recieve an confirmation e-mail, and the login credentials will be sent to the address you provided.
-   4.   If you requested an accounts for a course, you will recieve the credentials in the corresponding course lecture.
+   1.   We usually take 2-4 working days to process your account request.
+   2.   We will get back to you if we find anything missing in your application.
+   3.   If the account creation was successful, you will recieve a confirmation e-mail.
+   4.   After you recieved your confirmation e-mail, your login credentials will be sent to the postal address you provided. In case you requested an account for a course, you will recieve the credentials in the corresponding course lecture.
 
+
+Request class access
+####################
+
+If you are the *instructor* of a course at KTH and want to request access to PDC for all course participants, please complete this application below.
+
+.. topic:: `Request class access <https://www.pdc.kth.se/support/accounts/class-new/request-class-access>`_
+
+   Complete the application and submit
+	   
+	   
 .. _link_supr_pdc:
    
 Linking SUPR to PDC
 ###################
-   Most projects are now managed through SUPR, so all PDC accounts should be linked to a SUPR account. If you applied for an PDC account outside of SUPR, your account might not be linked. You should check if your SUPR and PDC accounts are linked and, if necessary, arrange for the accounts to be linked.
+
+Most projects are now managed through SUPR, so all PDC accounts should be linked to a SUPR account. If you applied for an PDC account outside of SUPR, your account might not be linked. You should check if your SUPR and PDC accounts are linked and, if necessary, arrange for the accounts to be linked.
 
 .. rubric:: Check if your PDC account is linked to your SUPR account:
 
@@ -111,4 +105,3 @@ Contact PDC support requesting that your PDC account be linked to your SUPR acco
 2.    e-mail address connected to your SUPR account
 
 PDC Support will send you a confirmation email when your SUPR account has been linked to your PDC account. When you receive the email, you can use the instructions above to verify that your SUPR account is now linked to your PDC account.
-
