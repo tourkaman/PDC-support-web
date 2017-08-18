@@ -80,13 +80,16 @@ Cuda on Tegner
 The Tegner cluster have some GPU that can be used with CUDA (see more about hardware specification here). You can compile a code including CUDA the following way
 
 .. code-block:: bash
+
    cd /cfs/klemming/nobackup/u/username
    module add cuda
    nvcc -arch=sm_37 hello.cu -o hello.out
 
 
 and then excecuted with normally ( ./hello.out in a batch script, or with *srun* on interactive mode ). Remember to specify GPU nodes with
+
 .. code-block:: bash
+
    #SBATCH --gres=gpu:K80:2
 
 or with **K420:1** instead of K80.

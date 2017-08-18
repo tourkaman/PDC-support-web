@@ -20,7 +20,10 @@ Here's a simplified workflow of queueing jobs to the supercomputer.
 .. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqra2JSUnpYcUJtOGc
 
 For running time counsuming large programs, sending the job to the queue system might be preferred. You can find more information about how to queue jobs at:
-:ref:`send the code to the queueing system <Queueing_jobs>` `(sbatch)`
+
+.. topic:: Queueing_jobs
+
+   :ref:`send the code to the queueing system <Queueing_jobs>` `(sbatch)`
 
 
 Run Interactively
@@ -31,7 +34,10 @@ Here's a simplified workflow of booking a node.
 .. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrbTVybmJTZWRFRjA
 
 Booking a node might be suitable if you want to test and verify your code in a parallell environment, or when the code is not time consuming but frequent adjustment is needed. You can find more information about how to run interatively at:
-:ref:`book an interactive compute node where you can run your code. <Run_interactively>` `(salloc)`:
+
+.. topic:: Run Interactively
+
+   :ref:`book an interactive compute node. <Run_interactively>` `(salloc)`
 
      
 How are jobs scheduled
