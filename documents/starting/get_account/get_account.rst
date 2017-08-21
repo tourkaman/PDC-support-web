@@ -10,6 +10,8 @@ Step 2: Applying for an account
 Once you know what allocation you will belong to, you are ready to apply for a PDC account. You can apply for an account in one of following ways depending on the type of project.
 
 
+.. _supr_account:
+
 SUPR account
 ############
 
@@ -33,6 +35,8 @@ If you are involved in a project SUPR, the account request happens entirely in t
    3. Press Request account
 5. Information regarding account creation will be sent to the provided e-mail address
 
+   The changes are then automatically applied to PDC clusters overnight by various scripts.
+
 .. topic:: `SUPR webpage <https://supr.snic.se>`_
 
    Login to SUPR and request PDC account.
@@ -54,16 +58,16 @@ If you are a student participating in a course requiring PDC resources, you woul
 
 .. seealso:: **Nationality: Why do we bother?**
 
-   1. If you are concerned with what we do with your nationality information or why was ask for it, please continue reading.       
-   2. We at PDC do not care what nationality you have. Unfortunately, some of the computer vendors and states where these computers are manufactured do care. Therefore we have to restrict citizens of a small number of nationalities (there is a list which is updated now and then) access to whole or part of our facilities.
+If you are concerned with what we do with your nationality information or why was ask, we at PDC do not care what nationality you have. Unfortunately, some of the computer vendors and states where these computers are manufactured do care. Therefore we have to restrict citizens of a small number of nationalities (there is a list which is updated now and then) access to whole or part of our facilities.
 
 .. We should state what vendors ask.
 .. We should state what those countries are!   
     
 Special account
-##################
+###############
 
-**TODO**: Maybe, this section is unneccessary?!
+.. TODO
+.. If you belong to an industry (SCANIA,..), or a project (XENON,), or course (PDC Summer School, PRACE School) that requires PDC resources, fill-in the form with
 
 
 .. topic:: **What happends after requesting for account?**	   

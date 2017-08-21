@@ -12,8 +12,6 @@ PDC uses `Kerberos <http://web.mit.edu/kerberos/>`_ authentication protocol. Thi
 1.  obtain Kerberos tickets on your local machine once (requires a password)
 2.  login to PDC machine (does not require a password)
 
-Kerberos tickets are stored on your local machine, and are then presented when you try to log in to the remote system. This means that in order to log in you need the following software (in versions that are appropriate for the operating system on your local computer):
-
 .. image:: https://drive.google.com/uc?id=0B7GAinAyrwFFUEF5VGQydHAyZDA
    :height: 400px
    :width: 700 px
@@ -21,10 +19,12 @@ Kerberos tickets are stored on your local machine, and are then presented when y
    :alt: alternate text
    :align: center
 
+Kerberos tickets are stored on your local machine, and are then presented when you try to log in to the remote system. You'll need the following software (in versions that are appropriate for your operating system):
+	   
 *  Kerberos v5 software (from Heimdal or MIT) - which is necessary for getting a Kerberos ticket, and
 *  SSH software supporting GSSAPI with KeyExchange (from modified OpenSSH).
 
-Choose the operating system of your local computer from which you want to access PDC resources. If you face any trouble logging in or need further help, feel free to contact PDC support.
+For step-by-step tutorials on how to login, choose from below the operating system of your local computer from which you want to access PDC resources. If you face any trouble logging in or need further help, feel free to contact PDC support.
 
 
 Windows
