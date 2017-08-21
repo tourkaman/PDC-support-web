@@ -15,7 +15,7 @@ Available softwares
 
    `Available Software <http://pdc-software-web.readthedocs.io/en/latest/>`_
 
-In the software page you can also find what versions is available. Each software have instructions on how to load and use the software. If you don't find the version or a specific software, you can either (temporary) create it in your `cfs` directory or :ref:`Contact PDC <contact_support>` and ask us to install it.
+In the software page you can also find what versions are available. Each software have instructions on how to load and use the software. If you don't find a version or a specific software, you can either (temporary) create it in your `cfs` directory or :ref:`Contact PDC <contact_support>` and ask us to install it.
 
 [More about Licence and policy etc should also be here?]
 
