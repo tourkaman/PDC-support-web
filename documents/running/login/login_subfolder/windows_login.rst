@@ -60,7 +60,8 @@ You will be asked for your kerberos password and then you have acquired your tic
 More information about kerberos can be found at ...
 
 If you intend to use OpenAFS(see :ref:`file_transfer` ), you also need to obtain an AFS token with the following command::
-	aklog
+	
+    aklog
 
 After you have obtained an kerberos ticket.
 

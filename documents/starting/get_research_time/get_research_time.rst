@@ -166,7 +166,7 @@ If you are applying for a new Time Allocation, you are the Principal Investigato
 
 .. Add to large allocation, application evaluation: Evidence of successful work at a medium level needed. Performed by SNAC twice a year   
 
-All time allocations are now managed through `SUPR <https://supr.snic.se/>`_, handled by SNAC (Swedish National Allocations Committee) so users can be added or removed from the allocation directly using the SUPR web interface. If you do not have an SUPR account, you need to obtain one [go to step 2 SUPR account] and apply from my page in SUPR web interface.  The changes are then automatically applied to PDC clusters overnight by various scripts.
+All time allocations are now managed through `SUPR <https://supr.snic.se/>`_, handled by SNAC (Swedish National Allocations Committee) so users can be added or removed from the allocation directly using the SUPR web interface. If you do not have an SUPR account, you need to obtain one :ref:`Step 2: SUPR account <get_supr_account>` and apply from my page in SUPR web interface.  The changes are then automatically applied to PDC clusters overnight by various scripts.
 
 To know more on what cores or core-hours mean, please visit the Preliminaries page.
 
@@ -175,7 +175,7 @@ To know more on what cores or core-hours mean, please visit the Preliminaries pa
 Joining a existing Time Allocation
 ##################################
 
-If you want to join an existing Time allocation, you have to first create an SUPR account [go to step 2 SUPR account] and send an Project Membership Request from SUPR web interface, and then proceed to send an PDC account request through SUPR.
+If you want to join an existing Time allocation, you have to first create an SUPR account :ref:`Step 2: SUPR account <get_supr_account>` and send an Project Membership Request from SUPR web interface, and then proceed to send an PDC account request through SUPR.
 
 
 Check your existing Time Allocation
