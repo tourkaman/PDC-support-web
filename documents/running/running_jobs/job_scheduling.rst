@@ -20,7 +20,7 @@ Here's a simplified workflow of queueing jobs to the supercomputer.
 
 For running time counsuming large programs, sending the job to the queue system might be preferred. You can find more information about how to queue jobs at:
 
-.. topic:: Queueing_jobs
+.. topic:: Queueing jobs
 
    :ref:`send the code to the queueing system <Queueing_jobs>` `(sbatch)`
 
