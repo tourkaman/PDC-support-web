@@ -1,10 +1,12 @@
 .. index:: Storing data
 .. _storing_data:
 
-Storing data
-============
+.. _storing_begineer:
 
-Computations on PDC resources usually demand storage of files relating to calculations being performed, such as data files or program files. PDC has two file systems available: AFS and Klemming.
+Where to store my data (begineer)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+As the speed of CPU computations keep increasing, the relatively slow rate of input/output (I/O) or data accessing operations can create bottlenecks and cause programs to slow down significantly. Therefore it is very important to pay attention to how your programs are doing I/O and accessing data as that can have a huge impact on the run time of your jobs. Here, you will find a quick guide to storing data, ideal if you have just started to use PDC resources. 
 
 .. rubric:: What are AFS and Klemming?
 
@@ -21,17 +23,13 @@ Users can define custom groups and control access-rights effortlessly, suitable 
    :scale: 100 %
    :alt: alternate text
    :align: center
-
-Where to store my data (begineer)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-As the speed of CPU computations keep increasing, the relatively slow rate of input/output (I/O) or data accessing operations can create bottlenecks and cause programs to slow down significantly. Therefore it is very important to pay attention to how your programs are doing I/O and accessing data as that can have a huge impact on the run time of your jobs. Here, you will find a quick guide to storing data, ideal if you have just started to use PDC resources. 
-
+	
 .. topic:: Where do I find it?
-
+  
    | You can find AFS at ``/afs/pdc.kth.se``
    | You can find Klemming at ``/cfs/klemming``
- 
+
+   
 .. rubric:: Before running your processes
    
 * All files for Beskow computations must go on **Klemming**
@@ -78,6 +76,7 @@ As the speed of CPU computations keep increasing, the relatively slow rate of in
 * Move important data files to your own departmental storage systems after performing computations at PDC. Remeber, space on Klemming is currently limited, and are not backed up
 * Smaller data files can be moved to AFS 
 
+.. _storing_advanced:
 
 Where to store my data (advanced)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^      

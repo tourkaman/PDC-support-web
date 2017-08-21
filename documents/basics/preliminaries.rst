@@ -14,7 +14,7 @@ Like most high-performance computing facilities, PDC mainly features **clusters*
 
 A **node** is the individual computer part of each cluster. Nodes are analogous to the computers we use everyday.
 
-And each node in turn has **processors** made up of computing entities called **cores**. To get some perspective, Beskow consists of 1676 nodes with 32 cores per node, and Tegner has 65 nodes with 48/24 cores per node.
+And each node in turn has **processors** made up of computing entities called **cores**. To get some perspective, Beskow currently consists of 1676 nodes with 32 cores per node, and Tegner has 65 nodes with 48/24 cores per node.
 
 .. seealso::
    For a more technical overview, please visit the `Resources <https://www.pdc.kth.se/resources>`_ page.
