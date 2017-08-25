@@ -48,7 +48,39 @@ where ``username`` is your username at PDC.
 
 Using SCP/RSYNC from Windows:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TODO
+
+If you're using *putty* to login to PDC clusters, you can use **PSFTP** that follows the putty installation. Simply go to the folder putty is installed, or search for *PSFTP* on windows main menu. Note that just like putty, you need kerberos ticket to use PSFTP.
+
+if you start PSFTP, a new terminal will open. Here, you first have to connect to the cluster. You can do this by typing
+
+.. code-block::
+   
+   open <username>@t04n28.pdc.kth.se
+
+This is a designated transfer node. If you have followed the step from :ref:`Windows Login <windows_login>` and saved a login session (example: Beskow) you can also type `` open <session_name> `` instead.
+
+Now you have logged in to the cluster and you're in your *AFS Home Directory*. You can change your **remote** directory location to your cfs directory with
+
+.. code-block::
+
+   cd /cfs/klemming/nobackup/u/user/file_location
+
+You can also change your **local** diectory location with
+
+.. code-block::
+
+   lcd c:\Users\username\folder_to_save_file
+
+Keep in mind that the location should be specified in the same way you change directory on a windows terminal, for ``lcd``.
+
+You can transfer files by using **get** or **put**. *get* will transfer files specified from remote location to current local directory, and *put* will transfer files from current local directory to the current remote directory.
+
+.. code-block::
+
+   get <filename>
+
+For more information about PSFTP utility and commands, please look at `Putty Documentation <http://the.earth.li/~sgtatham/putty/0.63/htmldoc/>`
+
 
 Using SCP/RSYNC from Mac OS:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
