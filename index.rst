@@ -52,7 +52,13 @@ Running research
    :maxdepth: 3
 
    documents/running/managing_files/data_management
-     
+
+.. toctree::
+   :glob:
+   :maxdepth: 3
+		
+   documents/running/development/*
+
 * `Available Software <http://pdc-software-web.readthedocs.io/en/latest/>`_
      
 Getting help
