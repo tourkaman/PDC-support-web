@@ -15,9 +15,7 @@ User guide
    :glob:
    :maxdepth: 2
 
-   documents/basics/preliminaries/
-   documents/basics/linux/
-   documents/basics/glossary/   
+   documents/basics/*  
 
 Getting Started
 ===============
