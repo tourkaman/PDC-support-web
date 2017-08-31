@@ -6,7 +6,7 @@
 Welcome to PDC Support!
 =======================================
 
-This section provides links for help with frequently-raised issues when using PDC resources. If you cannot find the information you need in the official documentation, or through a global web search please see `Contact Support <contact_support>`_ below. We are always glad to help, and we also appreciate suggestions for improving our documentation.
+This section provides links for help with frequently-raised issues when using PDC resources. If you cannot find the information you need in the official documentation, or through a global web search please see :ref:`Contact Support <contact_support>` below. We are always glad to help, and we also appreciate suggestions for improving our documentation.
 
 User guide
 ==========
