@@ -1,11 +1,11 @@
-.. index:: Getting research time at PDC
-.. _get_time:
-
-.. centered::
-   *It is easy to become a user at PDC, just follow these instructions.*
+.. index:: get_research_time
+.. _get_research_time:
 
 Step 1: Getting research time
 =============================
+
+.. centered::
+   *It is easy to become a user at PDC, just follow these instructions.*
 
 .. intro research time is TA, you need one, why
 Before running on PDC, users must belong to at least one Time Allocation. 

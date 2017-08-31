@@ -102,21 +102,24 @@ Configuring PuTTY
    A session is basically a collection of settings for a connection to a machine. 
    In this case, we will assume that the machine we are connecting to is **Beskow**
    (with hostname beskow.pdc.kth.se), with username "user". 
-   You can substitute these values for some other cluster at PDC (eg tegner.pdc.kth.se, etc) and of course your own username respectively.
-	.. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrLWVmdVh3VURnWnc
+   You can substitute these values for some other cluster at PDC (eg tegner.pdc.kth.se, etc)
+   and of course your own username respectively.
+   
+ 	   .. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrLWVmdVh3VURnWnc
+
 #. In the field Host Name at the top, we enter ``user@beskow.pdc.kth.se``. 
    Again, substitute the username and the cluster as needed. Make sure the port is 22 and that SSH is selected underneath.
-	.. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrTzloaUxMWmU0eG8
+
+     .. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrTzloaUxMWmU0eG8
+
 #. In the menu to the left, navigate to Connection > SSH > Auth > GSSAPI  and check the box "Allow GSSAPI credential delegation".
-
 #. Make sure to move the Heimdal Kerberos GSSAPI.DLL library to the top of the list by using the up key.
-
 #. In the menu to the left again, navigate back to the screen where we started by clicking Session at the very top.
-		.. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrLWVmdVh3VURnWnc 
+
+		 .. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrLWVmdVh3VURnWnc 
+
 #. In the field Saved Sessions, we will enter a name for this session. In this case, we will call it "Beskow", 
    but the name can of course be anything descriptive.
-
 #. Click the Save button to the right.
-
 #. Now, click Open. If you have valid Kerberos tickets like
    explained in :ref:`acquire_kerberos` you will now login to the cluster

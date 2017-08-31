@@ -42,7 +42,7 @@ In a job script option the following sbatch command can be defined:
 
 	
 Job examples (Tegner)
-*******************	
+*********************
 	   
 This is an an example of a job script for a MPI program. For other programs, you can find examples in the software page `Software <http://pdc-software-web.readthedocs.io/en/latest/>`_.
 		

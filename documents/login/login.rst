@@ -1,7 +1,6 @@
 .. index:: Login
 .. _login:
 
-
 How to login
 ============
 
@@ -26,18 +25,17 @@ Kerberos tickets are stored on your local machine, and are then presented when y
 
 For step-by-step tutorials on how to login, choose from below the operating system of your local computer from which you want to access PDC resources. If you face any trouble logging in or need further help, feel free to contact PDC support.
 
-
 Windows
-#######
+-------
 
 :ref:`Login from Windows <windows_login>`
 
 Linux
-#####
+-----
 
 :ref:`Login from Linux <linux_login>`
 
 Mac OS
-#######
+------
 
 :ref:`Login from Mac <mac_login>`

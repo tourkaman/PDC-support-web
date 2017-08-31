@@ -1,4 +1,4 @@
-.. index:: Getting an account at PDC
+.. index:: get_account
 .. _get_account:
 
 Step 2: Applying for an account

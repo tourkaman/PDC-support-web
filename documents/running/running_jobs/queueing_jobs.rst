@@ -2,7 +2,7 @@
 .. _Queueing_jobs:
 
 Queueing jobs
-#############
+=============
 
 * You can submit a job script to the Slurm queue system from the login node with
 	.. code-block:: bash
@@ -10,7 +10,7 @@ Queueing jobs
 
 		sbatch ./jobscript.sh
 
-	more information on how to create an job script can be found in :ref:`job-scripts`.
+	more information on how to create an job script can be found in :ref:`job-scripts_tegner`.
 
 	.. Warning::
 
@@ -42,7 +42,7 @@ These commands are the basic commands for submit, cancel, check jobs to the queu
 
 
 Job scripts
-*****************
+***********
 
 To submit a job to the queue system one have to specify few details, such as the time allocation the user belong to and the number of nodes required. This is done by adding option in the job script with **#SBATCH** flag. This option are then given to the SLURM.
 
