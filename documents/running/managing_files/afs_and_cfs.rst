@@ -38,7 +38,7 @@ For storing the latter type of files, PDC has two file systems available. They a
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+
    |                             |                                                    |                                                  |
-   | Total storage size          |   Small (around 50 TB)                             |   Large (5 PB)                                   |
+   | Storage size                |   default 5GB in home directory                    |   total 5 PB shared with all user                |
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+
    |                             |                                                    |                                                  |
@@ -46,12 +46,7 @@ For storing the latter type of files, PDC has two file systems available. They a
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+
    |                             |                                                    |                                                  |
-   | Accessibility               |   accessible by any computer with internet         |   accessible after login to PDC                  |
-   |                             |   (need not login to PDC)                          |                                                  |
-   |                             |                                                    |                                                  |
-   +-----------------------------+----------------------------------------------------+--------------------------------------------------+
-   |                             |                                                    |                                                  |
-   | Access from Beskow          |   No                                               |   Yes                                            |
+   | Access from Beskow          |   No (accessed only from the login node)           |   Yes                                            |
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+
    |                             |                                                    |                                                  |
@@ -69,7 +64,7 @@ For storing the latter type of files, PDC has two file systems available. They a
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+   
    |                             |                                                    |                                                  |
-   | Backup                      |   all files are backed up                          |   files are not backed up                        |
+   | Backup                      |   files in home directory are backed up            |   files are not backed up                        |
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+
    |                             |                                                    |                                                  |
