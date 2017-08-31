@@ -4,16 +4,14 @@
 Data management
 ===============
 
-This section gives you information about PDC's storage solutions. Before following this section, make sure you can login to a PDC system.
-
 Working with PDC would involves transferring data back and forth between your local machine and PDC, or between different systems at PDC. PDC offers two storage systems AFS and CFS(Klemming), and an efficient usage of PDC would involve knowing when to use what.
 
 File transfer
 #############
 
-This section contains information about transferring files to, from, and between PDC. We recommend two methods for this:
+We recommend two methods for this:
 
-1. **SCP/rsync**: Secure Copy (SCP) and RSYNC copies files between hosts on a network. It uses SSH for data transfer, and uses the same authentication and provides the same security as SSH.
+1. **scp/rsync**: Secure Copy (SCP) and RSYNC copies files between hosts on a network. It uses SSH for data transfer, and uses the same authentication and provides the same security as SSH.
    
    * :ref:`with Ubuntu (Linux) <scp_ubuntu>`
    * :ref:`with Windows <scp_windows>`
