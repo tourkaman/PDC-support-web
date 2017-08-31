@@ -9,7 +9,7 @@ Guide: 2. AFS
    You can find AFS at ``/afs/pdc.kth.se``
 
 Key features
-^^^^^^^^^^^^
+------------
 
 * **Storage size**:small volume of storage (5 GB in user home directory)
 * **File access speed**: relatively slow access to files (not good for files being accessed by parallel computation)
@@ -27,7 +27,7 @@ Key features
   * source code packages
 
 Viewing and modifing access (Access Control List)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
+-------------------------------------------------
 
 Every directory in AFS is controlled by the Access Control List (ACL) describing different user rights in that directory. To see this list, use the command ``fs listacl`` or ``fs la``. This command entered by the user ``svensson`` might result in something like this:
 
@@ -83,7 +83,7 @@ This would make it possible for ``mysister`` to read, list, create new files, an
 Finally, to see all the available commands with ``fs`` use ``fs help``.
 
 Protecting Your ``init`` files
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------
 
 .. note:: This has already been set up if you got a standard PDC account, check with ``ls -la ~``
 
@@ -108,7 +108,7 @@ Create the links:
 and so on...
 
 Creating and managing groups
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------
 
 Every user in the AFS system can create groups of users. All the members can then be given the same access rights by adding the group to an ACL. This is a very convenient way of giving the same rights to a group.
 
@@ -197,7 +197,7 @@ which would let members of the group friends read, list, insert, delete and writ
 
 
 Accessing other cells
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 If you want to access files that are located somewhere else, e.g. your home directory at another institution that uses AFS, you need to acquire tokens for that cell (unless the files you want are readable by anyone, in which case you don't have to do anything special). This is done by first getting Kerberos tickets for the corresponding realm and then getting tokens from those tickets using the command afslog.
 
@@ -216,7 +216,7 @@ Then you need to acquire tokens:
 You should now be able to read and write the files in ``/afs/physto.se/home/u/user``.
 
 Disk usage and quota
-^^^^^^^^^^^^^^^^^^^^
+--------------------
 
 How much space do you have in your home directory? And how much space is already used? You can find out in the following ways:
 	    
@@ -248,7 +248,7 @@ In AFS there are two aspects of your storage that are limited - KB of disk space
 
 
 Maximum number of files
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 
 The maximum number of files in an AFS directory is 64435 (if the file names are short, otherwise the number is less). If you try to create one more file than that, you will get an error message.
 
@@ -259,7 +259,7 @@ The maximum number of files in an AFS directory is 64435 (if the file names are 
 OpenAFS has a very slow algorithm for accessing files in a directory with many files. So it's not practical having more than a few thousand files in a directory. Recommended is instead to group the filenames in different directories or create larger files.
 
 Check the status of an AFS server
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 	    
 If you are suspecting that the AFS server you are using is overloaded you can check this.
 

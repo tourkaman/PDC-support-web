@@ -35,12 +35,9 @@ How to login
 
 .. toctree::
    :glob:
-   :maxdepth: 2
+   :maxdepth: 3
 		
    documents/login/login
-   documents/login/linux_login
-   documents/login/windows_login
-   documents/login/mac_login
 
 Running research
 ================
@@ -53,33 +50,19 @@ Running research
   
   .. toctree::
      :glob:
-     :titlesonly:
-     :maxdepth: 2
+     :maxdepth: 3
 
      documents/running/running_jobs/job_scheduling
      documents/running/running_jobs/software
      documents/running/running_jobs/queueing_jobs
-     documents/running/running_jobs/job_scripts_tegner
-     documents/running/running_jobs/job_scripts_beskow
      documents/running/running_jobs/run_interactively
 
-* Data Management
-  
-  .. toctree::
-     :glob:
-     :titlesonly:
-     :maxdepth: 2
+.. toctree::
+   :glob:
+   :maxdepth: 3
 
-     documents/running/managing_files/*
-     
-* Development
-
-  .. toctree::
-     :glob:
-     :titlesonly:
-     :maxdepth: 3
-     
-     documents/running/development
+   documents/running/managing_files/data_management
+   documents/running/development
 
 * `Available Software <http://pdc-software-web.readthedocs.io/en/latest/>`_
 
@@ -92,4 +75,3 @@ Getting help
 
    documents/contact/faq
    documents/contact/contact_support
-      
