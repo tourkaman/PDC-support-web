@@ -11,10 +11,9 @@ Guide: 2. AFS
 Key features
 ^^^^^^^^^^^^
 
-* **Storage size**:small volume of storage (around 50 TB total)
+* **Storage size**:small volume of storage (5 GB in user home directory)
 * **File access speed**: relatively slow access to files (not good for files being accessed by parallel computation)
-* **Backup**: all files on AFS are backed up
-* **Access**: files stored on AFS can be directly accessed from any computer connected to the internet - it is not neccessary to log in to a PDC computer over the internet first
+* **Backup**: files in user AFS home directory are backed up
 * **Access from Beskow**: files on AFS are not accessible from Beskow's compute nodes (so any data or program files that you need for running pograms ob Beskow must be stored Klemming)
 * **Access from Tegner**: files on AFS can be accessed from Tegner's compute nodes - so small amounts of data for Tegner computations can be stored on AFS (any large amount of data should be stored on Klemming for reasons of speed of access)
 * good for storing small files that need to be backed up
@@ -22,22 +21,11 @@ Key features
 * **File access**: AFS has its own implementation of Access Control Lists (ACLs), where users can define new groups (Note: In AFS access is set per directory and not on individual files)
 * **Secure access**: uses Kerberos for authentication and is designed for security and robustness. We assume that you have forwarded a valid ticket from your workstation when you logged in, see Kerberos for details.
 * mainly used for:
-  * users' home directory (with backup) - initially 500 MB (can be raised to 5 GB)
-  * project volumes (backup optional) - typically 10-50 GB (time limited)
+  * users' home directory (with backup) - default 5 GB
+  * project volumes - typically 10-50 GB with special request
   * installation and configuration of the PDC environment, and
   * source code packages
 
-   
-The `afsws` module
-^^^^^^^^^^^^^^^^^^
-
-On the PDC systems that use modules, the AFS commands are in the afsws (AFS WorkStation) module.
-
-.. code-block:: bash
-		
-   > module add afsws
-
- 
 Viewing and modifing access (Access Control List)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^   
 
@@ -108,31 +96,14 @@ Change to your home directory:
 .. code-block:: bash
 
    > cd
-
-Create a subdirectory:
-
-.. code-block:: bash
-
-   > mkdir Public
-
-Make this subdirectory readable by any user:
-
-.. code-block:: bash
-
-   > fs setacl Public system:anyuser read
-
-Move all the files that should be public readable to this directory:
-
-.. code-block:: bash
-
-   > mv .login .cshrc .tcshrc .forward Public
+   > mv .bashrc .forward Public
 
 Create the links:
 
 .. code-block:: bash
 
-   > ln -s Public/.login .
-   > ln -s Public/.cshrc .
+   > ln -s Public/.bashrc .
+   > ln -s Public/.forward .
 
 and so on...
 
