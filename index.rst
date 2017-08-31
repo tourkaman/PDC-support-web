@@ -26,8 +26,8 @@ Getting Started
 .. toctree::
    :glob:
    :maxdepth: 2
-
-   documents/starting/*
+   documents/starting/get_research_time/*
+   documents/starting/get_account/*
 
 Running research
 ================
@@ -48,7 +48,7 @@ Running research
      documents/running/running_jobs/*
      documents/running/managing_files/data_management
      documents/running/development
-     `Available Software <http://pdc-software-web.readthedocs.io/en/latest/>`_
+     Available Software at http://pdc-software-web.readthedocs.io/en/latest/
      
 Getting help
 ============
