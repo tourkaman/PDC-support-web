@@ -61,5 +61,7 @@ Here you will find the basic terminologies and quick reference materials.
      Andrew File System (AFS) is a distributed file system. This file system can be accessed without logging in to the clusters, and this is also the system where users home directory reside. To get access to AFS, one needs to use Kerberos.
 
    CFS/Klemming
-     TODO
+     Klemming is a high-performance parallel Lustre file system which is mounted on both Tegner and Beskow. Klemming provides fast access to large data files needed for large parallel applications, but is less suitable for dealing with many small operations on a large number of files.
+
+
    
