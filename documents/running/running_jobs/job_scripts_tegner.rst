@@ -62,19 +62,20 @@ This is an an example of a job script for a MPI program. For other programs, you
 	      #SBATCH -t 1:00:00
 	      
 	      # Number of nodes
-	      #SBATCH --nodes=4
-	      # Number of MPI processes per node (the following is actually the default)
-	      #SBATCH --ntasks-per-node=32
+	      #SBATCH --nodes=2
+	      # Number of MPI processes per node
+	      #SBATCH --ntasks-per-node=24
 	      
 	      #SBATCH -e error_file.e
 	      #SBATCH -o output_file.o
 	      
-	      # Run the executable named myexe 
-	      # and write the output into my_output_file
-	      aprun -n 128 ./myexe > my_output_file 2>&1
-   
-Note that the command `aprun` have to be used to run the code in parallel!
+              # Load the Intel MPI module
+              module add intelmpi/17.0.1
 
+	      # Run the executable named myexe with MPI-rank of 48
+	      # and write the output into my_output_file
+	      mpirun -n 48 ./myexe > my_output_file 2>&1
+   
 Cuda on Tegner
 ***************
 The Tegner cluster have some GPU that can be used with CUDA (see more about hardware specification here). You can compile a code including CUDA the following way
@@ -86,10 +87,10 @@ The Tegner cluster have some GPU that can be used with CUDA (see more about hard
    nvcc -arch=sm_37 hello.cu -o hello.out
 
 
-and then excecuted with normally ( ./hello.out in a batch script, or with *srun* on interactive mode ). Remember to specify GPU nodes with
+and then excecuted with normally ( ./hello.out in a batch script, or with *srun* on interactive mode ). Remember to specify GPU nodes with 
 
 .. code-block:: bash
 
    #SBATCH --gres=gpu:K80:2
 
-or with **K420:1** instead of K80.
+for the K80 nodes or with **K420:1** for the K420 nodes.
