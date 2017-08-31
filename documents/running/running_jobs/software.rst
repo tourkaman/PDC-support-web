@@ -8,7 +8,7 @@ At PDC, there is a variety of machines, operating systems, projects and differen
 To be able to maintain and use this large set of programs we use `Modules <http://modules.sourceforge.net/index.html>`_. Below we present the needed commands to use these modules to your advantage.
 
 Available softwares
-##################
+###################
 .. topic:: Available softwares
  
    You can find the softwares that are available in the different machines at

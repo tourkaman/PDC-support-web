@@ -7,7 +7,6 @@ Step 1: Getting research time
 .. centered::
    *It is easy to become a user at PDC, just follow these instructions.*
 
-.. intro research time is TA, you need one, why
 Before running on PDC, users must belong to at least one Time Allocation. 
 
 
@@ -199,7 +198,7 @@ Once you decide on the details of your Time Allocation, you can go to :ref:`Step
 .. _joining_a_existing_time_allocation:
 
 Joining an existing Time Allocation
-##################################
+###################################
 
 All research projects are now handled at the national level in SNIC through the `SUPR <https://supr.snic.se/>`_ portal, so applying/joining Time Allocation, adding/removing users from Time Allocation, and applying for PDC account must be done from your SUPR page.
 

@@ -24,7 +24,8 @@ Here you will find the basic terminologies and quick reference materials.
      Time Allocation is the technical term for "Project" that users need to be a part of to use the supercomputer. Time allocation contains information about the project and how much resources the project have been allocated. There are different types of time allocation depending on how one applied for one, but for runtime instruction there is no difference.
 
    Principal Investigator (PI)
-     Principal Investigator is the "Project manager" of a time allocation. This user can add/remove users from the project, and usually the one that applied for the time allocation. All project related utilities is managed through SUPR.
+     Principal Investigator is the "Project manager" of a time allocation. This user can add/remove users from the project, and usually the one that applied for the time allocation. All project related utilities is managed through SUPR. 
+
    CAC
      CAC or Charge Account Category is a deprecated term referring to allocations for a project. It is now replaced by Time Allocation.
 
@@ -54,7 +55,8 @@ Here you will find the basic terminologies and quick reference materials.
      Tegner is the name of cluster currently deployed in PDC designed for pre/post processing.
 
    Kerberos
-     Kerberos is a computer network authentication protocol. It works on the basis of creating a *ticket* that is used for secure communication. You need to create a kerberos ticket to login to the clusters, run program and get access to the home directory and transfer files.
+     Kerberos is a computer network authentication protocol. It works on the basis of creating a *ticket* that is used for secure communication. You need to create a kerberos ticket to login to the clusters, run program and get access to the home directory and transfer files. 
+
    AFS
      Andrew File System (AFS) is a distributed file system. This file system can be accessed without logging in to the clusters, and this is also the system where users home directory reside. To get access to AFS, one needs to use Kerberos.
 
