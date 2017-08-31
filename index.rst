@@ -15,8 +15,11 @@ User guide
    :glob:
    :maxdepth: 2
 
-   documents/basics/*  
-
+   documents/basics/preliminaries
+   documents/basics/glossary
+   documents/basics/linux
+   documents/basics/short_linux
+   
 Getting Started
 ===============
 
@@ -43,21 +46,9 @@ Running research
      :maxdepth: 2
 
      documents/running/running_jobs/*
-     
-      
-.. toctree::
-   :glob:
-   :maxdepth: 3
-
-   documents/running/managing_files/data_management
-
-.. toctree::
-   :glob:
-   :maxdepth: 3
-		
-   documents/running/development/*
-
-* `Available Software <http://pdc-software-web.readthedocs.io/en/latest/>`_
+     documents/running/managing_files/data_management
+     documents/running/development
+     `Available Software <http://pdc-software-web.readthedocs.io/en/latest/>`_
      
 Getting help
 ============
@@ -69,10 +60,3 @@ Getting help
    documents/contact/faq
    documents/contact/contact_support
       
-
-Indices and tables
-==================
-
-.. `genindex`
-.. `modindex`
-* :ref:`search`
