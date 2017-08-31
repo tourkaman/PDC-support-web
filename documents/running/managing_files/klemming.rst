@@ -13,10 +13,9 @@ Klemming is a parallel file system based on Lustre optimized for handling data f
 Key features
 ^^^^^^^^^^^^
 
-* **Storage size**: large volume of storage (total over 5 PB - so 100 times more than AFS)
+* **Storage size**: large volume of storage (total 5 PB shared with all PDC users)
 * **File access speed**: fast access (good for files accessed for computation)
 * **Backup**: files are not backed up
-* **Accessibility**: not possible to access files stored on Klemming directly via the internet - need to login to a PDC computer to get acces to Klemming
 * **Access from Tegner**: files on Klemming can be accessed from Beskow's compute nodes (any data or program files that you need for running programs on Beskow must be stored on Klemming)
 * **Access from Beskow**: files on Klemming can be accessed from Tegner's compute nodes - so large amounts of data for egner computationa should be stored on Klemming (small amounts of data are also okay on Klemming)
 * good for storing any large files and program code
@@ -32,7 +31,7 @@ Klemming is divided into two parts: scratch and nobackup. Note that the two part
 
 .. rubric:: Scratch
 
-Use for most files that are used by jobs running at PDC (but does not fall into the nobackup-category). This branch will be automatically cleaned by removing files that has not been changed within a certain time. This time will be adjusted when needed so that:
+Use for most files that are used by jobs running at PDC (but does not fall into the nobackup-category). This branch will be automatically cleaned by removing files that has not been changed within 30 days. This time will be adjusted when needed so that:
 
 * The files are available while a job is running on the cluster
 * After the job has run there is a reasonable chance to move the files to some other storage.

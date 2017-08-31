@@ -6,8 +6,8 @@ Using SCP/RSYNC
 
 .. _scp_ubuntu:
 
-Using SCP/RSYNC from Ubuntu (Linux):
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Using SCP/RSYNC from Ubuntu (Linux) and Mac OS:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 SCP: ``scp`` (secure copy) copies files between hosts on a network. It uses SSH for data transfer, and uses the same authentication and provides the same security as ``ssh``. Before using ``scp``, make sure you have valid forwardable Kerberos tickets on your local machine and a working SSH setup. 
 
@@ -80,11 +80,6 @@ You can transfer files by using **get** or **put**. *get* will transfer files sp
    get <filename>
 
 For more information about PSFTP utility and commands, please look at `Putty Documentation <http://the.earth.li/~sgtatham/putty/0.63/htmldoc/>`
-
-
-Using SCP/RSYNC from Mac OS:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TODO
 
 With AFS client
 ###############
