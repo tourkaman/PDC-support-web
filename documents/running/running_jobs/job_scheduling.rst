@@ -13,7 +13,7 @@ To run your script/program on the supercomputer, you can do it in one of the fol
 
 
 Queue jobs
-###############################################
+----------
 Here's a simplified workflow of queueing jobs to the supercomputer.
 
 .. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqra2JSUnpYcUJtOGc
@@ -26,7 +26,7 @@ For running time counsuming large programs, sending the job to the queue system 
 
 
 Run Interactively
-######################################################
+-----------------
 
 Here's a simplified workflow of booking a node.
 
@@ -40,7 +40,7 @@ Booking a node might be suitable if you want to test and verify your code in a p
 
      
 How are jobs scheduled
-######################
+----------------------
 
 The queue system use two main methods *fair-share* and *Backfill* to decide which jobs are run. It might be a good idea to check how the queue system work to get your jobs a better priority.
 

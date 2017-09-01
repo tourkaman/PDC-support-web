@@ -41,7 +41,7 @@ In the job script, The following option can be defined:
 Keep in mind that Beskow **do not** have access to your afs home directory, and therefore, the script, the executable and the dependencies must recide in your *CFS* home directory. (``/cfs/klemming/nobackup/u/username``)
 
 Job examples (Beskow)
-***********************
+---------------------
    
 Below are a job script example for MPI. For other programs, you can find examples in the software page `Software <http://pdc-software-web.readthedocs.io/en/latest/>`_.
    

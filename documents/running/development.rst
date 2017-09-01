@@ -1,8 +1,7 @@
-.. index:: compiling
-.. _compiling:
+.. index:: developing_software
+.. _development:
 
-
-How to compile software
+How to develop software
 =======================
 
 Compilers and libraries on Beskow

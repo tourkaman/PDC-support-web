@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to PDC Support!
-=======================================
+=======================
 
 This section provides links for help with frequently-raised issues when using PDC resources. If you cannot find the information you need in the official documentation, or through a global web search please see :ref:`Contact Support <contact_support>` below. We are always glad to help, and we also appreciate suggestions for improving our documentation.
 
@@ -13,12 +13,11 @@ User guide
 
 .. toctree::
    :glob:
-   :maxdepth: 1
+   :maxdepth: 2
 
    documents/basics/preliminaries
    documents/basics/glossary
    documents/basics/linux
-   documents/basics/short_linux
    
 Getting Started
 ===============
@@ -35,51 +34,20 @@ How to login
 
 .. toctree::
    :glob:
-   :maxdepth: 2
+   :maxdepth: 3
 		
    documents/login/login
-   documents/login/linux_login
-   documents/login/windows_login
-   documents/login/mac_login
 
 Running research
 ================
 
 .. toctree::
    :glob:
-   :maxdepth: 2
-   
-* How to run jobs
-  
-  .. toctree::
-     :glob:
-     :titlesonly:
-     :maxdepth: 2
+   :maxdepth: 3
 
-     documents/running/running_jobs/job_scheduling
-     documents/running/running_jobs/software
-     documents/running/running_jobs/queueing_jobs
-     documents/running/running_jobs/job_scripts_tegner
-     documents/running/running_jobs/job_scripts_beskow
-     documents/running/running_jobs/run_interactively
-
-* Data Management
-  
-  .. toctree::
-     :glob:
-     :titlesonly:
-     :maxdepth: 2
-
-     documents/running/managing_files/*
-     
-* Development
-
-  .. toctree::
-     :glob:
-     :titlesonly:
-     :maxdepth: 3
-     
-     documents/running/development
+   documents/running/running_jobs/how_to_run
+   documents/running/managing_files/data_management
+   documents/running/development
 
 * `Available Software <http://pdc-software-web.readthedocs.io/en/latest/>`_
 
@@ -92,4 +60,3 @@ Getting help
 
    documents/contact/faq
    documents/contact/contact_support
-      

@@ -82,36 +82,29 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'default_pdc'
+html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-html_theme_options = {
-    'collapsiblesidebar': True,
-    'footerbgcolor' : '#65656C',
-    'footertextcolor' : '#FFFFFF',
-    'sidebarbgcolor' : '#FFFFFF',
-    'sidebarbtncolor' : '#F7F7F7',
-    'sidebartextcolor' : '#444444',
-    'relbarbgcolor': '#1954A6',
-    'relbartextcolor' : '#FFFFFF',
-    'relbarlinkcolor' : '#FFFFFF',
-    'bgcolor' : '#FFFFFF',
-    'textcolor' : '#111111',
-    'headbgcolor' : '#FFFFFF',
-    'codebgcolor' : "#EEEEEE",
-    'codetextcolor' : "#000000",
-    'bodyfont' : 'Verdana, Arial, Helvetica, sans-serif',
-    'headfont' : 'Verdana, Arial, Helvetica, sans-serif'
-}
+# html_theme_options = {}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_theme_path = ['./themes']
+html_static_path = ['_static']
 
+# Custom sidebar templates, must be a dictionary that maps document names
+# to template names.
+#
+# This is required for the alabaster theme
+# refs: http://alabaster.readthedocs.io/en/latest/installation.html#sidebars
+
+html_theme="classic"
+html_theme_options = {
+    'collapsiblesidebar': True
+}
 
 # -- Options for HTMLHelp output ------------------------------------------
 

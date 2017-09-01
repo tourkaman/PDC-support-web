@@ -42,7 +42,7 @@ In a job script option the following sbatch command can be defined:
 
 	
 Job examples (Tegner)
-*********************
+---------------------
 	   
 This is an an example of a job script for a MPI program. For other programs, you can find examples in the software page `Software <http://pdc-software-web.readthedocs.io/en/latest/>`_.
 		
@@ -77,7 +77,8 @@ This is an an example of a job script for a MPI program. For other programs, you
 	      mpirun -n 48 ./myexe > my_output_file 2>&1
    
 Cuda on Tegner
-***************
+--------------
+
 The Tegner cluster have some GPU that can be used with CUDA (see more about hardware specification here). You can compile a code including CUDA the following way
 
 .. code-block:: bash

@@ -4,7 +4,7 @@
 .. _storing_begineer:
 
 Where to store my data (begineer)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=================================
 
 As the speed of CPU computations keep increasing, the relatively slow rate of input/output (I/O) or data accessing operations can create bottlenecks and cause programs to slow down significantly. Therefore it is very important to pay attention to how your programs are doing I/O and accessing data as that can have a huge impact on the run time of your jobs. Here, you will find a quick guide to storing data, ideal if you have just started to use PDC resources. 
 
@@ -79,7 +79,7 @@ Users can define custom groups and control access-rights effortlessly, suitable 
 .. _storing_advanced:
 
 Where to store my data (advanced)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^      
+=================================  
 
 Finding a good storage solution may be essential for the success of your application. This guide will help you to choose a storage option that suits your problem. To find the most suitable storage option for your data set, please consider the following aspects of your data.
 

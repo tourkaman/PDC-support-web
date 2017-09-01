@@ -6,7 +6,8 @@ Introduction
 
 Here, you will find the basic terminologies needed to get started with PDC.
 
-.. rubric:: Clusters, nodes, processors, and cores
+Clusters, nodes, processors, and cores
+--------------------------------------
 
 .. About basic HPC architecture
 
@@ -31,7 +32,8 @@ And each node in turn has **processors** made up of computing entities called **
 .. TODO: Maybe remove the title 'Supercomputer anatomy'.
 .. TODO: Picture does not match well with the text. Explain racks, blades, CPU,..
 
-.. rubric:: Deciding whether you need PDC for your work
+Deciding whether you need PDC for your work
+-------------------------------------------
 	    
 .. https://www.hpc2n.umu.se/documentation/guides/beginner-guide
    
@@ -52,7 +54,8 @@ If you decide to use PDC resources, welcome on board! PDC provides you with:
 * assistance with using PDC's computing and storage resources
 * experts in different research fields to assist you with using and/or scaling software	    
 	    
-.. rubric:: Account and Time Allocation
+Account and Time Allocation
+---------------------------
 
 .. You need account. And time allocation.
 .. Refer to https://www.pdc.kth.se/support/getting-started-at-pdc
@@ -71,9 +74,8 @@ When you submit jobs in a cluster, you should belong to at least one Time Alloca
 1. Prioritize your submitted jobs compared to other user's jobs.
 2. Keep track of compute-time used each month by users and user groups.
 
-.. rubric:: How much resources will be needed: node-hours
+How much resources will be needed: core-hours
+---------------------------------------------
 
-At PDC, we allocate compute-time on our systems in node hours. The queuing systems at PDC uses node hours, and you are charged according to the number of node hours you have requested on a particular system.
-
-.. no more node-hours: Node hours (n) equal core-hours (c) divided by the number of cores per node (cpn), i.e., n = c/cpn. Conversely, core hours equal the number of cores per node times node hours: c = cpn*n.
-   
+At PDC, we allocate compute-time on our systems in core hours and you are charged according to the number of core hours you have requested on a particular system.
+Corehours equals the number of cores used in how many hours. A time allocation gives you a certain amount of corehours per month.
