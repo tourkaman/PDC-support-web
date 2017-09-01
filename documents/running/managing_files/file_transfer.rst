@@ -79,7 +79,7 @@ You can transfer files by using **get** or **put**. *get* will transfer files sp
 
    get <filename>
 
-For more information about PSFTP utility and commands, please look at `Putty Documentation <http://the.earth.li/~sgtatham/putty/0.63/htmldoc/>`
+For more information about PSFTP utility and commands, please look at :ref:`Putty Documentation <http://the.earth.li/~sgtatham/putty/0.63/htmldoc/>`
 
 With AFS client
 ###############
