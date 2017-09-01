@@ -44,23 +44,9 @@ Running research
 
 .. toctree::
    :glob:
-   :maxdepth: 2
-   
-* How to run jobs
-  
-  .. toctree::
-     :glob:
-     :maxdepth: 3
-
-     documents/running/running_jobs/job_scheduling
-     documents/running/running_jobs/software
-     documents/running/running_jobs/queueing_jobs
-     documents/running/running_jobs/run_interactively
-
-.. toctree::
-   :glob:
    :maxdepth: 3
 
+   documents/running/running_jobs/how_to_run
    documents/running/managing_files/data_management
    documents/running/development
 

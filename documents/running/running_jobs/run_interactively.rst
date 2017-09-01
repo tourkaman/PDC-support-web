@@ -2,7 +2,7 @@
 .. _Run_interactively:
 		
 Run interactively
-#################
+=================
 
 Compute nodes can be booked from the queue system for interactive use. This means that you can run your program similar to how you run it on a local computer through terminal.
 
@@ -42,7 +42,8 @@ Keep in mind that the node is booked as long as you have not shut down the termi
  
 
 Beskow
-*******
+------
+
 .. Note::
 
    The standard value of ``-t`` and ``--nodes`` for ``salloc`` in Beskow is 1 hour and 4 nodes.
@@ -62,7 +63,7 @@ check the manual page of aprun for more details about flags and options with
 
 
 Tegner
-*******
+------
 
 .. Note::
 
