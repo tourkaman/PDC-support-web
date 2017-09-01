@@ -167,7 +167,7 @@ All research projects are now handled at the national level through the SUPR por
 .. _Apply_for_a_new_time_allocation:
      
 Apply for a new Time Allocation
-################################
+-------------------------------
 
 All research projects are now handled at the national level in SNIC through the `SUPR <https://supr.snic.se/>`_ portal, so applying/joining Time Allocation, adding/removing users from Time Allocation, and applying for PDC account must be done from your SUPR page.
 
@@ -198,7 +198,7 @@ Once you decide on the details of your Time Allocation, you can go to :ref:`Step
 .. _joining_a_existing_time_allocation:
 
 Joining an existing Time Allocation
-###################################
+-----------------------------------
 
 All research projects are now handled at the national level in SNIC through the `SUPR <https://supr.snic.se/>`_ portal, so applying/joining Time Allocation, adding/removing users from Time Allocation, and applying for PDC account must be done from your SUPR page.
 
@@ -206,7 +206,7 @@ If you want to join an existing Time allocation, you have to login/signup on SUP
 
 
 Check your existing Time Allocation
-###################################
+-----------------------------------
 
 You can see what Time Allocations in two ways:
 

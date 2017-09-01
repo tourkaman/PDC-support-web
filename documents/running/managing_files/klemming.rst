@@ -1,14 +1,14 @@
 .. index:: Klemming File System
 .. _klemming:
 
-Guide: 3. Klemming
+Guide: 2. Klemming
 ==================
 
 Klemming is a parallel file system based on Lustre optimized for handling data from many clients at the same time. This section provides the guidelines on the usage of Klemming.
 
 .. note:: You can find Klemming at ``/cfs/klemming``
 
-.. warning:: All files on Klemming are **NOT** backed up!	     
+.. warning:: Files on Klemming are **NOT** backed up!	     
 	     	     
 Key features
 ------------
@@ -30,7 +30,8 @@ Klemming has two parts
 
 Klemming is divided into two parts: scratch and nobackup. Note that the two parts currently reside in the same file system and therefore share resources. This means that if one part gets overloaded or fills up, so does that other part too. This also means that you can move files between the two parts, with e.g. 'mv', rather than having to copy the data over.
 
-.. rubric:: Scratch
+Scratch
+^^^^^^^
 
 Use for most files that are used by jobs running at PDC (but does not fall into the nobackup-category). This branch will be automatically cleaned by removing files that has not been changed within a certain time. This time will be adjusted when needed so that:
 
@@ -44,7 +45,8 @@ Your directory is located in ``/cfs/klemming/scratch/[1st letter of username]/[u
 
 /cfs/klemming/scratch/s/svensson
 
-.. rubric:: Nobackup
+Nobackup
+^^^^^^^^
 
 Use for files that - while needed as input by jobs frequently running on PDC - is not of a transient nature. Examples of this could be large in-data sets that are used by several jobs running over several months. In other words nobackup is a cache for frequently used data and exists to alleviate staging problems. PDC will manually monitor the usage of this branch and it will be cleaned if need arises. If frequent misuse proves it necessary, PDC can and will monitor this branch for files that more properly belongs in scratch.
 
@@ -94,4 +96,4 @@ File locking
 
 We recommend not using file locking since it can have negative impacts on performance.
 
-If you need help in converting your code to better use the Lustre file system contact support.
+If you need help in converting your code to better use the Lustre file system :ref:`contact_support`.

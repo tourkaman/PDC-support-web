@@ -2,12 +2,12 @@
 .. _linux_login:
 
 How to login from Linux (Ubuntu)
---------------------------------
+================================
 
 This section describes how to acquire kerberos tickets and login in linux
 
 Installing Kerberos
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
 In Ubuntu, kinit and ssh are in the packages heimdal-clients and openssh-client. 
 Install these packages with your favorite package manager or by executing::
@@ -19,7 +19,7 @@ If you are on a centrally managed computer at KTH, both packages are probably
 installed by default.
 
 Configure Kerberos
-^^^^^^^^^^^^^^^^^^
+------------------
 
 Next you need to configure **Kerberos** so we are able to find the PDC domain.
 The configuration file for kerberos that you need to edit is **/etc/krb5.conf** as root.
@@ -48,7 +48,7 @@ After this you need to set the path for kerberos like::
   setenv KRB5_CONFIG  ~/pdckrb/krb5.conf
 
 Acquire kerberos tickets
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
 In order to get a kerberos ticket::
 
@@ -62,7 +62,7 @@ You can see what active tickets you have using::
 More information about kerberos can be found at ...
 
 Configure SSH
-^^^^^^^^^^^^^
+-------------
 
 OpenSSH can be configured with command line arguments or a configuration file.
 The options in the configuration file are parsed in order.
@@ -95,14 +95,14 @@ After this you can login by using::
   ssh UserName@Cluster.pdc.kth.se
   
 SSH without configuration
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 As an alternative you can also supply these options directly to the ssh command in order to login::
 
   ssh -o GSSAPIDelegateCredentials=yes -o GSSAPIKeyExchange=yes -o GSSAPIAuthentication=yes UserName@Cluster.pdc.kth.se
 
 Installing AFS
-^^^^^^^^^^^^^^
+--------------
 
 In order to access your home directory you need to install AFS::
 

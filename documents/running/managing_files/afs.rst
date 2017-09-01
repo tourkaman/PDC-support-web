@@ -1,7 +1,7 @@
 .. index:: AFS File System
 .. _afs:
 
-Guide: 2. AFS
+Guide: 1. AFS
 =============
 
 .. topic:: Location

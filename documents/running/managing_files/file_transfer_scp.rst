@@ -11,7 +11,8 @@ Using SCP/RSYNC from Ubuntu (Linux):
 
 SCP: ``scp`` (secure copy) copies files between hosts on a network. It uses SSH for data transfer, and uses the same authentication and provides the same security as ``ssh``. Before using ``scp``, make sure you have valid forwardable Kerberos tickets on your local machine and a working SSH setup. 
 
-.. rubric:: Transferring from your local machine to PDC
+Transferring from your local machine to PDC
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Standing in a directory on your local computer containing the file ``localfile``, you can copy it to the ``Private`` directory on your PDC home directory ``~`` using the command:
 
@@ -21,7 +22,8 @@ Standing in a directory on your local computer containing the file ``localfile``
 
 where ``username`` is your username at PDC. 
 
-.. rubric:: Transferring from PDC to your local machine
+Transferring from PDC to your local machine
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Standing in a directory on your local computer where you want to put the file pdcfile located in ``/cfs/klemming/nobackup/u/username/`` you can transfer it using the command:
 
@@ -53,31 +55,31 @@ If you're using *putty* to login to PDC clusters, you can use **PSFTP** that fol
 
 if you start PSFTP, a new terminal will open. Here, you first have to connect to the cluster. You can do this by typing
 
-.. code-block::
+::
    
-   open <username>@t04n28.pdc.kth.se
+  open <username>@t04n28.pdc.kth.se
 
 This is a designated transfer node. If you have followed the step from :ref:`Windows Login <windows_login>` and saved a login session (example: Beskow) you can also type `` open <session_name> `` instead.
 
 Now you have logged in to the cluster and you're in your *AFS Home Directory*. You can change your **remote** directory location to your cfs directory with
 
-.. code-block::
+::
 
-   cd /cfs/klemming/nobackup/u/user/file_location
+  cd /cfs/klemming/nobackup/u/user/file_location
 
 You can also change your **local** diectory location with
 
-.. code-block::
+::
 
-   lcd c:\Users\username\folder_to_save_file
+  lcd c:\Users\username\folder_to_save_file
 
 Keep in mind that the location should be specified in the same way you change directory on a windows terminal, for ``lcd``.
 
 You can transfer files by using **get** or **put**. *get* will transfer files specified from remote location to current local directory, and *put* will transfer files from current local directory to the current remote directory.
 
-.. code-block::
+::
 
-   get <filename>
+  get <filename>
 
 For more information about PSFTP utility and commands, please look at `Putty Documentation <http://the.earth.li/~sgtatham/putty/0.63/htmldoc/>`
 

@@ -2,16 +2,17 @@
 .. _file_transfer_afs:
 
 With AFS client
-###############
+===============
 
 With an AFS client on your local machine, transferring files between PDC and your local computer is as is as drag-and-drop, or, using a ``cp`` command. Follow the below instruction based on your OS to install an AFS client.
 
 .. _afs_client_ubuntu:
 
 Ubuntu (Linux):
-^^^^^^^^^^^^^^^
+---------------
 
-.. rubric:: Method 1
+Method 1
+^^^^^^^^
 
 Install the AFS client this way:
 
@@ -22,7 +23,8 @@ Install the AFS client this way:
 
 The last step will take quite some time, so please be patient! If asked about which AFS cell this workstation belongs to, answer pdc.kth.se. Please note that the openafs-kernel-module will be rebuilt automatically for you with every new openafs version and with every kernel upgrade. You do not need to do any manual work! To start, stop and use your AFS client, see instructions below.
 
-.. rubric:: Method 2
+Method 2
+^^^^^^^^
 
 Using the Synaptic Package Manager's graphical user interface (GUI) to install these packages:
 
@@ -62,7 +64,7 @@ Please note, the AFS client kernel module has do be rebuild every time a new ope
 Now, see instructions below on how to start, stop and use the AFS client.
 
 Starting and using the installed AFS client
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------------
 
 Start the AFS client on your local machine::
 
