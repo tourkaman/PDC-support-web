@@ -33,7 +33,8 @@ If windows is not installed as default under **C:** then replace
 this with were windows is installed. Also the folder **ProgramData**
 is hidden by default in windows, so just write the path in the file manager.
 
-**krb5.conf** should be defined with the following entries::
+**krb5.conf** should be defined with the following entries
+::
 
   [domain_realm]
     .pdc.kth.se = NADA.KTH.SE
@@ -59,7 +60,8 @@ enter the following::
 You will be asked for your kerberos password and then you have acquired your ticket.
 More information about kerberos can be found at ...
 
-If you intend to use OpenAFS(see :ref:`file_transfer_afs` ), you also need to obtain an AFS token with the following command::
+If you intend to use OpenAFS(see :ref:`file_transfer_afs` ), you also need to obtain an AFS token with the following command
+::
 	
     aklog
 
