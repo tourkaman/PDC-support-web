@@ -93,7 +93,6 @@ Also on this cluster we only have the *Intel* and the *GNU* compiler.
 
 Example of compiling serial code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 ::
 
   # GNU
@@ -108,7 +107,6 @@ Example of compiling serial code
 
 Example of compiling OpenMP/MPI code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 ::
 
   # GNU

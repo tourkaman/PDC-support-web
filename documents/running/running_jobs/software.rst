@@ -4,9 +4,12 @@
 Accessing software
 ==================
 
-At PDC, there is a variety of machines, operating systems, projects and different versions of the same code that all have their special set of programs to run. This means that different users or different programs might have newer/older dependencies or preference of a specific software.
+At PDC, there is a variety of machines, operating systems, projects and different versions of the same code that all
+have their special set of programs to run. This means that different users or
+different programs might have newer/older dependencies or preference of a specific software.
 
-To be able to maintain and use this large set of programs we use `Modules <http://modules.sourceforge.net/index.html>`_. Below we present the needed commands to use these modules to your advantage.
+To be able to maintain and use this large set of programs we use `Modules <http://modules.sourceforge.net/index.html>`_.
+Below we present the needed commands to use these modules to your advantage.
 
 Available softwares
 -------------------
@@ -26,41 +29,31 @@ Using modules
 -------------
 
 You can load/add a module from your terminal with the following command
-
-.. code-block:: bash
-   
-   module add Programname/version
+::   
+  module add [Programname]/[version]
 
 the *Programname*  can be found using
-
-.. code-block:: bash
-
-   module avail 
+::
+  module avail 
 
 and the available versions can be found using
+::
 
-.. code-block:: bash
-
-   module avail Programname
+  module avail [Programname]
 
 You can check the currently loaded modules with
+::
 
-.. code-block:: bash
-
-   module list
+  module list
 
 If you have an module you do not want, you can unload it with
+::
 
-.. code-block:: bash
-
-   module unload Programname
+  module unload [Programname]
 
 and you can also swap modules with
+::
 
-.. code-block:: bash
-
-   module swap loadedProgramname newProgramname
+  module swap [loadedProgramname] [newProgramname]
 
 Make sure you haven't loaded multiple version of one program or forgot to load dependencies for certain software.
-
-

@@ -6,14 +6,16 @@ Data management
 
 This section gives you information about PDC's storage solutions. Before following this section, make sure you can login to a PDC system.
 
-Working with PDC would involves transferring data back and forth between your local machine and PDC, or between different systems at PDC. PDC offers two storage systems AFS and CFS(Klemming), and an efficient usage of PDC would involve knowing when to use what.
+Working with PDC would involves transferring data back and forth between your local machine and PDC, or between different systems at PDC. 
+PDC offers two storage systems AFS and CFS(Klemming), and an efficient usage of PDC would involve knowing when to use what.
 
 File transfer
 -------------
 
 We recommend two methods for this:
 
-#. **SCP/rsync**: Secure Copy (SCP) and RSYNC copies files between hosts on a network. It uses SSH for data transfer, and uses the same authentication and provides the same security as SSH.
+#. **SCP/rsync**: Secure Copy (SCP) and RSYNC copies files between hosts on a network.
+   It uses SSH for data transfer, and uses the same authentication and provides the same security as SSH.
    
    .. toctree::
       :glob:
@@ -21,7 +23,8 @@ We recommend two methods for this:
       
       file_transfer_scp
      
-#. **AFS client**: With an AFS client on your local machine transferring files between PDC and your local computer is as is as drag-and-drop, or, using a cp command. 
+#. **AFS client**: With an AFS client on your local machine transferring
+   files between PDC and your local computer is as is as drag-and-drop, or, using a cp command. 
 
    .. toctree::
       :glob:
@@ -32,7 +35,8 @@ We recommend two methods for this:
 Storing data
 ------------
 
-Computations on PDC resources usually demands storage of files relating to computations, such as data files or program files. PDC has two file systems available: AFS and Klemming. To know more:
+Computations on PDC resources usually demands storage of files relating to computations, such as data files or program files.
+PDC has two file systems available: AFS and Klemming. To know more:
 	    
 .. toctree::
    :glob:
@@ -57,14 +61,16 @@ Researchers using PDC's facilities need different types of storage:
 * massive storage for archiving large volumes of research data
 * somewhere to store files relating to calculation being performed on PDC's systems (such as data files or program files)
 
-For storing the latter type of files, PDC has two file systems available. They are known as AFS (which is based on Andrew File System) and Klemming (which is a Lustre-based system). Which system you should use to store your files depends on:
+For storing the latter type of files, PDC has two file systems available. They are known as AFS (which is based on Andrew File System) and
+Klemming (which is a Lustre-based system). Which system you should use to store your files depends on:
 
 * the amount of data you need to store, and
 * how you will be using or accessing the data  
   
 .. rubric:: What is AFS and Klemming?:
 
-* The **Andrew File System (AFS)** is a distributed file system which uses a set of trusted servers to present a homogeneous, location-transparent file name space to all the client workstations. Proceed to Guide 2. AFS	   
+* The **Andrew File System (AFS)** is a distributed file system which uses a set of trusted servers to present a homogeneous,
+location-transparent file name space to all the client workstations. Proceed to Guide 2. AFS	   
 * The **Klemming** system is based on Lustre - a parallel file system optimized for handling data from many clients at the same time. Proceed to Guide 3. Klemming
 
    
@@ -77,44 +83,44 @@ For storing the latter type of files, PDC has two file systems available. They a
    |                             |                                                    |                                                  |
    +=============================+====================================================+==================================================+
    |                             |                                                    |                                                  |
-   | Location                    |  ``/afs/pdc.kth.se``                               |       ``/cfs/klemming``                          |
+   | Location                    | ``/afs/pdc.kth.se``                                | ``/cfs/klemming``                                |
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+
    |                             |                                                    |                                                  |
-   | Storage size                |   default 5GB in home directory                    |   total 5 PB shared with all user                |
+   | Storage size                | default 5GB in home directory                      | total 5 PB shared with all user                  |
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+
    |                             |                                                    |                                                  |
-   | File access speed           |   Slow                                             |   Fast                                           |
+   | File access speed           | Slow                                               | Fast                                             |
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+
    |                             |                                                    |                                                  |
-   | Access from Beskow          |   No (accessed only from the login node)           |   Yes                                            |
+   | Access from Beskow          | No (accessed only from the login node)             | Yes                                              |
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+
    |                             |                                                    |                                                  |
-   | Access from Tegner          |   Yes                                              |   Yes                                            |   
+   | Access from Tegner          | Yes                                                | Yes                                              |   
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+   
    |                             |                                                    |                                                  |
-   | File access                 |   #. own implementation of Access Control List     |   #. supports standard POSIC ACLs                |
-   |                             |   #. user can define own group                     |                                                  |
-   |                             |   #. access permissions per directory (not file)   |                                                  |
+   | File access                 | #. own implementation of Access Control List       | #. supports standard POSIC ACLs                  |
+   |                             | #. user can define own group                       |                                                  |
+   |                             | #. access permissions per directory (not file)     |                                                  |
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+   
    |                             |                                                    |                                                  |
-   | Secure access               |   uses Kerberos for authentication                 |   ...                                            |
+   | Secure access               | uses Kerberos for authentication                   | ...                                              |
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+   
    |                             |                                                    |                                                  |
-   | Backup                      |   files in home directory are backed up            |   files are not backed up                        |
+   | Backup                      | files in home directory are backed up              | files are not backed up                          |
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+
    |                             |                                                    |                                                  |
-   | Contents                    |   #. user home directory (with backup)             |   #. cluster scratch (no backup)                 |
-   |                             |   #. project volumes (backup optional)             |   #. program code                                |
-   |                             |   #. installation/configuration of PDC environment |   #. nobackup area (input/output) of running jobs|
-   |                             |   #. source code packages                          |                                                  |
+   | Contents                    | #. user home directory (with backup)               | #. cluster scratch (no backup)                   |
+   |                             | #. project volumes (backup optional)               | #. program code                                  |
+   |                             | #. installation/configuration of PDC environment   | #. nobackup area (input/output) of running jobs  |
+   |                             | #. source code packages                            |                                                  |
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+
  
@@ -125,5 +131,3 @@ For storing the latter type of files, PDC has two file systems available. They a
       
    afs
    klemming
-     
-     

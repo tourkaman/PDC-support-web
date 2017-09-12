@@ -14,7 +14,7 @@ We give a simple tutorial with basic command-line operations needed to get start
 Using commands in the shell
 ---------------------------
 
-The **shell** is the program from which the user controls (almost) everything in a text-interface. 
+The **shell** is the program from which the user controls everything in a text-interface. 
 When you login to a PDC system remotely, you are already in the shell window of the system.
 If you login to your own system, you are probably on a graphical screen. 
 From there, search for terminal or Ctrl+Alt+T to enter the shell terminal.
@@ -29,8 +29,7 @@ the value of the corresponding options. Start by entering ``date`` to print the 
 Useful Shell commands
 ---------------------
 
-Upon login we are greeted with a command-line interface (CLI)
-
+Upon login we are greeted with the shell
 ::
   
   $ ssh user@tegner.pdc.kth.se
@@ -40,12 +39,14 @@ Upon login we are greeted with a command-line interface (CLI)
 Bash: Files and directories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Command **pwd** tells me where I am. After login I am in the "home"directory::
+* Command **pwd** tells me where I am. After login I am in the "home"directory
+  ::
   
     user@machine:~$ pwd
     /afs/pdc.kth.se/home/u/user
     
-* I can change the directory with **cd**::
+* I can change the directory with **cd**
+  ::
   
     user@machine:~$ cd tmp/talks
     user@machine:~/tmp/talks$ pwd
@@ -53,7 +54,8 @@ Bash: Files and directories
     
 * I can go one level up with **cd ..**
 * I can return to my HOME folder with **cd**
-* List the contents with **ls -l**::
+* List the contents with **ls -l**
+  ::
   
     user@machine:~/tmp/talks
     $ ls -ltotal 237
@@ -64,7 +66,8 @@ Bash: Files and directories
 Bash: creating directories and files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* We create a new directory called *results* and change to it::
+* We create a new directory called *results* and change to it
+  ::
   
     $ mkdir results
     $ cd results
@@ -98,7 +101,8 @@ Copying, moving renaming and deleting
 Bash: history and tab completion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* history preserve commands used::
+* history preserve commands used
+  ::
 
     $ history
     689  cd ..
@@ -110,7 +114,8 @@ Bash: history and tab completion
     696  pwd
     697  history
 
-* If I want to repeat...::
+* If I want to repeat...
+  ::
 
     $ !696
     pwd
@@ -123,21 +128,23 @@ Bash: history and tab completion
 Bash: finding things
 ^^^^^^^^^^^^^^^^^^^^
 
-* Extract lines which contain an expression with **grep**::
+* Extract lines which contain an expression with **grep**
+  ::
 
     # extract all lines that contain searchme
     $ grep searchme draft.txt
     
-* If you do not know what a UNIX command does, examine it with **man**::
+* If you do not know what a UNIX command does, examine it with **man**
+  ::
 
     $ man [command]
 
-* Find files with **find**::
+* Find files with **find**
+  ::
 
     $ find ~ | grep lostfile.txt
     
 * We can pipe commands and filter results with |
-
   ::
 
     $ grep energy results.out | sort | uniq
@@ -145,15 +152,18 @@ Bash: finding things
 Bash: Redirecting output
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Print content of a file to screen::
+* Print content of a file to screen
+  ::
 
     $ cat test.out
 
-* Redirect output to a file::
+* Redirect output to a file
+  ::
 
     $ cat test.out > myfile.txt
   
-* Append output to a file::
+* Append output to a file
+  ::
 
     $ cat test.out >> myfile.txt
   
@@ -169,7 +179,8 @@ Bash: Writing shell scripts
     cat $file
   done
     
-We make the script executable and then run it::
+We make the script executable and then run it
+::
 
   # Make it executable
   $ chmod u+x my_script
@@ -179,7 +190,8 @@ We make the script executable and then run it::
 Arguments to script can be passed by using **$**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-File example::
+File example
+::
   
   #!/bin/bash
   echo "Hi" $1 $2
@@ -200,11 +212,13 @@ Then run the script by typing ``./<script>``.
 Information about shell commands
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Information about a commands can be retrieved from the manual::
+Information about a commands can be retrieved from the manual
+::
 
   man <cmd>
   
-Also you can get information about where the executable lies::
+Also you can get information about where the executable lies
+::
 
   which <cmd>
 
