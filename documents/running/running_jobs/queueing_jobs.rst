@@ -5,25 +5,24 @@ Queueing jobs
 =============
 
 * You can submit a job script to the Slurm queue system from the login node with
-	::
-    
+  ::
+
     sbatch ./jobscript.sh
 
-	more information on how to create an job script can be found in :ref:`job-scripts_tegner`.
+  more information on how to create an job script can be found in :ref:`job-scripts_tegner`.
 
-	.. Warning::
+.. Warning::
 
-	   Note that programs should **ONLY** be run with `sbatch` above or following the instruction in :ref:`Run_interactively`
-     !Running programs in other way will result in the program running in the login node and not the super computer. 
+   Note that programs should **ONLY** be run with `sbatch` above or following the instruction in :ref:`Run_interactively`
+   Running programs in other way will result in the program running in the login node and not the super computer. 
      
 * You can remove your job from queue with
-	::
+  ::
     
     scancel jobid
 
 * Information about the jobs running in the queue can be obtained with
-	::
-  
+  ::
     squeue
 
 	you can also see your job in the queue by adding the flag **-u <username>** to *squeue*.
