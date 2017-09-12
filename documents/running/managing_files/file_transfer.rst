@@ -33,7 +33,7 @@ where ``username`` is your username at PDC.
 
 .. note:: Avoid overloading the login nodes
 
-   The login nodes of most clusters can be weak, so it is important not to over load these nodes. The currently recommended machines for transferring large amounts of data in and out of the Klemming filesystem are the two transfer nodes: ``t04n27.pdc.kth.se`` and ``t04n28.pdc.kth.se``.
+   The login nodes of most clusters can be weak, so it is important not to over load these nodes. The currently recommended machines for transferring large amounts of data in and out of the Lustre filesystem are the two transfer nodes: ``t04n27.pdc.kth.se`` and ``t04n28.pdc.kth.se``.
 
 
 .. note::

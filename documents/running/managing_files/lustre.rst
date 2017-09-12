@@ -1,15 +1,15 @@
-.. index:: Klemming File System
-.. _klemming:
+.. index:: Lustre File System
+.. _lustre:
 
-Guide: 2. Klemming
+Guide: 2. Lustre
 ==================
 
-Klemming is a parallel file system based on Lustre optimized for handling data from many clients at the same time.
-This section provides the guidelines on the usage of Klemming.
+Lustre is a parallel file system based on Lustre optimized for handling data from many clients at the same time.
+This section provides the guidelines on the usage of Lustre.
 
-.. note:: You can find Klemming at ``/cfs/klemming``
+.. note:: You can find Lustre user home directory at ``/cfs/klemming``
 
-.. warning:: Files on Klemming are **NOT** backed up!	     
+.. warning:: Files on  are **NOT** backed up!	     
 	     	     
 Key features
 ------------
@@ -17,12 +17,12 @@ Key features
 * **Storage size**: large volume of storage (total over 5 PB - so 100 times more than AFS)
 * **File access speed**: fast access (good for files accessed for computation)
 * **Backup**: files are not backed up
-* **Accessibility**: not possible to access files stored on Klemming directly via the internet - 
-  need to login to a PDC computer to get acces to Klemming
-* **Access from Tegner**: files on Klemming can be accessed from Beskow's compute nodes 
-  (any data or program files that you need for running programs on Beskow must be stored on Klemming)
-* **Access from Beskow**: files on Klemming can be accessed from Tegner's compute nodes - 
-  so large amounts of data for egner computationa should be stored on Klemming (small amounts of data are also okay on Klemming)
+* **Accessibility**: not possible to access files stored on Lustre directly via the internet - 
+  need to login to a PDC computer to get acces to Lustre
+* **Access from Tegner**: files on Lustre can be accessed from Beskow's compute nodes 
+  (any data or program files that you need for running programs on Beskow must be stored on Lustre)
+* **Access from Beskow**: files on Lustre can be accessed from Tegner's compute nodes - 
+  so large amounts of data for egner computationa should be stored on Lustre (small amounts of data are also okay on Lustre)
 * good for storing any large files and program code
 * **File access**: Lustre supports standard (POSIX) Access Control Lists
 * mainly used for:
@@ -30,10 +30,10 @@ Key features
   * nobackup area - shared area to be used for input/output for running jobs - no backup - 
     users should move files elsewhere as soon as possible when they are not needed for jobs
 
-Klemming has two parts
+Lustre has two parts
 ----------------------
 
-Klemming is divided into two parts: scratch and nobackup. Note that the two parts currently reside in the same file system and therefore share resources.
+In Lustre file system you can find two user home directory: scratch and nobackup, at `cfs/klemming/`. Note that the two parts currently reside in the same file system and therefore share resources.
 This means that if one part gets overloaded or fills up, so does that other part too.
 This also means that you can move files between the two parts, with e.g. 'mv', rather than having to copy the data over.
 
@@ -73,26 +73,26 @@ Similar to scratch, your nobackup directory is under
 Check disk usage and quota
 --------------------------
 
-You can see how much data and how many files you currently have stored in Klemming using the command:
+You can see how much data and how many files you currently have stored in Lustre using the command:
 ::
   lfs quota -u $USER /cfs/klemming
 
-There are currently no disk quotas enforced on Klemming, but remember that Klemming is only intended
+There are currently no disk quotas enforced on Lustre, but remember that Lustre is only intended
 for **temporary storage**, and should not be used for long term storage. And while it can handle large amounts of data well, 
 it can not handle too many files, so please keep the number of files down.
-Only files needed by, or were recently produced by, jobs running on PDC compute resources should be on Klemming.
+Only files needed by, or were recently produced by, jobs running on PDC compute resources should be on Lustre.
 
 Tranfer nodes
 -------------
 
 For more information on how to transfer files to, from and between PDC's resources please check here.
-There are dedicated machines for moving data in and out of Klemming. The recommended way is to use Tegner
+There are dedicated machines for moving data in and out of Lustre. The recommended way is to use Tegner
 for this to not overload other resources, e.g. the login node of Beskow.
 
 Characteristics of a Lustre file system
 ---------------------------------------
 
-Lustre file systems such as Klemming perform quite differently to local disks that are common on other machines. 
+Lustre file systems perform quite differently to local disks that are common on other machines. 
 Lustre was developed for providing fast access to the large data files needed for large parallel applications.
 They are particularly bad at dealing with small files and with doing many small operations on these files and those cases should be avoided as much as possible.
 

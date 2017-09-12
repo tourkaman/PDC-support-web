@@ -12,19 +12,19 @@ Therefore it is very important to pay attention to how your programs are doing I
 as that can have a huge impact on the run time of your jobs. Here, you will find a quick guide to storing data,
 ideal if you have just started to use PDC resources. 
 
-.. rubric:: What are AFS and Klemming?
+.. rubric:: What are AFS and Lustre?
 
 The **Andrew File System (AFS)** is a *distributed* file system which uses a set of trusted servers to present a homogeneous,
 location-transparent file name space to all the client workstations.
-The **Klemming** system is based on Lustre - a *parallel* file system optimized for handling data from many clients at the same time.
+The **Lustre** system is a *parallel* file system optimized for handling data from many clients at the same time.
 
 .. rubric:: Why is there more than one file system?
 
-The AFS and Klemming file systems offer different and often complementary functionality.
+The AFS and Lustre file systems offer different and often complementary functionality.
 AFS allows a huge number of computers all over the world to share files between each other.
 Users can define custom groups and control access-rights effortlessly, suitable for project groups.
 But, AFS has a small storage volume and slow access speed, making it unsuitable for directly access with computational processes.
-On the contrary, Klemming is accessible only to PDC systems, but provides large storage and,
+On the contrary, Lustre is accessible only to PDC systems, but provides large storage and,
 is highly optimized for fast access with computational processes. 
 
 .. image:: https://drive.google.com/uc?id=0B7GAinAyrwFFSnNJYVZmUWE1bHM
@@ -37,13 +37,13 @@ is highly optimized for fast access with computational processes.
 .. topic:: Where do I find it?
   
    | You can find AFS at ``/afs/pdc.kth.se``
-   | You can find Klemming at ``/cfs/klemming``
+   | You can find Lustre at ``/cfs/klemming``
 
    
 .. rubric:: Before running your processes
    
-* All files for Beskow computations must go on **Klemming**
-* Big data files for Tegner computations should be put on **Klemming**
+* All files for Beskow computations must go on **Lustre**
+* Big data files for Tegner computations should be put on **Lustre**
 * Small data files for Tegner computations can be put on **AFS**
 
 .. rubric:: Things to remember when using all types of files
@@ -60,7 +60,7 @@ is highly optimized for fast access with computational processes.
    :alt: alternate text
    :align: center
 
-.. rubric:: Things to remember when using Klemming
+.. rubric:: Things to remember when using Lustre
 
 * Avoid all unnecessary metadata operations - once a file is opened, do as much as possible before closing it again.
   Do not check the existence of files or ``stat()`` files too often.
@@ -69,13 +69,13 @@ is highly optimized for fast access with computational processes.
   every file to determine its type, which puts an unnecessary load on the file system. Use such flags only
   when the extra information is really needed and do not have them as default.
 
-  .. table:: Comparison summary of AFS and Klemming
+  .. table:: Comparison summary of AFS and Lustre
    :widths: auto
    :align: center
 	
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+
    |                             |                                                    |                                                  |
-   |  File system                |  AFS                                               |   Klemming                                       |
+   |  File system                |  AFS                                               |   Lustre                                         |
    |                             |                                                    |                                                  |
    +=============================+====================================================+==================================================+
    |                             |                                                    |                                                  |
@@ -88,7 +88,7 @@ is highly optimized for fast access with computational processes.
 .. rubric:: After running your processes
 
 * Move important data files to your own departmental storage systems after performing computations at PDC.
-  Remember, space on Klemming is currently limited, and are not backed up
+  Remember, space on Lustre is currently limited, and are not backed up
 * Smaller data files can be moved to AFS 
 
 .. _storing_advanced:

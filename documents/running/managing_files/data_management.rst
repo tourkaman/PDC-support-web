@@ -7,7 +7,7 @@ Data management
 This section gives you information about PDC's storage solutions. Before following this section, make sure you can login to a PDC system.
 
 Working with PDC would involves transferring data back and forth between your local machine and PDC, or between different systems at PDC. 
-PDC offers two storage systems AFS and CFS(Klemming), and an efficient usage of PDC would involve knowing when to use what.
+PDC offers two storage systems AFS and CFS(Lustre), and an efficient usage of PDC would involve knowing when to use what.
 
 File transfer
 -------------
@@ -36,7 +36,7 @@ Storing data
 ------------
 
 Computations on PDC resources usually demands storage of files relating to computations, such as data files or program files.
-PDC has two file systems available: AFS and Klemming. To know more:
+PDC has two file systems available: AFS and Lustre. To know more:
 	    
 .. toctree::
    :glob:
@@ -48,13 +48,13 @@ Guide: File Systems at PDC
 --------------------------
 
 For storing files, PDC has two file systems available. They are known as AFS (which is based on Andrew File System) and 
-Klemming (which is a Lustre-based system). 
+Lustre ( for normal users this correspond to `cfs/klemming` directories). 
 For first-time users, it might be confusing knowing there are different file systems, and more so, 
-when having to choose between them. We give a tutorial-style indtroduction to AFS and Klemming systems, 
+when having to choose between them. We give a tutorial-style indtroduction to AFS and Lustre systems, 
 that will hopefully help getting started.
 
 .. centered::   
-   *Survival guide when using AFS and Klemming at PDC!*
+   *Survival guide when using AFS and Lustre at PDC!*
 
 Researchers using PDC's facilities need different types of storage:
 
@@ -62,24 +62,24 @@ Researchers using PDC's facilities need different types of storage:
 * somewhere to store files relating to calculation being performed on PDC's systems (such as data files or program files)
 
 For storing the latter type of files, PDC has two file systems available. They are known as AFS (which is based on Andrew File System) and
-Klemming (which is a Lustre-based system). Which system you should use to store your files depends on:
+Lustre (with subfolders at `cfs/klemming` ). Which system you should use to store your files depends on:
 
 * the amount of data you need to store, and
 * how you will be using or accessing the data  
   
-.. rubric:: What is AFS and Klemming?:
+.. rubric:: What is AFS and Lustre?:
 
 * The **Andrew File System (AFS)** is a distributed file system which uses a set of trusted servers to present a homogeneous,
 location-transparent file name space to all the client workstations. Proceed to Guide 2. AFS	   
-* The **Klemming** system is based on Lustre - a parallel file system optimized for handling data from many clients at the same time. Proceed to Guide 3. Klemming
+* The **Lustre** system is a parallel file system optimized for handling data from many clients at the same time. Proceed to Guide 3. Lustre
 
    
-.. table:: Comparison summary of AFS and Klemming
+.. table:: Comparison summary of AFS and Lustre
    :widths: auto
    :align: center
 
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+
-   |        Description          |                            AFS                     |                    Klemming                      |
+   |        Description          |                            AFS                     |                    Lustre                        |
    |                             |                                                    |                                                  |
    +=============================+====================================================+==================================================+
    |                             |                                                    |                                                  |
@@ -130,4 +130,4 @@ location-transparent file name space to all the client workstations. Proceed to 
    :maxdepth: 2
       
    afs
-   klemming
+   lustre

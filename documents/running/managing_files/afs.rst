@@ -15,9 +15,9 @@ Key features
 * **File access speed**: relatively slow access to files (not good for files being accessed by parallel computation)
 * **Backup**: files in user AFS home directory are backed up
 * **Access from Beskow**: files on AFS are not accessible from Beskow's compute nodes
-  (so any data or program files that you need for running pograms ob Beskow must be stored Klemming)
+  (so any data or program files that you need for running pograms ob Beskow must be stored Lustre)
 * **Access from Tegner**: files on AFS can be accessed from Tegner's compute nodes - so small amounts of data for
-  Tegner computations can be stored on AFS (any large amount of data should be stored on Klemming for reasons of speed of access)
+  Tegner computations can be stored on AFS (any large amount of data should be stored on Lustre for reasons of speed of access)
 * good for storing small files that need to be backed up
 * home directories are on AFS (so you will be in AFS when you first log in to PDC's systems)
 * **File access**: AFS has its own implementation of Access Control Lists (ACLs), where users can
