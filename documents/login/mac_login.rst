@@ -121,7 +121,8 @@ but both methods are described below.
 (Method 1) Mac Installer
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Start by downloading :download:`this Mac installer package `.
+Start by downloading `this <https://drive.google.com/file/d/0B3KTk17tdgqDY2xCMWJxMXNvQWs/view?usp=sharing/>`_.
+
 Start the installer and click through the steps.
 
 To avoid interfering with the default binaries in /usr/bin, the installer will place the ssh, scp and sftp binaries in /usr/local/bin, 

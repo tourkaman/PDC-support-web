@@ -78,7 +78,7 @@ Special account
 .. If you belong to an industry (SCANIA,..), or a project (XENON,), or course (PDC Summer School, PRACE School) that requires PDC resources, fill-in the form with
 
 
-.. topic:: **What happends after requesting for account?**	   
+.. topic:: **What happens after requesting for account?**	   
 	   
    #. We usually take 2-4 working days to process your account request.
    #. We will get back to you if we find anything missing in your application.

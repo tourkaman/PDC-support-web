@@ -17,6 +17,7 @@ If you're a participant of a course at KTH that requires using PDC resources, yo
 * If you already have a PDC account (maybe you used PDC for other courses), 
   all you have to do is send us a mail at ``support@pdc.kth.se``. 
   Include your...
+  
   #. Username at PDC
   #. The course code that requires PDC. 
      You also need to make sure you are included in the participant list managed by your course responsible.
