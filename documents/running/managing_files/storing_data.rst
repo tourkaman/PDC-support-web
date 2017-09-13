@@ -44,7 +44,7 @@ is highly optimized for fast access with computational processes.
    
 * All files for Beskow computations must go on **Lustre**
 * Big data files for Tegner computations should be put on **Lustre**
-* Small data files for Tegner computations can be put on **AFS**
+* Small data files for Tegner computations can be put on **AFS** but should be put on **lustre**
 
 .. rubric:: Things to remember when using all types of files
 

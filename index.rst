@@ -16,6 +16,7 @@ User guide
    :maxdepth: 2
 
    documents/basics/preliminaries
+   documents/basics/clusters
    documents/basics/glossary
    documents/basics/linux
    
@@ -45,8 +46,8 @@ Running research
    :glob:
    :maxdepth: 3
 
-   documents/running/running_jobs/how_to_run
    documents/running/managing_files/data_management
+   documents/running/running_jobs/how_to_run
    documents/running/development
 
 * `Available Software <http://pdc-software-web.readthedocs.io/en/latest/>`_

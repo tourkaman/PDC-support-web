@@ -220,7 +220,7 @@ You can go :ref:`Step 2: Account Creation -> SUPR account <supr_account>`.
 Check your existing Time Allocation
 -----------------------------------
 
-You can see what Time Allocations in two ways:
+You can see what Time Allocations you belong to in two ways:
 
 #. If you have a SUPR account, go to your SUPR page and click the Projects tab.
 #. If you have a PDC account, you can login to Beskow/Tegner and use the ``projinfo`` command.

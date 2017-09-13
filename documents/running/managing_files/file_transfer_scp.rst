@@ -4,12 +4,27 @@
 Using SCP/RSYNC
 ===============
 
+Transfer nodes
+--------------
+
+At PDC we have a number of transfer nodes setup to transfer large amount of data so to transfer data
+and not bog down the login node, here are a couple of rules to abide by
+
+================= ====================== =======================================
+Name              Type                   Intended for...
+================= ====================== =======================================
+t04n27.pdc.kth.se Dedicated tranfer node Large/many file(s) transfer
+t04n28.pdc.kth.se Dedicated tranfer node Large/many file(s) transfer
+tegner.pdc.kth.se login node             Submitting jobs and small file transfer
+beskow.pdc.kth.se login node             Submitting jobs and small file transfer
+================= ====================== =======================================
+
 .. _scp_ubuntu:
 
 Using SCP/RSYNC from Ubuntu (Linux):
 ------------------------------------
 
-SCP: ``scp`` (secure copy) copies files between hosts on a network.
+SCP: (secure copy) copies files between hosts on a network.
 It uses SSH for data transfer, and uses the same authentication and provides the same security as ``ssh``. Before using ``scp``,
 make sure you have valid forwardable Kerberos tickets on your local machine and a working SSH setup. 
 
@@ -46,10 +61,9 @@ where ``username`` is your username at PDC.
    If your ``.bashrc`` or other shell configuration files produce **ANY** output, then ``scp`` can fail.
    You can test this with the command below. If the command produces output,
    then you need to fix your shell configuration files so that they do not produce output.
-
-   .. code-block:: bash  
-	   
-      ssh pdcusername@t04n28.pdc.kth.se /bin/true
+   ::
+   
+     ssh pdcusername@t04n28.pdc.kth.se /bin/true
 
 .. _scp_windows:      
 

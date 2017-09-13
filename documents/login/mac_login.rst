@@ -121,7 +121,7 @@ but both methods are described below.
 (Method 1) Mac Installer
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Start by downloading `this <https://drive.google.com/file/d/0B3KTk17tdgqDY2xCMWJxMXNvQWs/view?usp=sharing/>`_.
+Start by downloading `the OSX installer <https://drive.google.com/file/d/0B3KTk17tdgqDY2xCMWJxMXNvQWs/view?usp=sharing/>`_.
 
 Start the installer and click through the steps.
 

@@ -85,13 +85,6 @@ for **temporary storage**, and should not be used for long term storage. And whi
 it can not handle too many files, so please keep the number of files down.
 Only files needed by, or were recently produced by, jobs running on PDC compute resources should be on Lustre.
 
-Tranfer nodes
--------------
-
-For more information on how to transfer files to, from and between PDC's resources please check here.
-There are dedicated machines for moving data in and out of Lustre. The recommended way is to use Tegner
-for this to not overload other resources, e.g. the login node of Beskow.
-
 Characteristics of a Lustre file system
 ---------------------------------------
 

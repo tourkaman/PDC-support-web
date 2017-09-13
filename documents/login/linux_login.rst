@@ -113,7 +113,7 @@ As an alternative you can also supply these options directly to the ssh command 
 Installing AFS
 --------------
 
-In order to access your home directory you need to install AFS
+In order to access your home directory from your local computer you need to install AFS
 ::
 
   sudo add-apt-repository ppa:openafs/stable

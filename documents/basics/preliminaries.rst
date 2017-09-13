@@ -14,7 +14,7 @@ Clusters, nodes, processors, and cores
 Like most high-performance computing facilities, PDC mainly features **clusters**. 
 A computer cluster is in the broad sense terminology for a supercomputer, 
 consisting of a set of connected computers working together so that they can be viewed as a single system.
-Currently PDC has two clusters: Tegner and Beskow.
+There are a number of different :ref:`clusters_at_pdc` for various needs.
 
 A **node** is the individual computer part of each cluster. Nodes are analogous to the computers we use everyday.
 

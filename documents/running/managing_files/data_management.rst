@@ -24,7 +24,7 @@ We recommend two methods for this:
       file_transfer_scp
      
 #. **AFS client**: With an AFS client on your local machine transferring
-   files between PDC and your local computer is as is as drag-and-drop, or, using a cp command. 
+   files between PDC and your local computer is as is as drag-and-drop, or, using a *cp* command. 
 
    .. toctree::
       :glob:
@@ -92,14 +92,6 @@ Lustre (with subfolders at `cfs/klemming` ). Which system you should use to stor
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+
    |                             |                                                    |                                                  |
    | File access speed           | Slow                                               | Fast                                             |
-   |                             |                                                    |                                                  |
-   +-----------------------------+----------------------------------------------------+--------------------------------------------------+
-   |                             |                                                    |                                                  |
-   | Access from Beskow          | No (accessed only from the login node)             | Yes                                              |
-   |                             |                                                    |                                                  |
-   +-----------------------------+----------------------------------------------------+--------------------------------------------------+
-   |                             |                                                    |                                                  |
-   | Access from Tegner          | Yes                                                | Yes                                              |   
    |                             |                                                    |                                                  |
    +-----------------------------+----------------------------------------------------+--------------------------------------------------+   
    |                             |                                                    |                                                  |

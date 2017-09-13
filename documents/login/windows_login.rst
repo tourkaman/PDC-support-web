@@ -15,8 +15,8 @@ Installing Kerberos
 
    In case if this link is temporarily down, please use one of the following...
    
-   | 64 bits: https://www.pdc.kth.se/resources/software/login-1/windows/heimdal-kerberos/downloads/64-bit-heimdal
-   | 32 bits: https://www.pdc.kth.se/resources/software/login-1/windows/heimdal-kerberos/downloads/32-bit-heimdal
+   | `64 bits heimdal kerberos <https://drive.google.com/file/d/0B3KTk17tdgqDYzFpaHdBRU95QzQ/view?usp=sharing>`_
+   | `32 bits heimdal kerberos <https://drive.google.com/file/d/0B3KTk17tdgqDNE0yR1p0ck05X0U/view?usp=sharing>`_
 
 #. Run the downloaded installer for Heimdal.
 #. Choose to install a complete installation of Heimdal following this series of pictures
@@ -76,8 +76,9 @@ In order to login you need to install PuTTY with GSSAPI and heimdal support.
 #. Installation files for windows can be found at https://marcussundberg.com/putty/
    If the external site is not reachable, here are copies of the Windows installers, PuTTY version 0.67, kex version 1.0
 
-   | 64 bits windows: https://www.pdc.kth.se/resources/software/login-1/windows/putty/putty-0.67-kex-1.0-installer64.exe
-   | 32 bits windows: https://www.pdc.kth.se/resources/software/login-1/windows/putty/putty-0.67-kex-1.0-installer32.exe
+
+   | `64 bits windows installer <https://drive.google.com/file/d/0B3KTk17tdgqDM0ZZbXg0akNoUkE/view?usp=sharing>`_
+   | `32 bits windows installer <https://drive.google.com/file/d/0B3KTk17tdgqDMkZxOFFtTzlqY0U/view?usp=sharing>`_
 
 #. Run the installer. If you get a warning from Windows that it prevented an unrecognized app from starting, click on "More info" and then "Run anyway".
 	.. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrQm0xa2VwazV1NVE

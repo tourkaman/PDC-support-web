@@ -24,7 +24,7 @@ If you are involved in a project SUPR, the account request happens entirely in t
    #. Name
    #. E-mail
    #. Citizenship
-   #. Address
+   #. Working Address
    #. Postal code
    #. City
    #. Country
@@ -62,11 +62,11 @@ Before starting with the applicaton, make sure you read the items in the checkli
    Complete the application form and submit it.
 
 .. seealso:: **Nationality: Why do we bother?**
-
-If you are concerned with what we do with your nationality information or why was ask, we at PDC do not care what nationality you have. 
-Unfortunately, some of the computer vendors and states where these computers are manufactured do care.
-Therefore we have to restrict citizens of a small number of nationalities (there is a list which is updated now and then) 
-access to whole or part of our facilities.
+             
+   If you are concerned with what we do with your nationality information or why was ask, we at PDC do not care what nationality you have. 
+   Unfortunately, some of the computer vendors and states where these computers are manufactured do care.
+   Therefore we have to restrict citizens of a small number of nationalities (there is a list which is updated now and then) 
+   access to whole or part of our facilities.
 
 .. We should state what vendors ask.
 .. We should state what those countries are!   
