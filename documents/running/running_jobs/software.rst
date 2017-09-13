@@ -30,10 +30,12 @@ Using modules
 
 You can load/add a module from your terminal with the following command
 ::   
+
   module add [Programname]/[version]
 
 the *Programname*  can be found using
 ::
+
   module avail 
 
 and the available versions can be found using

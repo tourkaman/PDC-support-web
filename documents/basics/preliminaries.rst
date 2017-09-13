@@ -12,8 +12,9 @@ Clusters, nodes, processors, and cores
 .. About basic HPC architecture
 
 Like most high-performance computing facilities, PDC mainly features **clusters**. 
-A computer cluster cluster is in the broad sense terminology for a supercomputer, 
-consisting of a set of connected computers working together so that they can be viewed as a single system. Currently PDC has two clusters: Tegner and Beskow.
+A computer cluster is in the broad sense terminology for a supercomputer, 
+consisting of a set of connected computers working together so that they can be viewed as a single system.
+Currently PDC has two clusters: Tegner and Beskow.
 
 A **node** is the individual computer part of each cluster. Nodes are analogous to the computers we use everyday.
 
@@ -54,7 +55,7 @@ If you decide to use PDC resources, welcome on board! PDC provides you with:
 * supercomputer systems for large simulations and calculations
 * systems for processing data before and after simulations or calculations
 * software for simulation and modelling
-* storage for large volumes of data
+* short term storage for large volumes of data
 * assistance with using PDC's computing and storage resources
 * experts in different research fields to assist you with using and/or scaling software	    
 	    
@@ -66,26 +67,26 @@ Account and Time Allocation
 .. Refer to https://www.pdc.kth.se/support/time-allocations/
 .. USE EITHER time allocation or CAC consistently.
 
-PDC is funded centrally and is free for all Swedish academic users and their collaborators.
-Before you starting using PDC resources, you will need to get an account.
+PDC receives national funds and is free for all Swedish academic users and their collaborators.
+Before starting using PDC resources, you will need to get an account.
 Each user account must belong to one or more **Time Allocations**, since we allocate resources and manage job queueing based on 
 the Time Allocation you belong to and not based on your individual user account. Each Time Allocation includes the following information:
 
-1. list of users belonging to that Time Allocation
-2. number of node-hours allocated per month (for all members of the Time Allocation put together)
-3. an expiration date for the Time Allocation
-4. list of clusters available for running jobs
+#. list of users belonging to that Time Allocation
+#. number of corehours allocated per month (for all members of the Time Allocation put together)
+#. an expiration date for the Time Allocation
+#. list of clusters available for running jobs
 
 When you submit jobs in a cluster, you should belong to at least one Time Allocation, or the submission will fail.
 Using Time Allocations allows us to:
 
-1. Prioritize your submitted jobs compared to other user's jobs.
-2. Keep track of compute-time used each month by users and user groups.
+#. Prioritize your submitted jobs compared to other user's jobs.
+#. Keep track of compute-time used each month by users and projects.
 
 How much resources will be needed: core-hours
 ---------------------------------------------
 
-At PDC, we allocate compute-time on our systems in core hours and you are charged
-according to the number of core hours you have requested on a particular system.
+At PDC, we allocate compute-time on our systems in corehours and you are granted an
+amount of corehours on a particular system.
 Corehours equals the number of cores used in how many hours.
 A time allocation gives you a certain amount of corehours per month.

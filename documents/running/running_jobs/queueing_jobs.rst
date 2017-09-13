@@ -23,6 +23,7 @@ Queueing jobs
 
 * Information about the jobs running in the queue can be obtained with
   ::
+  
     squeue
 
 	you can also see your job in the queue by adding the flag **-u <username>** to *squeue*.

@@ -26,6 +26,7 @@ Key features
 * good for storing any large files and program code
 * **File access**: Lustre supports standard (POSIX) Access Control Lists
 * mainly used for:
+
   * cluster scratch - shared area for temporary files - no  backup - old files will be deleted periofically by the system
   * nobackup area - shared area to be used for input/output for running jobs - no backup - 
     users should move files elsewhere as soon as possible when they are not needed for jobs
@@ -68,6 +69,7 @@ If frequent misuse proves it necessary, PDC can and will monitor this branch for
 
 Similar to scratch, your nobackup directory is under
 ::
+
   /cfs/klemming/nobackup/s/svensson
 
 Check disk usage and quota
@@ -75,6 +77,7 @@ Check disk usage and quota
 
 You can see how much data and how many files you currently have stored in Lustre using the command:
 ::
+
   lfs quota -u $USER /cfs/klemming
 
 There are currently no disk quotas enforced on Lustre, but remember that Lustre is only intended

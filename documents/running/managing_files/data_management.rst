@@ -70,7 +70,7 @@ Lustre (with subfolders at `cfs/klemming` ). Which system you should use to stor
 .. rubric:: What is AFS and Lustre?:
 
 * The **Andrew File System (AFS)** is a distributed file system which uses a set of trusted servers to present a homogeneous,
-location-transparent file name space to all the client workstations. Proceed to Guide 2. AFS	   
+  location-transparent file name space to all the client workstations. Proceed to Guide 2. AFS	   
 * The **Lustre** system is a parallel file system optimized for handling data from many clients at the same time. Proceed to Guide 3. Lustre
 
    

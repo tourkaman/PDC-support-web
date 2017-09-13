@@ -19,6 +19,7 @@ Transferring from your local machine to PDC
 Standing in a directory on your local computer containing the file ``localfile``, you can copy it to the ``Private``
 directory on your PDC home directory ``~`` using the command:
 ::  
+
   scp ./localfile username@t04n28.pdc.kth.se:~/Private/
 
 where ``username`` is your username at PDC. 
@@ -29,6 +30,7 @@ Transferring from PDC to your local machine
 Standing in a directory on your local computer where you want to put the file pdcfile located in
 ``/cfs/klemming/nobackup/u/username/`` you can transfer it using the command:
 ::
+
   scp username@t04n28.pdc.kth.se:/cfs/klemming/scratch/u/username/pdcfile .
 
 where ``username`` is your username at PDC. 

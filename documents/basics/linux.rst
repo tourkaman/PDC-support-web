@@ -9,7 +9,7 @@ Tutorials: Linux
 
 Working with PDC resources requires a basic understanding of Linux systems. 
 Some of our users are new to using Linux-based systems and have asked for introductory materials. 
-We give a simple tutorial with basic command-line operations needed to get started with PDC.
+Here is a simple tutorial with basic command-line operations needed to get started with PDC.
 
 Using commands in the shell
 ---------------------------
@@ -19,12 +19,6 @@ When you login to a PDC system remotely, you are already in the shell window of 
 If you login to your own system, you are probably on a graphical screen. 
 From there, search for terminal or Ctrl+Alt+T to enter the shell terminal.
 In the shell, you can start typing commands to perform some action. 
-Most commands are quite intuitive acronyms and are easy to remember once you start using them. 
-The usual syntax is ``command -option1 arg1 -option2 arg2``, where ``command`` is the name of the command, 
-``-option1`` and ``-option2`` specifies the particulars of the command (they are optional, 
-there can be as many options as the specific command permits), and ``arg1`` and ``arg2`` are 
-the value of the corresponding options. Start by entering ``date`` to print the system date and time on the screen.
-
 
 Useful Shell commands
 ---------------------
@@ -221,6 +215,26 @@ Also you can get information about where the executable lies
 ::
 
   which <cmd>
+
+Executing your software
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Most commands are quite intuitive acronyms and are easy to remember once you start using them. 
+The usual syntax is
+::
+
+  command -option1 arg1 -option2 arg2
+  
+where ``command`` is the name of the command, 
+``-option1`` and ``-option2`` specifies the particulars of the command (they are optional, 
+there can be as many options as the specific command permits), and ``arg1`` and ``arg2`` are 
+the value of the corresponding options.
+In general
+::
+
+  command -h
+  
+Prints information about what options and arguments you can enter.
 
 Further information
 ^^^^^^^^^^^^^^^^^^^

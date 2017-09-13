@@ -16,7 +16,8 @@ Method 1
 ^^^^^^^^
 
 Install the AFS client this way:
-::	   
+::
+
   sudo add-apt-repository ppa:openafs/stable
   sudo apt-get install openafs-client openafs-modules-dkms
 
@@ -35,13 +36,15 @@ Using the Synaptic Package Manager's graphical user interface (GUI) to install t
 * openafs-modules-source
 
 This can also be done without the GUI:
-::	   
+::
+	   
   sudo apt-get install module-assistant openafs-client openafs-modules-source
 
 If asked about which AFS cell this workstation belongs to, answer pdc.kth.se
 
 Then, in a shell run:
-::   
+::
+   
   sudo module-assistant
 
 and do the following:
