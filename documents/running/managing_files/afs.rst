@@ -34,15 +34,16 @@ Viewing and modifing access (Access Control List)
 -------------------------------------------------
 
 Every directory in AFS is controlled by the Access Control List (ACL) describing different user rights in that directory.
-To see this list, use the command ``fs listacl`` or ``fs la``. This command entered by the user ``svensson`` might result in something like this:
-:	
+To see this list, use the command ``fs listacl`` or ``fs la``. This command entered by the user ``svensson`` might result in something like this
+::	
+
   > fs la
-    Access list for . is
-    Normal rights:
-    svensson rlidwka
-    system:administrators rlidwka
-    system:anyuser rl
-    andersson rlidwk
+  Access list for . is
+  Normal rights:
+  svensson rlidwka
+  system:administrators rlidwka
+  system:anyuser rl
+  andersson rlidwk
 
 Before going into the details of this list, we should take a look at what permissions you can set. Each action you can perform in a directory has its own letter:
 
@@ -67,18 +68,21 @@ Before going into the details of this list, we should take a look at what permis
 
 In the example earlier, we see that the user ``svensson`` has all the rights to his directory, so does the group ``system:administrators``.
 The group ``system:anyuser`` which contains all the users of AFS in the whole world may read and list the files in this directory.
-Finally ``svensson``'s friend ``andersson`` has all the rights except the right to change the ACL. To alter the ACL you use ``fs setacl`` or ``fs sa`` like:
+Finally ``svensson``'s friend ``andersson`` has all the rights except the right to change the ACL. To alter the ACL you use ``fs setacl`` or ``fs sa`` like
 ::
+
   > fs sa [directory] user rights
 
 Assuming that you are in your home directory and that you want to give the user ``mysister`` some rights in this directory you could write
 ::
+
   > fs sa . mysister rliw
 
 This would make it possible for ``mysister`` to read, list, create new files, and to modify existing files.
 By default ``fs sa`` adds to or alters the contents of the ACL instead of replacing it.
 To revoke the rights given to a user you must use t he the following command:
 ::
+
   > fs sa [directory] user none
 
 Finally, to see all the available commands with ``fs`` use ``fs help``.
@@ -101,11 +105,13 @@ You should not make your home directory public readable. One example to clarify 
 
 Change to your home directory:
 ::
+
   > cd
   > mv .bashrc .forward Public
 
 Create the links:
 ::
+
   > ln -s Public/.bashrc .
   > ln -s Public/.forward .
 
@@ -127,27 +133,33 @@ we see the group ``system:anyuse``. This is one of the systems groups of which t
 To create your own groups, use the command ``pts`` as follows:
 
 * Create a new group with ``creategroup`` or ``cg``, owner should be your username
-::
-  > pts creategroup owner:groupname
+  ::
+
+    > pts creategroup owner:groupname
 
 * Add a user to a group with ``adduser`` or ``ad``
-:: 
-  > pts adduser user owner:groupname
+  :: 
+
+    > pts adduser user owner:groupname
 
 * Deletes a group with ``delete`` or ``del``
-:: 
-  > pts delete owner:groupname
+  :: 
+
+    > pts delete owner:groupname
 
 Removes one user from the group with ``removeuser`` or ``rem``
 :: 
+
   > pts removeuser user owner:groupname
 
 Lists the members in a group with ``membership`` or ``m``.
 :: 
+
   > pts membership owner:groupname
 
 List all commands to ``pts`` with ``help``
 :: 
+
   > pts help
 
 .. rubric:: Example
@@ -155,17 +167,20 @@ List all commands to ``pts`` with ``help``
 Here is an example, assume that you have two friends svensson and andersson. You want to give them certain rights in a directory called my_secrets.
 Yor own username is me. First in your home directory, you create the group friends:
 :: 
+
   > cd
   > pts creategroup me:friends
 
 Then you should add the users to the group
 :: 
+
   > pts adduser svensson me:friends
   > pts adduser andersson me:friends
 
 All we have to do now is to add this group to the ACL for the directory my_secrets.
 Assuming that my_secrets are a subdirectory under your home dire ctory you would type:
 ::
+
   > fs setacl my_secrets me:friends rlidw
 
 which would let members of the group friends read, list, insert, delete and write files in your directory.
@@ -173,15 +188,15 @@ You use fs setacl in the same way for users and groups, just remember that a gro
 
 Then you should add the users to the group
 :: 
+
   > pts adduser svensson me:friends
   > pts adduser andersson me:friends
 
 All we have to do now is to add this group to the ACL for the directory my_secrets.
 Assuming that my_secrets are a subdirectory under your home dire ctory you would type:
-
-.. code-block:: bash
+::
    
-   > fs setacl my_secrets me:friends rlidw
+  > fs setacl my_secrets me:friends rlidw
 
 which would let members of the group friends read, list, insert, delete and write files in your directory.
 You use fs setacl in the same way for us ers and groups, just remember that a group is written as owner:groupname.
@@ -197,10 +212,12 @@ the corresponding realm and then getting tokens from those tickets using the com
 As an example, assume that you have an account ``user@PHYSTO.SE`` with the home directory ``/afs/physto.se/home/u/user``.
 First you need to get Kerberos tickets:
 ::   
+
   > kauth user@PHYSTO.SE
 
 Then you need to acquire tokens:
 ::   
+
   > afslog -c physto.se
 
 You should now be able to read and write the files in ``/afs/physto.se/home/u/user``.
@@ -212,18 +229,22 @@ How much space do you have in your home directory? And how much space is already
 	    
 To see the size of single files (NOT directories in AFS):
 :: 
+
   > ls -lh
 
 Check your current overall usage:
 :: 
+
   > du -hs ~/*
 
 and WAIT! It will take some time to get the total size of each folder in your home directory.
 :: 
+
   > fs lq directory_name
 
 will list the quota of for the given directory. For example:
 :: 
+
   > fs lq ~
 
 In AFS there are two aspects of your storage that are limited - KB of disk space
@@ -235,6 +256,7 @@ Maximum number of files
 The maximum number of files in an AFS directory is 64435 (if the file names are short, otherwise the number is less).
 If you try to create one more file than that, you will get an error message.
 ::   
+
   File too large
 
 OpenAFS has a very slow algorithm for accessing files in a directory with many files.
@@ -248,21 +270,25 @@ If you are suspecting that the AFS server you are using is overloaded you can ch
 
 You can check if an AFS file server is overloaded. First find out on what file server your directory is located:
 ::   
+
   > module add afsws
   > fs whereis ~
 
 This will return a host name for your home directory, ~, for instance sculpin.pdc.kth.se. Now, get some information from that host:
 :: 
+
   > rxdebug sculpin.pdc.kth.se | head -5 | tail -2
 
 An output might be:
 :: 
+
   > 0 calls waiting for a thread
   > 122 threads are idle
 
 Those values corresponds to the normal healthy condition of an AFS file server with not so high load.
 But if you on the other hand would see:
 :: 
+
   > 500 calls waiting for a thread
   > 2 threads are idle
 

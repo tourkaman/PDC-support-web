@@ -45,46 +45,7 @@ In a job script option the following sbatch command can be defined:
   #SBATCH --mail-type=ALL
     request a mail when the job starts and ends
 
-Job examples
-------------
-	   
-This is an an example of a job script for a MPI program. For other programs, you can find examples in the software page `Software <http://pdc-software-web.readthedocs.io/en/latest/>`_.
-::
-
-  #!/bin/bash -l
-  # The -l above is required to get the full environment with modules
-
-  # Set the allocation to be charged for this job
-  # not required if you have set a default allocation
-  #SBATCH -A 201X-X-XX
-  
-  # The name of the script is myjob
-  #SBATCH -J myjob
-  
-  # Only 1 hour wall-clock time will be given to this job
-  #SBATCH -t 1:00:00
-  
-  # Number of nodes
-  #SBATCH --nodes=2
-  # Number of MPI processes per node
-  #SBATCH --ntasks-per-node=24
-  
-  #SBATCH -e error_file.e
-  #SBATCH -o output_file.o
-  
-  # Load the Intel MPI module
-  module add intelmpi/17.0.1
-
-  # Run the executable named myexe with MPI-rank of 48
-  # and write the output into my_output_file
-  mpirun/aprun -n 48 ./myexe > my_output_file 2>&1
-
-.. Warning::
-  The above example covers several kinds of OSs.
-  In general to exectute your command you use *mpirun* but on Cray
-  based system you have to use the command *aprun*.
-
-More information at
+For job examples see information about specific clusters at...
 
 .. toctree::
    :glob:
