@@ -4,6 +4,13 @@
 Run interactively
 =================
 
+Here's a simplified workflow of booking a node.
+
+.. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqrbTVybmJTZWRFRjA
+
+Booking a node might be suitable if you want to test and verify your code in a parallell environment, or when the code is
+not time consuming but frequent adjustment is needed.
+
 Compute nodes can be booked from the queue system for interactive use. 
 This means that you can run your program similar to how you run it on a local computer through terminal.
 

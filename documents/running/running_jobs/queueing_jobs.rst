@@ -4,6 +4,12 @@
 Queueing jobs
 =============
 
+Here's a simplified workflow of queueing jobs to the supercomputer.
+
+.. image:: https://drive.google.com/uc?id=0BxYU3X5kGVqra2JSUnpYcUJtOGc
+
+For running time counsuming large programs, sending the job to the queue system might be preferred.
+
 * You can submit a job script to the Slurm queue system from the login node with
   ::
 
@@ -41,17 +47,6 @@ These commands are the basic commands for submit, cancel, check jobs to the queu
      /cfs/klemming/nobackup/y/yourUsername
      
    But it is always good practice to run any type of job in the lustre file system
-
-Job scripts
------------
-
-To submit a job to the queue system one have to specify few details, 
-such as the time allocation the user belong to and the number of nodes required.
-This is done by adding option in the job script with **#SBATCH** flag. This option are then given to the SLURM.
-   
-The flag option specified in `#SBATCH` is for **SLURM** (the queue system). 
-This have nothing to do with the `aprun` option, and both needed to be configured properly for the job to make sense. 
-Below are the cluster specific instructions:
 
 .. toctree::
    :glob:

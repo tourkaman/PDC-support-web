@@ -25,7 +25,7 @@ Getting Started
 
 .. toctree::
    :glob:
-   :maxdepth: 3
+   :maxdepth: 2
    
    documents/starting/get_research_time/get_research_time
    documents/starting/get_account
@@ -35,7 +35,7 @@ How to login
 
 .. toctree::
    :glob:
-   :maxdepth: 3
+   :maxdepth: 2
 		
    documents/login/login
 
@@ -44,7 +44,7 @@ Running research
 
 .. toctree::
    :glob:
-   :maxdepth: 3
+   :maxdepth: 4
 
    documents/running/managing_files/data_management
    documents/running/running_jobs/how_to_run

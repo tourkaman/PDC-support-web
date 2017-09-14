@@ -4,7 +4,13 @@
 		
 Job scripts
 ===========
-		
+
+To submit a job to the queue system one have to specify few details, 
+such as the time allocation the user belong to and the number of nodes required.
+This is done by adding option in the job script with **#SBATCH** flag. This option are then given to the SLURM.
+   
+The flag option specified in `#SBATCH` is for **SLURM** (the queue system). 
+This have nothing to do with the `aprun` option, and both needed to be configured properly for the job to make sense. 		
 In a job script option the following sbatch command can be defined:
 
 .. glossary::

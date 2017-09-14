@@ -36,3 +36,4 @@ from which you want to access PDC resources. If you face any trouble logging in 
    linux_login
    windows_login
    mac_login
+   configuration

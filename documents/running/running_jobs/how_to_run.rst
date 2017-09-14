@@ -12,7 +12,6 @@ Before following this section, make sure you can login to a PDC system.
    :glob:
    :maxdepth: 3
 
-   job_scheduling
    software
-   queueing_jobs
-   run_interactively
+   job_scheduling
+
