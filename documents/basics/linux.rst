@@ -1,15 +1,15 @@
 .. index:: Introductin to Linux
 .. _linux:
 
-Tutorials: Linux 
-================
+Basic Linux for new HPC users 
+=============================
 
 .. Refer to http://www.ee.surrey.ac.uk/Teaching/Unix/unix1.html
 .. Refer to https://www.osc.edu/sites/osc.edu/files/documentation/Intro%20to%20Unix%202015.pdf
 
 Working with PDC resources requires a basic understanding of Linux systems. 
 Some of our users are new to using Linux-based systems and have asked for introductory materials. 
-Here is a simple tutorial with basic command-line operations needed to get started with PDC.
+Here is a collection for the basic command-line operations needed to get started with PDC.
 
 Using commands in the shell
 ---------------------------
@@ -19,6 +19,7 @@ When you login to a PDC system remotely, you are already in the shell window of 
 If you login to your own system, you are probably on a graphical screen. 
 From there, search for terminal or Ctrl+Alt+T to enter the shell terminal.
 In the shell, you can start typing commands to perform some action. 
+The default shell on the PDC clusters is **bash**.
 
 Useful Shell commands
 ---------------------
