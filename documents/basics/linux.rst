@@ -28,8 +28,8 @@ Upon login we are greeted with the shell
 ::
   
   $ ssh user@tegner.pdc.kth.se
-  Last login: Fri Aug 8 10:14:59 2014 from example.com
-  user@milner-login1:~> _
+  Last login: Fri Aug 8 10:14:59 2017 from example.com
+  user@tegner-login-1:~> _
 
 Bash: Files and directories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
