@@ -4,8 +4,6 @@
 Introduction
 ============
 
-Here, you will find the basic terminologies needed to get started with PDC.
-
 Clusters, nodes, processors, and cores
 --------------------------------------
 

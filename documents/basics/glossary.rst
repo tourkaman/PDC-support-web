@@ -39,12 +39,10 @@ Here you will find the basic terminologies and quick reference materials.
      CAC or Charge Account Category is a deprecated term referring to allocations for a project. 
      It is now replaced by Time Allocation.
 
-   nodehours
-     Nodehours(n) equals the corehours (c) divided by the number of cores per node(cpn): `n = c/cpn`. 
 
    corehours
-     Corehours (c) can be calculated with Nodehours (n) you have requested on a particular system,
-     by knowing cores per node(cpn): `c = n*cpn` 
+     Corehours (c) can be calculated with amount of nodes (n) and the amount of hours (t) you have requested the nodes on a particular system,
+     by knowing cores per node(cpn): `c = n*cpn*t` 
 
    SNIC
      SNIC or Swedish National Infrastructure for Computing is a national research infrastructure.
