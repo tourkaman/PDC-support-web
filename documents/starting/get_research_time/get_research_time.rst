@@ -10,31 +10,6 @@ Step 1: Getting research time
 Before running on PDC, users must belong to at least one Time Allocation. 
 
 
-.. rubric:: Are you a student taking a course requiring PDC resource?
-
-If you're a participant of a course at KTH that requires using PDC resources, you don't have to bother with Time Allocation.
-
-* If you already have a PDC account (maybe you used PDC for other courses), 
-  all you have to do is send us a mail at ``support@pdc.kth.se``. 
-  Include your...
-  
-  #. Username at PDC
-  #. The course code that requires PDC. 
-     You also need to make sure you are included in the participant list managed by your course responsible.
-
-* If you don't have a PDC account, go directly to :ref:`Step 2: Account Creation -> Course account <course_account>` 
-  and fill in the form. Do not forget to specify the course code and the name of the course responsible. 
-  You also need to make sure you are included in the participant list managed by your course responsible.
-
-.. rubric:: Are you a student (Bachelor or Master level) requiring PDC resources for your thesis?
-
-In general, we do not accept applications directly from students below PhD level. However, your supervisor can apply on your behalf.
-
-#. Request your supervisor to :ref:`apply for a new Time Allocation <Apply_for_a_new_time_allocation>`. 
-#. You can :ref:`join that Time allocation <joining_a_existing_time_allocation>` as a project member. 
-
-We recommend applying for *small allocation* (see more info in the link) for thesis work.
-
 .. rubric:: Are you a researcher (PhD or higher) requiring PDC resources?
 
 All research projects are handled through the SUPR portal,
@@ -42,6 +17,31 @@ so applying/joining Time Allocation and applying for PDC account must be done on
 	    
 * If you want to start a new Time Allocation, then :ref:`apply for a new Time Allocation <Apply_for_a_new_time_allocation>`
 * If you are joining a research project that already has a Time Allocation at PDC, then :ref:`join the Time Allocation <joining_a_existing_time_allocation>`.
+
+.. rubric:: Are you a student taking a course requiring PDC resource?
+
+If you're a participant of a course at KTH that requires using PDC resources, you don't have to bother with Time Allocation.
+
+* If you already have a PDC account (maybe you used PDC for other courses),
+  all you have to do is send us a mail at ``support@pdc.kth.se``.
+  Include your...
+
+  #. Username at PDC
+  #. The course code that requires PDC.
+     You also need to make sure you are included in the participant list managed by your course responsible.
+
+* If you don't have a PDC account, go directly to :ref:`Step 2: Account Creation -> Course account <course_account>`
+  and fill in the form. Do not forget to specify the course code and the name of the course responsible.
+  You also need to make sure you are included in the participant list managed by your course responsible.
+
+.. rubric:: Are you a student (Bachelor or Master level) requiring PDC resources for your thesis?
+
+In general, we do not accept applications directly from students below PhD level. However, your supervisor can apply on your behalf.
+
+#. Request your supervisor to :ref:`apply for a new Time Allocation <Apply_for_a_new_time_allocation>`.
+#. You can :ref:`join that Time allocation <joining_a_existing_time_allocation>` as a project member.
+
+We recommend applying for *small allocation* (see more info in the link) for thesis work.
 
 
 |
@@ -191,7 +191,7 @@ You can decide what allocation would suit the best for your project with the hel
 ========================= ==================================== ==================================== ====================================
 Description                          Small allocation                     Medium allocation                    Large allocation
 ========================= ==================================== ==================================== ====================================
-Limit                     5000 corehours/month                 200 kcorehours/month                 Above 200 kcorehours/month
+Limit                     5K corehours/month                   200K corehours/month                 Above 2K corehours/month
 Applicant requirement     PhD student or higher                Senior scientist in Swedish academia Senior scientist in Swedish academia
 Application evaluation    Only technical evaluation            Only technical evaluation            Scientific and technical evaluation
 ========================= ==================================== ==================================== ====================================
@@ -226,5 +226,5 @@ You can see what Time Allocations you belong to in two ways:
 #. If you have a PDC account, you can login to Beskow/Tegner and use the ``projinfo`` command.
    It will print the information of all the allocations you belong to and information on the recent usage of the allocation.
 
-Note that medium allocations normally have an extra m, at the start, e.g. SNIC 2015/1-1 is m.2015-1-1 on our system.
+Note that medium allocations normally have an extra m, at the start, e.g. SNIC 2017/1-1 is m.2017-1-1 on our system.
 
