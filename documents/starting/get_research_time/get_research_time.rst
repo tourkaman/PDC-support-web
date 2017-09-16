@@ -191,7 +191,7 @@ You can decide what allocation would suit the best for your project with the hel
 ========================= ==================================== ==================================== ====================================
 Description                          Small allocation                     Medium allocation                    Large allocation
 ========================= ==================================== ==================================== ====================================
-Limit                     5K corehours/month                   200K corehours/month                 Above 2K corehours/month
+Limit                     5K corehours/month                   200K corehours/month                 Above 200K corehours/month
 Applicant requirement     PhD student or higher                Senior scientist in Swedish academia Senior scientist in Swedish academia
 Application evaluation    Only technical evaluation            Only technical evaluation            Scientific and technical evaluation
 ========================= ==================================== ==================================== ====================================
