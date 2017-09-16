@@ -17,9 +17,8 @@ User guide
 
    documents/basics/preliminaries
    documents/basics/clusters
+   documents/basics/linux  
    documents/basics/glossary
-   documents/basics/linux
-   
 Getting Started
 ===============
 
@@ -52,7 +51,7 @@ Running research
 
 * `Available Software <http://pdc-software-web.readthedocs.io/en/latest/>`_
 
-Getting help
+Get further help
 ============
 
 .. toctree::
