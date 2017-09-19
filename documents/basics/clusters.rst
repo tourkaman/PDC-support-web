@@ -13,4 +13,4 @@ Beskow Medium/Large        Large scale jobs capable of    SNIC
                            using >128 cores (4 nodes)/job
 Tegner Small/Medium        Hybrid system with Large RAM,  Scientific groups in the Stockholm area
                            GPUs
-====== =================== =============================  =======================================
+====== =================== ============================== =======================================

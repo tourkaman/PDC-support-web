@@ -19,6 +19,7 @@ User guide
    documents/basics/clusters
    documents/basics/linux  
    documents/basics/glossary
+
 Getting Started
 ===============
 
@@ -34,7 +35,7 @@ How to login
 
 .. toctree::
    :glob:
-   :maxdepth: 2
+   :maxdepth: 3
 		
    documents/login/login
 
@@ -52,7 +53,7 @@ Running research
 * `Available Software <http://pdc-software-web.readthedocs.io/en/latest/>`_
 
 Get further help
-============
+================
 
 .. toctree::
    :glob:
