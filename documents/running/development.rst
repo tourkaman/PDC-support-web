@@ -91,9 +91,9 @@ many versions of the different compilers do exist and the command does
 differ depending on language and type of compiler.
 Also on this cluster we only have the *Intel* and the *GNU* compiler.
 
-Example of compiling serial code
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-::
+Examples
+^^^^^^^^
+Compiling serial code::
 
   # GNU
   gfortran -o hello hello.f
@@ -105,9 +105,7 @@ Example of compiling serial code
   icc -o hello hello.c
   icpc -o hello hello.cpp
 
-Example of compiling OpenMP/MPI code
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-::
+Compiling OpenMP/MPI code::
 
   # GNU
   module add gcc/5.1 openmpi/1.8-gcc-5.1 
@@ -120,6 +118,12 @@ Example of compiling OpenMP/MPI code
   mpiicc -openmp -o hello_mpi hello_mpi.c
   mpiicpc  -openmp -o hello_mpi hello_mpi.cpp
 
+Compiling CUDA code::
+
+  # CUDA 
+  module add cuda/8.0
+  nvcc -arch=sm_37 -O2  hello.cu -o hello.x
+  
 Allinea forge
 -------------
 
