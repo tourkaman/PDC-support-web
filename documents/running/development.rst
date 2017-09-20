@@ -24,6 +24,7 @@ C++      CC [flags] source.cpp
 Fortran  ftn [flags] source.f90
 ======== ======================
 
+   
 Type of compiler
 ^^^^^^^^^^^^^^^^
 
@@ -54,6 +55,10 @@ Example::
   
 See http://pdc-software-web.readthedocs.io/en/latest/#libraries
 For more libraries that can be added.
+
+.. warning::
+
+   You should only use ``ftn/cc/CC`` when compiling in Beskow irrespective of your choice of compiler. This is common to Cray systems (like Beskow) as these scripts automatically call the correct compiler depending on your loaded PrgEnv module. They also automatically link to other libraries depending on the modules you have loaded, so you need not link them while compiling  (e.g. to link to Lapack, just load the cray-libsci module and the scripts will handle the rest).   
 
 Examples
 ^^^^^^^^
