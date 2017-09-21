@@ -67,10 +67,31 @@ where ``username`` is your username at PDC.
 
 .. _scp_windows:      
 
-Using SCP/RSYNC from Windows:
+Using SCP/PSFTP from Windows:
 -----------------------------
 
-If you're using *putty* to login to PDC clusters, you can use **PSFTP** that follows the putty installation.
+If you're using *putty* to login to PDC clusters, you can use **PSFTP** or **PSCP** that follows the putty installation.
+
+Using PSCP
+^^^^^^^^^^
+
+To use PSCP, open up the command prompt, i.e run cmd. Use PSCP to transfer the files using the
+Saved Session you previously added in PuTTY. 
+The syntax is similar to scp (ie. -r for recursive etc).
+
+To transfer a file from your local computer to Lustre
+::
+
+  "C:\Program Files\PuTTY\pscp.exe" C:\[file to transfer] t04n28.pdc.kth.se:/cfs/klemming/nobackup/[u]/[username]
+
+To transfer a file from AFS to your local computer
+::
+
+  "C:\Program Files\PuTTY\pscp.exe" t04n28.pdc.kth.se:/afs/pdc.kth.se/home/[u]/[username]/[file] C:\[folder to transfer to]
+
+Using PSFTP
+^^^^^^^^^^^
+
 Simply go to the folder putty is installed, or search for *PSFTP* on windows main menu. Note that just like putty, you need kerberos ticket to use PSFTP.
 
 if you start PSFTP, a new terminal will open. Here, you first have to connect to the cluster. You can do this by typing
