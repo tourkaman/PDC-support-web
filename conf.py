@@ -82,7 +82,7 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-# html_theme = 'alabaster'
+html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -101,11 +101,9 @@ html_static_path = ['_static']
 # This is required for the alabaster theme
 # refs: http://alabaster.readthedocs.io/en/latest/installation.html#sidebars
 
-html_theme="classic"
 html_theme_options = {
-    'collapsiblesidebar': True,
-    'codebgcolor': "LightGray"
-}
+    'sidebar_collapse': True
+    }
 
 # -- Options for HTMLHelp output ------------------------------------------
 
