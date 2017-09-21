@@ -58,4 +58,4 @@ There are three methods by which you can get a new PDC password
   passport if the address is different from the account application)
 * Get a new password sent to you by SMS (requires your PDC username, mobile phonenumber, a scanned copy of your passport)
 
-For the last two method, you need to send us the detail via mail. see more about :ref:`_contact_support`
+For the last two method, you need to send us the detail via mail. see more about :ref:`contact_support`

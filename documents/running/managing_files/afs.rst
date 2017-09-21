@@ -35,9 +35,11 @@ Viewing and modifing access (Access Control List)
 
 Every directory in AFS is controlled by the Access Control List (ACL) describing different user rights in that directory.
 To see this list, use the command ``fs listacl`` or ``fs la``. This command entered by the user ``svensson`` might result in something like this
-::	
 
-  > fs la
+.. code-block:: bash
+  :emphasize-lines: 1
+
+  fs la
   Access list for . is
   Normal rights:
   svensson rlidwka
