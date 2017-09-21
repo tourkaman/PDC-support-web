@@ -25,9 +25,11 @@ Useful Shell commands
 ---------------------
 
 Upon login we are greeted with the shell
-::
+
+.. code-block:: bash
+  :emphasize-lines: 1
   
-  $ ssh user@tegner.pdc.kth.se
+  ssh user@tegner.pdc.kth.se
   Last login: Fri Aug 8 10:14:59 2017 from example.com
   user@tegner-login-1:~> _
 
@@ -35,25 +37,33 @@ Bash: Files and directories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Command **pwd** tells me where I am. After login I am in the "home"directory
-  ::
-  
-    user@machine:~$ pwd
+
+  .. code-block:: bash
+    :emphasize-lines: 1
+
+    pwd
     /afs/pdc.kth.se/home/u/user
     
 * I can change the directory with **cd**
-  ::
+
+  .. code-block:: bash
+    :emphasize-lines: 1,3
   
-    user@machine:~$ cd tmp/talks
-    user@machine:~/tmp/talks$ pwd
+    cd tmp/talks
+    /tmp/talks 
+    pwd
     /afs/pdc.kth.se/home/u/user/tmp/talks
     
 * I can go one level up with **cd ..**
 * I can return to my HOME folder with **cd**
 * List the contents with **ls -l**
-  ::
-  
+
+  .. code-block:: bash
+    :emphasize-lines: 2
+      
     user@machine:~/tmp/talks
-    $ ls -ltotal 237
+    ls -l
+    total 237
     drwx------ 3 user csc-users 2048 Aug 17 15:21 img
     -rw------- 1 user csc-users 18084 Aug 17 15:21 pdc-env.html
     -rw------- 1 user csc-users 222051 Aug 17 15:22 remark-latest.min.js
@@ -64,8 +74,8 @@ Bash: creating directories and files
 * We create a new directory called *results* and change to it
   ::
   
-    $ mkdir results
-    $ cd results
+    mkdir results
+    cd results
 
 * Creating and editing files
 
@@ -79,27 +89,29 @@ Copying, moving renaming and deleting
 ::
   
   # copy file
-  $ cp draft.txt backup.txt
+  cp draft.txt backup.txt
   # recursively copy directory
-  $ cp -r results backup
+  cp -r results backup
   # move/rename file
-  $ mv draft.txt draft_2.txt
+  mv draft.txt draft_2.txt
   # move/rename directory
-  $ mv results backup
+  mv results backup
   # move directory one level up
-  $ mv results ..
+  mv results ..
   # remove file
-  $ rm draft.txt
+  rm draft.txt
   # remove directory and all its contents
-  $ rm -r results
+  rm -r results
 
 Bash: history and tab completion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * history preserve commands used
-  ::
 
-    $ history
+  .. code-block:: bash
+    :emphasize-lines: 1
+    
+    history
     689  cd ..
     691  cd Documents/
     692  cp -r introduction_PDC /afs/pdc.kth.se/home/h/hzazzi/Documents/Presentations
@@ -110,9 +122,11 @@ Bash: history and tab completion
     697  history
 
 * If I want to repeat...
-  ::
 
-    $ !696
+  .. code-block:: bash
+    :emphasize-lines: 1
+
+    !696
     pwd
     ~/Documents/introduction_PDC
 
@@ -127,22 +141,22 @@ Bash: finding things
   ::
 
     # extract all lines that contain searchme
-    $ grep searchme draft.txt
+    grep searchme draft.txt
     
 * If you do not know what a UNIX command does, examine it with **man**
   ::
 
-    $ man [command]
+    man [command]
 
 * Find files with **find**
   ::
 
-    $ find ~ | grep lostfile.txt
+    find ~ | grep lostfile.txt
     
 * We can pipe commands and filter results with |
   ::
 
-    $ grep energy results.out | sort | uniq
+    grep energy results.out | sort | uniq
     
 Bash: Redirecting output
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -150,17 +164,17 @@ Bash: Redirecting output
 * Print content of a file to screen
   ::
 
-    $ cat test.out
+    cat test.out
 
 * Redirect output to a file
   ::
 
-    $ cat test.out > myfile.txt
+    cat test.out > myfile.txt
   
 * Append output to a file
   ::
 
-    $ cat test.out >> myfile.txt
+    cat test.out >> myfile.txt
   
 Bash: Writing shell scripts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -178,7 +192,7 @@ We make the script executable and then run it
 ::
 
   # Make it executable
-  $ chmod u+x my_script
+  chmod u+x my_script
   # run it
   ./my_script
 
@@ -191,9 +205,10 @@ File example
   #!/bin/bash
   echo "Hi" $1 $2
 
-::
+.. code-block:: bash
+  :emphasize-lines: 1
 
-  $ ./myscript Nils Nilsson
+  ./myscript Nils Nilsson
   Hi Nils Nilsson
     
 :$1..$X: First...Xth argument
